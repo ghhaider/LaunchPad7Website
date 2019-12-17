@@ -1,0 +1,142 @@
+﻿@model Launchpad7New.Areas.Admin.Models.Invoice
+
+@{
+    ViewBag.Title = "InvoiceDetails";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+   
+    .dl-horizontal dt {
+        margin-bottom: 5px;
+    }
+</style>
+<div class="pageHeader">
+    <div class="container">
+        <h2 class="dashboard">Invoice Detail</h2>
+    </div>
+</div>
+<div class="container" style=" padding: 50px 0;">
+    <div class="row">
+        <dl class="dl-horizontal col-md-offset-4 invoicecss">
+            @*<dt>
+                User Name:
+            </dt>*@
+
+            @*<dd>
+                @foreach (var user in ViewBag.UserId)
+                {
+                    if (user.UserId == Model.UserId)
+                    {
+                        <span>@user.Name</span>
+                    }
+                }
+            </dd>*@
+
+            <dt>
+                @Html.DisplayNameFor(model => model.InvoiceNumber):
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.InvoiceNumber)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.PaymentMethod):
+            </dt>
+
+            <dd>
+                @Enum.GetName(typeof(Launchpad.Enums.PaymentMethod), Model.PaymentMethod)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.PackageId):
+            </dt>
+
+            <dd>
+                @foreach (var val in ViewBag.packglist)
+                {
+                    if (Model.PackageId == val.Id)
+                    {
+                        @val.Name;
+                    }
+                }
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Members):
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Members)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.TotalPrice):
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.TotalPrice)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.IssueDate):
+            </dt>
+
+            <dd>
+                <span>@String.Format("{0:D}", Model.IssueDate)</span>
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Status):
+            </dt>
+
+            <dd>
+                @Enum.GetName(typeof(Launchpad.Enums.Status), Model.Status)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Comments):
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Comments)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.PaymentDate):
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.PaymentDate)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.CreatedDate):
+            </dt>
+
+            <dd>
+                <span>@String.Format("{0:D}", Model.CreatedDate)</span>
+            </dd>
+
+        </dl>
+        <a href="@Url.Action("Index", "DashBoard")" class="btn btn-default loginbtn">Back</a>
+    </div>
+
+</div>
+
+@section Scripts {
+    @*@Scripts.Render("~/bundles/jqueryval")*@
+    <script type="text/javascript">
+        var domain = $("#domain").attr('href');
+        $(document).ready(function () {
+            var whylink = domain+"#why-launchpad";
+            $("#why").attr("href", whylink)
+            var memberlink = domain + "#membership";
+            $("#member").attr("href", memberlink)
+            var eventlink = domain + "#events";
+            $("#event").attr("href", eventlink)
+        });
+    </script>
+}
+
+
+
+

@@ -1,0 +1,66 @@
+﻿@model IEnumerable<Launchpad7New.Areas.Admin.Models.ContactUser>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout1.cshtml";
+}
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h2>Contact Users List</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <table class="table table-responsive table-striped admineventsTable">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">
+                            @Html.DisplayNameFor(model => model.Name)
+                        </th>
+                        <th scope="col">
+                            @Html.DisplayNameFor(model => model.Email)
+                        </th>
+                        <th scope="col">
+                            @Html.DisplayNameFor(model => model.Phone)
+                        </th>
+                       
+                        <th scope="col">
+                            Actions
+                        </th>
+
+                    </tr>
+                </thead>
+
+
+                @foreach (var item in Model)
+                {
+                <tr>
+                    <td>
+
+                        <a href="@Url.Action( "Detail", new {id= @item.Id })">@item.Name</a>
+
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Email)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Phone)
+                    </td>
+                  
+                    <td>
+                        @Html.ActionLink("Detail", "Detail", new { id = item.Id }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                    </td>
+                </tr>
+                }
+
+            </table>
+        </div>
+
+    </div>
+
+</div>
+

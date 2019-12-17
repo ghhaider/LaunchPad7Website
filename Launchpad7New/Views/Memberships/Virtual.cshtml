@@ -1,0 +1,94 @@
+﻿
+@{
+    ViewBag.Title = "Virtual";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    ul.pull-right.membershipsmenu li .virtual {
+        color: #e86c6c;
+    }
+</style>
+<div class="membershipbanner"></div>
+<ul class="pull-right membershipsmenu">
+    <li><a class="virtual" href="@Url.Action("Virtual", "memberships")">Virtual</a></li>
+    <li><a class="hotdesk" href="@Url.Action("HotDesk", "memberships")">Dedicated Desk</a></li>
+    <li><a class="privateoffie" href="@Url.Action("PrivateOffice", "memberships")">Private Office</a></li>
+    <li><a class="privateoffie1" href="@Url.Action("privateoffice1", "memberships" )">Private Office</a></li>
+    <li><a class="privateoffie1" href="@Url.Action("EventAccess", "memberships")">Event Access</a></li>
+</ul>
+
+    <div class="membershipcontent">
+        <div class="container">
+            <div class="row">
+                <h2 id="pkgname">Virtual</h2>
+                <p>
+                    Launchpad7 Coworking space gives you a professional, dedicated space to work from without the huge cost of a traditional office space. Because the space is shared between multiple likeminded business owners, it’s more affordable, and to top it off there are no long term leases or contracts!
+                    At Launchapady7 we’re a friendly bunch who love embracing the many awesome coffee, lunch and drinking spots in the area. Of course, this is on top of all the great work we do. Our aim is to help businesses in their early stages by providing a low-risk and affordable office space.
+                    Our light filled warehouse is an elegant, professional and affordable space for small businesses and freelancers. You also get full use of the meeting rooms, giving you a professional space to meet (and impress) your clients.
+                </p>
+                <h3>What Include In Virtual</h3>
+                <ul>
+                    <li>Hot Desk</li>
+                    <li>Mailing Address</li>
+                    <li>Meeting room Access </li>
+                    <li>Table Tennis & Xbox</li>
+                    <li>Bean bag environment</li>
+                    <li>*Special Discounts on 3,6 or 12 months advance payment</li>
+                    <li style="visibility:hidden">Internet/ Networkng</li>
+                    <li style="visibility:hidden">Electricity & generator </li>
+                    <li style="visibility:hidden">Cooling and heating system</li>
+                    <li style="visibility:hidden">Digital & handbook library</li>
+                </ul>
+                <p class="pricetag"><small><sup>*</sup></small>5,000/-</p>
+                <p style="font-size: 13px; color:#4D3D6E;">*This amount is Excluded Tax.</p>
+            </div>
+            <div class="row">
+                <div class="bookspace col-sm-9 col-xs-7">Book your space</div>
+                <a href="@Url.Action("Contact", "Home")" class="taketour btn btn-danger col-sm-2 col-sm-offset-1 col-xs-5">Take a Tour</a>
+            </div>
+            <div class="row signupmembershipForm">
+                <input type="hidden" id="PackageIds" name="PackageIds" value="6" />
+                @Html.Action("Register","Account")
+                @*@Html.Partial("_Register", new Launchpad7New.Models.RegisterViewModel())*@
+            </div>
+        </div>
+    </div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    <script type="text/javascript">
+        var nowDate = new Date();
+        var today = new Date(nowDate.getFullYear(), nowDate.getMonth(), nowDate.getDate(), 0, 0, 0, 0);
+
+        $("#StartingDate").datepicker({
+            // showOn: "button",
+            //buttonImage: "@Url.Content("~/Content/images/calendar.png")",
+            buttonImageOnly: true,
+            duration: "fast",
+            changeMonth: true,
+            changeYear: true,
+            startDate: today,
+            // format: 'd, M, Y',
+            autoclose: true,
+            constrainInput: true,
+            // maxDate: '0',
+            // minDate: '0',
+            //buttonText: "Select date"
+
+        });
+
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () { 
+        $('#StartingDate').val('').datepicker('update');
+        $('#Members').val('');
+        
+        var pkgid = $('#PackageIds').val();
+        $('#PackageId').val(pkgid);
+        var pkgname = $('#pkgname').text();
+        $('#packagename').val(pkgname);
+
+        });
+    </script>
+}
+

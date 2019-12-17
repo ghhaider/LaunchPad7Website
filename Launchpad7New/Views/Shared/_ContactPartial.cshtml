@@ -1,0 +1,71 @@
+﻿@model Launchpad7New.Areas.Admin.Models.ContactUser
+
+@{
+    Layout = null;
+}
+
+@* Contact Form Partial View Section *@
+
+@*<form id="askusanythingform" role="form">
+        @using (Html.BeginForm("", "", FormMethod.Get, new { id = "ContactForm" }))
+        {
+            <input type="text" name="cpname" placeholder="Name*" required>
+            <input type="email" name="cpemail" placeholder="Email*" required>
+            <input type="number" name="cpphone" placeholder="Phone*" required>
+            <textarea name="cpmessage" rows="10" placeholder="Comments / Questions*" required></textarea>
+            <input type="submit" id="askusanythingbtn" class="btn btn-danger" value="Submit">
+        }
+    </form>*@
+
+
+@using (Html.BeginForm("Contact", "ContactUser", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+    <div class="form-horizontal contactFormLP7">
+
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+           
+            <div class="col-md-10 col-12">
+                @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control", @placeholder = "Name" } })
+                @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+           
+            <div class="col-md-10 col-12">
+                @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control", @placeholder = "Email" } })
+                @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+        <div class="form-group">
+           
+            <div class="col-md-10 col-12">
+                @Html.EditorFor(model => model.Phone, new { htmlAttributes = new { @class = "form-control", @placeholder = "Phone" } })
+                @Html.ValidationMessageFor(model => model.Phone, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+      
+
+        <div class="form-group">
+           
+            <div class="col-md-10 col-12">
+                    @Html.TextAreaFor(model => model.Message, new { htmlAttributes = new { @class = "form-control", @placeholder = "Message", @rows = 10 } })
+                    @Html.ValidationMessageFor(model => model.Message, "", new { @class = "text-danger", })    
+            </div>
+        </div>
+
+
+
+        <div class="form-group">
+            <div class="col-md-6">
+                <input type="submit" value="Send" class="btn btn-danger" />
+            </div>
+        </div>
+    </div>
+}
+

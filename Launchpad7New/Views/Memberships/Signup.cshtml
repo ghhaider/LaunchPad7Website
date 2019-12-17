@@ -1,0 +1,115 @@
+﻿
+@{
+    ViewBag.Title = "Signup";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="membershipbanner"></div>
+<!--
+  Note: jQuery and Bootstrap CSS and JS files required.
+
+-->
+
+<div class="col-md-12">
+    <!-- Nav tabs -->
+    <ul id="tabs" class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="virtual"><a href="#all" role="tab" data-toggle="tab">Virtual</a></li>
+        <li role="presentation" class="virtual"><a href="#online" role="tab" data-toggle="tab">Hot Desk</a></li>
+        <li role="presentation"><a href="#offline" role="tab" data-toggle="tab">Private Office</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane fade in" id="all">
+            <div class="row">
+                <h2>Virtual</h2>
+                <p>
+                    Launchpad7 Coworking space gives you a professional, dedicated space to work from without the huge cost of a traditional office space. Because the space is shared between multiple likeminded business owners, it’s more affordable, and to top it off there are no long term leases or contracts!
+                    At Launchapady7 we’re a friendly bunch who love embracing the many awesome coffee, lunch and drinking spots in the area. Of course, this is on top of all the great work we do. Our aim is to help businesses in their early stages by providing a low-risk and affordable office space.
+                    Our light filled warehouse is an elegant, professional and affordable space for small businesses and freelancers. You also get full use of the meeting rooms, giving you a professional space to meet (and impress) your clients.
+                </p>
+
+
+                <ul>
+                    <li>Hot Desk</li>
+                    <li>Mailing Address</li>
+                    <li>Internet/ Networkng</li>
+                    <li>Electricity & generator </li>
+                    <li>Cooling and heating system</li>
+                    <li>Digital & handbook library</li>
+                    <li>Gaming Area - bean bag environment</li>
+                    <li>*Special Discounts on 3,6 or 12 months advance payment</li>
+                </ul>
+                <p class="pricetag firstpricetag">15,000/-</p>
+            </div>
+            <div class="row">
+                <div class="bookspace col-sm-10 col-xs-8">Book your space</div>
+                <div class="taketour col-sm-2 col-xs-4">Take a Tour</div>
+            </div>
+            <div class="row">
+
+            </div>
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="online">Online content</div>
+        <div role="tabpanel" class="tab-pane fade" id="offline">Offline content</div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+@*<ul class="pull-right membershipsmenu">
+        <li><a class="virtual" herf="">Virtual</a></li>
+        <li><a class="virtual" herf="">Hot Desk</a></li>
+        <li><a class="virtual" herf="">Private Office</a></li>
+    </ul>
+
+    <div class="membershipcontent">
+        <div class="container">
+            <div class="row">
+                <h2>Virtual</h2>
+                <p>
+                    Launchpad7 Coworking space gives you a professional, dedicated space to work from without the huge cost of a traditional office space. Because the space is shared between multiple likeminded business owners, it’s more affordable, and to top it off there are no long term leases or contracts!
+                    At Launchapady7 we’re a friendly bunch who love embracing the many awesome coffee, lunch and drinking spots in the area. Of course, this is on top of all the great work we do. Our aim is to help businesses in their early stages by providing a low-risk and affordable office space.
+                    Our light filled warehouse is an elegant, professional and affordable space for small businesses and freelancers. You also get full use of the meeting rooms, giving you a professional space to meet (and impress) your clients.
+                </p>
+
+
+                <ul>
+                    <li>Hot Desk</li>
+                    <li>Mailing Address</li>
+                    <li>Internet/ Networkng</li>
+                    <li>Electricity & generator </li>
+                    <li>Cooling and heating system</li>
+                    <li>Digital & handbook library</li>
+                    <li>Gaming Area - bean bag environment</li>
+                    <li>*Special Discounts on 3,6 or 12 months advance payment</li>
+                </ul>
+                <p class="pricetag firstpricetag">15,000/-</p>
+            </div>
+            <div class="row">
+                <div class="bookspace col-sm-10 col-xs-8">Book your space</div>
+                <div class="taketour col-sm-2 col-xs-4">Take a Tour</div>
+            </div>
+            <div class="row">
+
+            </div>
+
+        </div>
+    </div>*@
+<script>
+    $(document).ready(function(){
+     var virtualmembership =  @ViewBag.membershipid;
+
+
+    });
+
+</script>
+
+

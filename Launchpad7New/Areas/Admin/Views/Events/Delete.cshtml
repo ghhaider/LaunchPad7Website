@@ -1,0 +1,56 @@
+﻿@model Launchpad7New.Areas.Admin.Models.Event
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout1.cshtml";
+}
+
+
+
+<div class="container">
+    <div class="col-12 mb-5">
+        <h2>Delete Event</h2>
+
+        <p>
+            @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+            @Html.ActionLink("Back to Events List", "Index")
+        </p>
+    </div>
+    <div class="col-12">
+        <h3>Are you sure to want to delete this event?</h3>
+
+    </div>
+    <div class="row mt-5">
+        <div class="col-12">
+            <label class="col-md-3 col-12">Event Name: </label>
+            <p class="col-md-9 col-12"> @Html.DisplayFor(model => model.Name)</p>
+            <label class="col-md-3 col-12">Event Location: </label>
+            <p class="col-md-9 col-12"> @Html.DisplayFor(model => model.Location)</p>
+            <label class="col-md-3 col-12">Event Date: </label>
+            <p class="col-md-9 col-12">  @Html.DisplayFor(model => model.Date)</p>
+            <label class="col-md-3 col-12">Event Time: </label>
+            <p class="col-md-9 col-12">  @Html.DisplayFor(model => model.Time)</p>
+            <label class="col-md-3 col-12">Event Status: </label>
+            <p class="col-md-9 col-12">  @Html.DisplayFor(model => model.IsActive)</p>
+
+
+
+
+        </div>
+    </div>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+
+</div>
+
+
+
+

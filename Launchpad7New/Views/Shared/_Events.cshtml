@@ -1,0 +1,42 @@
+﻿
+@model IEnumerable<Launchpad7New.Areas.Admin.Models.Event>
+
+@{
+    Layout = null;
+}
+
+@* Events Partial View Section *@
+
+
+<div class="container">
+    @if (Model != null)
+    {
+        foreach (var item in Model.OrderBy(item => item.Date))
+        {
+            if (item.IsActive == true)
+            {
+                <div class="row">
+                    <div class="col-md-6 col-12">
+                        <div class="eventsImageBody">
+                            <img src="~/Images/Avatar/Event/@item.Image" class="figure-img img-fluid rounded img-responsive eventImageBorder" alt="Event Image">
+                            <figcaption class="figure-caption">@item.Date.ToString("dd MMM")</figcaption>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12 eventsDetailBody">
+                        <h3><a href="@Url.Action("Details", "Events", new {id= @item.Id })">@item.Name</a></h3>
+                        <p>@item.MoreDetails</p>
+                        <ul>
+                            <li>  <strong class="glyphicon glyphicon-calendar"> <span> @item.Date.ToString("dd-MMM-yyyy") </span> </strong></li>
+                            <li><strong class="glyphicon glyphicon-time"> <span> @item.Time </span> </strong> </li>
+                            @*<li>@Html.DisplayFor(model => model.Location)</li>*@
+                        </ul>
+                        <div class="eventDetailButton">
+                            <a href="@Url.Action("Details", "Events", new {id= @item.Id })" class="btn btn-danger">Event Detail</a>
+                        </div>
+                        
+                    </div>
+                </div>
+            }
+        }
+    }
+</div>

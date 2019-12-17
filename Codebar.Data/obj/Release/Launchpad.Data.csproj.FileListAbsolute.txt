@@ -1,0 +1,9 @@
+D:\projects\Launchpadnew\Launchpad7New\Codebar.Data\bin\Release\Codebar.Data.dll
+D:\projects\Launchpadnew\Launchpad7New\Codebar.Data\bin\Release\Codebar.Data.pdb
+D:\projects\Launchpadnew\Launchpad7New\Codebar.Data\bin\Release\Codebar.dll
+D:\projects\Launchpadnew\Launchpad7New\Codebar.Data\bin\Release\EntityFramework.dll
+D:\projects\Launchpadnew\Launchpad7New\Codebar.Data\bin\Release\Codebar.pdb
+D:\projects\Launchpadnew\Launchpad7New\Codebar.Data\bin\Release\EntityFramework.xml
+D:\projects\Launchpadnew\Launchpad7New\Codebar.Data\obj\Release\Launchpad.Data.csprojResolveAssemblyReference.cache
+D:\projects\Launchpadnew\Launchpad7New\Codebar.Data\obj\Release\Codebar.Data.dll
+D:\projects\Launchpadnew\Launchpad7New\Codebar.Data\obj\Release\Codebar.Data.pdb

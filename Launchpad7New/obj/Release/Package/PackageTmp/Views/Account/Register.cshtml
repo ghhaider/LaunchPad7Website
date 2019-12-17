@@ -1,0 +1,247 @@
+﻿@model Launchpad7New.Models.RegisterViewModel
+@{
+    ViewBag.Title = "Register";
+}
+
+<style>
+    .addon {
+        content:"*";
+        color:red;
+       margin: 0 0 0 -12px;
+       font-size:16px;
+    }
+    input[type="checkbox"], input[type="radio"] {
+        height: 20px;
+        width: 20px;
+        font-family:'AvenirNextLTPro-Regular';
+    }
+    .form-group .form-control, h2, .field-validation-error{
+        font-family:'OpenSans',sans-serif, 'AvenirNextLTPro-Regular';
+    }
+    span.field-validation-error{
+        font-size:13px;
+    }
+
+    .body-content {
+        position: initial;
+    }
+
+
+
+    .navigation-image {
+        position: absolute;
+        z-index: 10;
+        top: 15%;
+        left: 0%;
+        margin-top: 0;
+    }
+
+    .navi {
+        list-style: none;
+        margin-top: 0px;
+        height: 79px;
+    }
+
+    .navbar-inverse .navi li a {
+        line-height: 50px;
+    }
+</style>
+<div class="pageHeader">
+    <div class="container">
+        <h2 class="dashboard">Register</h2>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+    <h3 class="createaccount">Create Account</h3>
+
+    @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+        {
+        @Html.AntiForgeryToken()
+        <style>
+            span.field-validation-error {
+                color: #b94a48;
+                }
+                .navigation-image {
+                position: absolute;
+                margin-top: 0;
+                left:15%;
+                top:0;
+                }
+            .body-content {
+                position: inherit;
+            }
+            .form-control{
+              border: 1px solid rgba(43, 42, 42, 0.46);
+            }
+        </style>
+        <div class="form-group">
+            <span class="addon">*</span>
+            <div class="col-md-6">
+                @Html.TextBoxFor(m => m.Name, new { @class = "form-control", @placeholder = "Full Name"})
+                @Html.ValidationMessageFor(m => m.Name)
+            </div>
+        </div>
+        <div class="form-group">
+            <span class="addon">*</span>
+            <div class="col-md-6">
+                @Html.EnumDropDownListFor(m => m.Gender,new { @class = "form-control"})
+                @Html.ValidationMessageFor(m => m.Gender)
+            </div>
+        </div>
+        <div class="form-group">
+            <span class="addon">*</span>
+            <div class="col-md-6">
+                @Html.TextBoxFor(m => m.Profession, new { @class = "form-control", @placeholder = "Profession" })
+                @Html.ValidationMessageFor(m => m.Profession)
+            </div>
+        </div>
+        <div class="form-group">
+            <span class="addon">*</span>
+            <div class="col-md-6">
+                @Html.TextBoxFor(m => m.City, new { @class = "form-control", @placeholder = "Your City" })
+                @Html.ValidationMessageFor(m => m.City)
+            </div>
+        </div>
+        <div class="form-group">
+            <span class="addon">*</span>
+            <div class="col-md-6">
+                @Html.TextBoxFor(m => m.Email, new { @class = "form-control", @placeholder = "Email" })
+                @Html.ValidationMessageFor(m => m.Email)
+            </div>
+        </div>
+        <div class="form-group">
+            <span class="addon">*</span>
+            <div class="col-md-6">
+                @Html.TextBoxFor(model => model.Phone, new { @class = "form-control", @placeholder = "Phone" })
+                @Html.ValidationMessageFor(m => m.Phone)
+            </div>
+        </div>
+        <div class="form-group">
+            <span class="addon">*</span>
+            <div class="col-md-6">
+                @Html.PasswordFor(m => m.Password, new { @class = "form-control", @placeholder = "Password" })
+                @Html.ValidationMessageFor(m => m.Password)
+            </div>
+        </div>
+        <div class="form-group">
+            <span class="addon">*</span>
+            <div class="col-md-6">
+                @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control", @placeholder = "Confirm Password" })
+                @Html.ValidationMessageFor(m => m.ConfirmPassword)
+            </div>
+        </div>
+
+        <h3 class="createaccount">Company Details</h3>
+
+
+        <div class="form-group">
+            <span class="addon">*</span>
+            <div class="col-md-6">
+                @Html.TextBoxFor(m => m.CompanyName, new { @class = "form-control", @placeholder = "Company Name" })
+                @Html.ValidationMessageFor(m => m.CompanyName)
+            </div>
+        </div>
+        <div class="form-group">
+            @*<span class="addon">*</span>*@
+            <div class="col-md-6">
+                @Html.TextBoxFor(m => m.Website, new { @class = "form-control", @placeholder = "Company Website" })
+                @Html.ValidationMessageFor(m => m.Website)
+            </div>
+        </div>
+        <div class="form-group">
+            <span class="addon">*</span>
+            <div class="col-md-6">
+                @Html.TextAreaFor(m => m.Details, new { @class = "form-control", @placeholder = "Company Details" })
+                @Html.ValidationMessageFor(m => m.Details)
+            </div>
+        </div>
+        <div class="form-group">
+            <span class="addon">*</span>
+            <div class="col-md-6">
+                @Html.TextBoxFor(m => m.Members, new { @class = "form-control", @placeholder = "Team Members" })
+                @Html.ValidationMessageFor(m => m.Members)
+            </div>
+        </div>
+
+        <h3 class="createaccount">Package Details</h3>
+
+        <div class="form-group">
+            <span class="addon">*</span>
+            <div class="col-md-6">
+                @Html.DropDownListFor(m => m.PackageId, new SelectList(ViewBag.PackageId, "Id","Name"), "Select Package", new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.PackageId)
+            </div>
+        </div>
+        <div class="form-group">
+            <span class="addon">*</span>
+            <div class="col-md-6">
+                @Html.EditorFor(model => model.StartingDate, new { htmlAttributes = new { @class = "form-control", @placeholder="Select Starting Date" } })
+                @Html.ValidationMessageFor(model => model.StartingDate, "", new { @class = "text-danger" })
+            </div>
+         </div>
+            <div class="form-group">
+                <span class="addon">*</span>
+                <div class="col-md-6">
+                    @Html.DropDownListFor(model => model.PaymentMethod, EnumHelper.GetSelectList(typeof(Launchpad.Enums.PaymentMethod)), "Select Payment Method", new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.PackageId)
+                </div>
+            </div>
+            <div class="form-group">
+                <span class="addon">*</span>
+                <div class="col-md-6">
+                    @Html.TextAreaFor(m => m.HowYouKnow, new { @class = "form-control", @placeholder = "How you Know about Launpad7" })
+                    @Html.ValidationMessageFor(m => m.HowYouKnow)
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.Food, new { @class = " foodlable" })
+                <div class="col-md-1">
+                    @Html.CheckBoxFor(m => m.Food, new { @class = "form-control", @placeholder = "Do you Want Food Facility" })
+                    @Html.ValidationMessageFor(m => m.Food)
+                </div>
+            </div>
+            
+            <div class="form-group text-center">
+                <div class="">
+                    <input type="submit" class="btn btn-default registerbtn" value="Register" />
+                </div>
+            </div>
+        }
+    </div>
+</div>
+@*@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+<script type="text/javascript">
+    var nowDate = new Date();
+    var today = new Date(nowDate.getFullYear(), nowDate.getMonth(), nowDate.getDate(), 0, 0, 0, 0);
+        $("#StartingDate").datepicker({
+           // showOn: "button",
+            //buttonImage: "@Url.Content("~/Content/images/calendar.png")",
+        buttonImageOnly: true,
+        duration: "fast",
+        changeMonth: true,
+        changeYear: true,
+        startDate: today,
+        // format: 'd, M, Y',
+        autoclose: true,
+        constrainInput: true,
+       // maxDate: '0',
+       // minDate: '0',
+        //buttonText: "Select date"
+        });
+   
+</script>
+<script type="text/javascript">
+    var domain = $("#domain").attr('href');
+    $(document).ready(function () {
+        var whylink = domain + "#why-launchpad";
+        $("#why").attr("href", whylink)
+        var memberlink = domain + "#membership";
+        //$("#member").attr("href", memberlink)
+       // var eventlink = domain + "#events";
+        $("#event").attr("href", eventlink)
+    });
+</script>
+
+}*@

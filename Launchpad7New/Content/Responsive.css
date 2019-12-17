@@ -1,0 +1,219 @@
+﻿@media (min-width: 992px) and (max-width: 1200px) {
+    .navbar-inverse .navbar-nav > li > a {
+        font-size: 13px;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .navbar-inverse .navbar-nav > li > a {
+        padding: 5px;
+    }
+    .navbar-inverse .navbar-nav > li > a {
+        font-size: 13px;
+    }
+    .pricingTabs {
+        width: 75%;
+        margin: auto 20%;
+    }
+    .currentOfferImage img {
+        width: 85%;
+        margin: 0 auto;
+    }
+    .currentOfferBody p {
+        margin: 15px auto;
+        width: 85%;
+    }
+    .currentOfferBody a {
+        font-size: 14px;
+        margin: 8px auto;
+    }
+    .galleryTabs {
+        width: 50%;
+        margin: auto 28%;
+    }
+
+    #myCarouselLP7RWPgallery .carousel-control .icon-prev, .carousel-control .icon-next {
+        width: 30px;
+        height: 30px;
+        margin-top: -31px;
+        margin-left: -15px;
+        font-size: 65px;
+    }
+    #myCarouselLP7ISDgallery .carousel-control .icon-prev, .carousel-control .icon-next {
+        width: 30px;
+        height: 30px;
+        margin-top: -31px;
+        margin-left: -15px;
+        font-size: 65px;
+    }
+
+}
+@media (min-width: 576px) and (max-width: 769px) {
+    .pricingTabs {
+        width: 100%;
+        margin: auto 8%;
+    }
+    .currentOfferImage img {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .currentOfferBody p {
+        font-size: 15px;
+        margin: 15px auto;
+        width: 100%;
+    }
+    .currentOfferBody a {
+        font-size: 15px;
+        margin: 5px auto;
+    }
+    .galleryTabs {
+        width: 100%;
+        margin: auto 19%;
+    }
+    #myCarouselLP7RWPgallery .carousel-control .icon-prev, .carousel-control .icon-next {
+        width: 30px;
+        height: 30px;
+        margin-top: -32px;
+        margin-left: -15px;
+        font-size: 65px;
+    }
+
+    #myCarouselLP7ISDgallery .carousel-control .icon-prev, .carousel-control .icon-next {
+        width: 30px;
+        height: 30px;
+        margin-top: -32px;
+        margin-left: -15px;
+        font-size: 65px;
+    }
+    .Topbar {
+        padding: 6px 5% 5px 0;
+    }
+
+    #packageSliderRWP.item:nth-child(n+1){
+        display: none;
+    }
+
+    #packageSliderRWP .carousel-control .icon-prev, .carousel-control .icon-next, .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right {
+        position: absolute;
+        top: 50%;
+        left: 15%;
+        z-index: 5;
+        display: inline-block;
+        font-size: 30px;
+    }
+    .footerLinks ul li {
+        display: inline-block;
+        margin: 10px 10px 0 0;
+        font-size: 13px;
+    }
+    .Topbar {
+        font-size: 12px;
+    }
+}
+
+    @media (min-width: 320px) and (max-width: 575px) {
+        .mapBody h4 {
+            font-size: 14px;
+        }
+
+        .addressBody h4 {
+            font-size: 12px;
+        }
+
+            .addressBody h4:after {
+                content: '';
+                display: block;
+                position: relative;
+                width: 26%;
+                border: 1px solid white;
+                margin-top: 8px;
+            }
+
+        .addressBody p {
+            font-size: 11px !important;
+            text-align: left !important;
+        }
+
+        .addressBody ul li {
+            font-size: 8px !important;
+            text-align: left !important;
+        }
+
+        .dontmissourevents p, .Iamgeandvideolp h2 {
+            font-size: 22px;
+        }
+
+        .worthy-members h2 {
+            font-size: 30px;
+        }
+
+        .currentOfferBody p {
+            font-size: 16px;
+            margin: 15px auto;
+            width: 100%;
+        }
+
+        .currentOfferBody a {
+            font-size: 12px;
+            margin: 8px auto;
+        }
+
+        .currentOfferImage img {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .subOffersImage img {
+            width: 75%;
+            margin: 0 auto;
+        }
+
+        .chooseaplan h3, .majorreason h3 {
+            font-size: 25px;
+        }
+
+        .whylp p {
+            text-align: center;
+            font-size: 14px;
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .worksmartnumber {
+            display: block;
+            text-align: center;
+            padding-bottom: 4px;
+            font-size: 11px;
+        }
+
+        .pricingTabs {
+            width: 60%;
+            margin: auto 25%;
+        }
+
+        .galleryTabs {
+            width: 50%;
+            margin: auto 25%;
+        }
+        #packageSliderRWP .carousel-control .icon-prev, .carousel-control .icon-next, .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right {
+            position: absolute;
+            top: 50%;
+            left: -5%;
+            z-index: 5;
+            display: inline-block;
+            font-size: 20px;
+        }
+        .footerLinks ul li {
+            display: inline-block;
+            margin: 10px 10px 0 0;
+            font-size: 12px;
+        }
+    }
+
+@media (min-width: 320px) and (max-width: 460px) {
+    .priceBtn {
+    width: 85%;
+}
+
+}

@@ -1,0 +1,32 @@
+D:\projects\Launchpadnew\Launchpad7New\Codebar\bin\Debug\Codebar.dll
+D:\projects\Launchpadnew\Launchpad7New\Codebar\bin\Debug\Codebar.pdb
+D:\projects\Launchpadnew\Launchpad7New\Codebar\obj\Debug\Launchpad.Domain.csprojResolveAssemblyReference.cache
+D:\projects\Launchpadnew\Launchpad7New\Codebar\obj\Debug\Codebar.dll
+D:\projects\Launchpadnew\Launchpad7New\Codebar\obj\Debug\Codebar.pdb
+C:\Users\waqar.kiyani\Documents\My Received Files\MS-DC-11\Launchpadnew\Launchpadnew\Launchpad7New\Codebar\bin\Debug\Codebar.dll
+C:\Users\waqar.kiyani\Documents\My Received Files\MS-DC-11\Launchpadnew\Launchpadnew\Launchpad7New\Codebar\bin\Debug\Codebar.pdb
+C:\Users\waqar.kiyani\Documents\My Received Files\MS-DC-11\Launchpadnew\Launchpadnew\Launchpad7New\Codebar\obj\Debug\Launchpad.Domain.csprojResolveAssemblyReference.cache
+C:\Users\waqar.kiyani\Documents\My Received Files\MS-DC-11\Launchpadnew\Launchpadnew\Launchpad7New\Codebar\obj\Debug\Codebar.dll
+C:\Users\waqar.kiyani\Documents\My Received Files\MS-DC-11\Launchpadnew\Launchpadnew\Launchpad7New\Codebar\obj\Debug\Codebar.pdb
+G:\Users\waqar.kiyani\projects\Launchpadnew\Launchpadnew\Launchpad7New\Codebar\bin\Debug\Codebar.dll
+G:\Users\waqar.kiyani\projects\Launchpadnew\Launchpadnew\Launchpad7New\Codebar\bin\Debug\Codebar.pdb
+G:\Users\waqar.kiyani\projects\Launchpadnew\Launchpadnew\Launchpad7New\Codebar\obj\Debug\Launchpad.Domain.csprojResolveAssemblyReference.cache
+G:\Users\waqar.kiyani\projects\Launchpadnew\Launchpadnew\Launchpad7New\Codebar\obj\Debug\Codebar.dll
+G:\Users\waqar.kiyani\projects\Launchpadnew\Launchpadnew\Launchpad7New\Codebar\obj\Debug\Codebar.pdb
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Codebar\bin\Debug\Codebar.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Codebar\bin\Debug\Codebar.pdb
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Codebar\obj\Debug\Launchpad.Domain.csprojAssemblyReference.cache
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Codebar\obj\Debug\Launchpad.Domain.csproj.CoreCompileInputs.cache
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Codebar\obj\Debug\Codebar.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Codebar\obj\Debug\Codebar.pdb
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-280619 - Updated\Launchpad7New\Codebar\bin\Debug\Codebar.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-280619 - Updated\Launchpad7New\Codebar\bin\Debug\Codebar.pdb
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-280619 - Updated\Launchpad7New\Codebar\obj\Debug\Launchpad.Domain.csprojAssemblyReference.cache
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-280619 - Updated\Launchpad7New\Codebar\obj\Debug\Launchpad.Domain.csproj.CoreCompileInputs.cache
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-280619 - Updated\Launchpad7New\Codebar\obj\Debug\Codebar.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-280619 - Updated\Launchpad7New\Codebar\obj\Debug\Codebar.pdb
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Codebar\bin\Debug\Codebar.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Codebar\bin\Debug\Codebar.pdb
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Codebar\obj\Debug\Launchpad.Domain.csproj.CoreCompileInputs.cache
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Codebar\obj\Debug\Codebar.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Codebar\obj\Debug\Codebar.pdb

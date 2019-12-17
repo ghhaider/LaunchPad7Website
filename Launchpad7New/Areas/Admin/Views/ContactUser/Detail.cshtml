@@ -1,0 +1,39 @@
+﻿@model Launchpad7New.Areas.Admin.Models.ContactUser
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout1.cshtml";
+}
+
+
+<div class="container">
+    <div class="col-12 mb-5">
+        <h2>Contact User Detail</h2>
+
+        <p>
+            @Html.ActionLink("Back to Contact List", "Index")
+        </p>
+    </div>
+    <div class="row mt-5">
+        <div class="col-12">
+            <label class="col-md-3 col-12">Name: </label>
+            <p class="col-md-9 col-12"> @Html.DisplayFor(model => model.Name)</p>
+
+            <label class="col-md-3 col-12">Email: </label>
+            <p class="col-md-9 col-12"> @Html.DisplayFor(model => model.Email)</p>
+         
+            <label class="col-md-3 col-12">Phone: </label>
+            <p class="col-md-9 col-12">  @Html.DisplayFor(model => model.Phone)</p>
+
+            <label class="col-md-3 col-12">Message: </label>
+            <p class="col-md-9 col-12"> @Html.DisplayFor(model => model.Message)</p>
+          
+        
+        </div>
+    </div>
+
+</div>
+
+
+
+

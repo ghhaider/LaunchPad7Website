@@ -1,0 +1,96 @@
+﻿
+@{
+    ViewBag.Title = "Memberships List";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="membershipbanner"></div>
+<div class="chooseaplan membershippage">
+    <div class="container">
+        <div class="row">
+            <h3>Coworking: <b>Choose a plan</b></h3>
+            <img src="~/Images/NewTheme/coworkinglogo.png" class="img-responsive" />
+            <div class=" col-md-4 col-sm-6 col-xs-12">
+                <div class="packgestypes">
+                    <img src="~/Images/NewTheme/virtual-.png" />
+                    <h3>Virtual</h3>
+                    <ul>
+                        <li>Hot Desk</li>
+                        <li>Mailing Address</li>
+                        <li>Internet/ Networkng</li>
+                        <li>Electricity & generator </li>
+                        <li>Cooling and heating system</li>
+                        <li>Digital & handbook library</li>
+                        <li>Gaming Area - bean bag environment</li>
+                        <li>*Special Discounts on 3,6 or 12 months advance payment</li>
+                    </ul>
+                    <p class="pricetag firstpricetag">10,000/-</p>
+                    <a href="@Url.Action("Virtual", "memberships")" class="btn btn-danger">Book Your Space</a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="packgestypes">
+                    <img src="~/Images/NewTheme/hot-desk.png" />
+                    <h3>Hot Desk</h3>
+                    <ul>
+                        <li>Dedicated Desk & chair</li>
+                        <li>Internet/ networking </li>
+                        <li>electricity & generator</li>
+                        <li>Cooling and heating system</li>
+                        <li>Free events- mentorship</li>
+                        <li>Meeting room Access </li>
+                        <li>Presentation area with all required equipment</li>
+                        <li>Food (on discount rate)</li>
+                        <li>Lockers and Digital & hard book Library </li>
+                        <li>Gaming Area - bean bag environment</li>
+                        <li>*Special Discounts on 3,6 or 12 months advance  payment</li>
+                    </ul>
+                    <p class="pricetag secondpricetag">15,000/-</p>
+                    <a href="@Url.Action("HotDesk", "memberships")" class="btn btn-danger">Book Your Space</a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="packgestypes">
+                    <img src="~/Images/NewTheme/private-office.png" />
+                    <h3>Private Office</h3>
+                    <ul>
+                        <li>Allow 6 person</li>
+                        <li>Meeting Room Access</li>
+                        <li>Reception Services</li>
+                        <li>Basic office necessities</li>
+                        <li>Access Event area (1 day per week)</li>
+                        <li>High speed broadband</li>
+                        <li>cooling and heating system</li>
+                        <li>Power Backup</li>
+                        <li>Presentation area with all required equipment</li>
+                        <li>food (on discount rate)</li>
+                        <li>lockers & Co living space on discount</li>
+                        <li>Gaming Area - bean bag environment</li>
+                        <li>24/7 – Access any time, any day.</li>
+                        <li>*Special Discounts on 3,6 or 12 months advance  payment</li>
+                    </ul>
+                    <p class="pricetag ">60,000/-</p>
+                    <a href="@Url.Action("PrivateOffice", "memberships")" class="btn btn-danger">Book Your Space</a>
+                </div>
+            </div>
+            
+
+        </div>
+        <div class="row memberpkgpage">
+            <div class="col-sm-6">
+                <a href="@Url.Action("Packages","Memberships")" class="dailypkgbox">
+                    <h3>Daily Pass</h3>
+                    <h4>1000/-</h4>
+                    <p>Unlimited access to shared workspace</p>
+                </a>
+            </div>
+            <div class="col-sm-6">
+                <a href="@Url.Action("Packages","Memberships")" class="dailypkgbox">
+                    <h3>Weekly Pass</h3>
+                    <h4>5000/-</h4>
+                    <p>Unlimited access to shared workspace</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

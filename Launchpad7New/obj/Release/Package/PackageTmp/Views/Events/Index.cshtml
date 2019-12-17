@@ -1,0 +1,42 @@
+﻿@model IEnumerable<Launchpad7New.Areas.Admin.Models.Event>
+
+@{
+    ViewBag.Title = "Events List";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    .glyphicon {
+    top: 0;
+}
+</style>
+<div class="eventbbanerbg"></div>
+<div class="eventlistpage">
+    <p class="pagecaption">We strive to provide members and non-members the opportunity to learn, meet and do business with one another. All of our workshops and networking events are open to members and non-members. Join us for an event and meet our amazing community!</p>
+    <div class="container">
+ @if (Model != null) {       
+foreach (var item in Model) { 
+    if (item.IsActive == true) { 
+        <div class="row rightdiv">
+            <div class="col-sm-4">
+                <figure class="figure">
+                    <img src="~/Images/Avatar/Event/@item.Image" class="figure-img img-fluid rounded img-responsive" alt="A generic square placeholder image with rounded corners in a figure.">
+                    <figcaption class="figure-caption">@item.Date.ToString("dd MMM")</figcaption>
+                </figure>
+            </div>
+            <div class="col-sm-8 detailssection">
+                <a href="@Url.Action("Details", "Events", new {id= @item.Id })">@item.Name</a>
+                <div class="eventtimedate"><span class="glyphicon glyphicon-calendar"> </span> @item.Date.ToString("dd-MMM-yyyy") <span class="glyphicon glyphicon-time"> </span> @item.Time</div>
+                <p class="eclipstext">@item.MoreDetails</p>
+            </div>
+        </div>}
+}
+}
+
+
+    </div>
+</div>
+
+
+
+
+

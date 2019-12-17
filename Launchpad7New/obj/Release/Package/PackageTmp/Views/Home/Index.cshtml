@@ -1,0 +1,530 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Start Slider BODY section -->
+
+<div id="carousel-example-generic" class="carousel slide MainSlider" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src="~/Images/NewTheme/FirstBanner.png" alt="Coworking Space">
+            <div class="carousel-caption FirstBanner">
+                <h4 class="animateslider">Co-Working</h4>
+                <h3>MORE THEN A DESK</h3>
+                <p class="animateslider">Why rent an office if you only need a desk/work place?</p>
+                <a href="@Url.Action("Contact", "Home")" class="btn btn-danger animateslider">Register Your Tour &rarr;</a>
+            </div>
+        </div>
+        <div class="item">
+            <img src="~/Images/NewTheme/launchpad7-banner-2.png" alt="WOrking Space">
+            <div class="carousel-caption FirstBanner secondbanner">
+                <div class="freefriday">
+                    <h3 class="animateslider">FREE FRIDAYS</h3>
+                    <p class="animateslider">
+                        Join us every first Friday of the month
+                        to meet and greet current members!
+                    </p>
+                </div>
+                <a href="@Url.Action("Contact", "Home")" class="btn btn-danger animateslider">Register Your Tour &rarr;</a>
+            </div>
+        </div>
+        <div class="item">
+            <img src="~/Images/NewTheme/day-and-week-banner.png" alt="DailyAndWeekelyPackages">
+            <div class="carousel-caption dayandweekpkg">
+                <h3 class="animateslider">Wish to Co-Work for a <br /><span>Day</span> or <span>Week?</span> <br /> </h3>
+                 <a href="@Url.Action("Packages", "Memberships")" class="btn btn-danger animateslider">Register Your Tour &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<!-- End Slider BODY section -->
+
+
+<div class="whylp" id="why-launchpad">
+    <div class="container">
+        <div class="row">
+            <h2>Why launchpad7</h2>
+            <h3>WORK | NETWORK | EXPAND</h3>
+            <p>Say no to the office. Say no to high rent. Say no to no bijli. Say no to generator expenses. Say no to the tea boy being absent. Say no to the printer not working. Say no to a cubicle. Say no to pin drop eery silence. Say no to solo brainstorming. Say no to tea breaks ONLY twice a day. Say no to boring office khana. Say no to slow internet. Say no to working like a robot. Say NO to work feeling like work. Say YES to LaunchPad7.</p>
+            <p>LaunchPad7 is the closest thing you’ll get to working from home… with great company and without ammi’s errands. Why don’t we actually want to work from home? Our comfort zones tend to take us for granted; running to the market for eggs, driving the sibling to tuitions, accompanying the electrician as he works on that tricky wiring and having to sit with the unannounced guests. And what with the constant reminders of chores we should get done since we’re at home, the work gets too many breaks.</p>
+            <p>That’s where LaunchPad7 comes in. We wanted to create a comfortable workspace like coworking space with all learning resources alongside any other ones available at immediate reach where you get the comfort of home and the pleasure of company without the obligation of actually having to interact. Unless you want to!</p>
+
+        </div>
+    </div>
+</div>
+
+<div class="chooseaplan">
+    <div class="container">
+        <div class="row">
+            <h3>Coworking: <b>Choose a plan</b></h3>
+            <img src="~/Images/NewTheme/coworkinglogo.png" class="img-responsive" />
+            <div class=" col-md-4 col-sm-6 col-xs-12">
+                <div class="packgestypes">
+                    <img src="~/Images/NewTheme/virtual-.png" />
+                    <h3>Virtual</h3>
+                    <ul>
+                        <li>Hot Desk</li>
+                        <li>Mailing Address</li>
+                        <li>Internet/ Networkng</li>
+                        <li>Electricity & generator </li>
+                        <li>Cooling and heating system</li>
+                        <li>Digital & handbook library</li>
+                        <li>Gaming Area - bean bag environment</li>
+                        <li>*Special Discounts on 3,6 or 12 months advance payment</li>
+                    </ul>
+                    <p class="pricetag firstpricetag">10,000/-</p>
+                    <a href="@Url.Action("Virtual", "memberships")" class="btn btn-danger">Book Your Space</a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="packgestypes">
+                    <img src="~/Images/NewTheme/hot-desk.png" />
+                    <h3>Hot Desk</h3>
+                    <ul>
+                        <li>Dedicated Desk & chair</li>
+                        <li>Internet/ networking </li>
+                        <li>electricity & generator</li>
+                        <li>Cooling and heating system</li>
+                        <li>Free events- mentorship</li>
+                        <li>Meeting room Access </li>
+                        <li>Presentation area with all required equipment</li>
+                        <li>Food (on discount rate)</li>
+                        <li>Lockers and Digital & hard book Library </li>
+                        <li>Gaming Area - bean bag environment</li>
+                        <li>*Special Discounts on 3,6 or 12 months advance  payment</li>
+                    </ul>
+                    <p class="pricetag secondpricetag">15,000/-</p>
+                    <a href="@Url.Action("HotDesk", "memberships")" class="btn btn-danger">Book Your Space</a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="packgestypes">
+                    <img src="~/Images/NewTheme/private-office.png" />
+                    <h3>Private Office</h3>
+                    <ul>
+                        <li>Allow 6 person</li>
+                        <li>Meeting Room Access</li>
+                        <li>Reception Services</li>
+                        <li>Basic office necessities</li>
+                        <li>Access Event area (1 day per week)</li>
+                        <li>High speed broadband</li>
+                        <li>cooling and heating system</li>
+                        <li>Power Backup</li>
+                        <li>Presentation area with all required equipment</li>
+                        <li>food (on discount rate)</li>
+                        <li>lockers & Co living space on discount</li>
+                        <li>Gaming Area - bean bag environment</li>
+                        <li>24/7 – Access any time, any day.</li>
+                        <li>*Special Discounts on 3,6 or 12 months advance  payment</li>
+                    </ul>
+                    <p class="pricetag ">60,000/-</p>
+                    <a href="@Url.Action("PrivateOffice", "memberships")" class="btn btn-danger">Book Your Space</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="Co-working-space">
+    <div class="container">
+        <div class="row">
+            <h3>
+                Co-working space<br>
+                the perfect match for
+            </h3>
+            <h4>
+                startup
+            </h4>
+        </div>
+    </div>
+</div>
+<div class="majorreason">
+    <div class="container">
+        <div class="row">
+            <h3>6 Major Reasons: To Choose LaunchPad7</h3>
+            <img src="~/Images/NewTheme/coworkinglogo.png" class="img-responsive majorreasoniconimg" />
+            <div class="col-sm-4">
+                <div class="reasonone">
+                    <h6>1</h6>
+                    <img src="~/Images/NewTheme/location.png" />
+                    <p>
+                        Central location in Rawalpindi
+                        and Islamabad. ome more text
+                        here some text here some
+                        more text here some
+                        text here
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="reasonone">
+                    <h6>2</h6>
+                    <img src="~/Images/NewTheme/gaming.png" />
+                    <p>
+                        Relaxing and gaming
+                        enveronment ome more text
+                        here some text here some
+                        more text here some
+                        text here
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-4 ">
+                <div class="reasonone">
+                    <h6>3</h6>
+                    <img src="~/Images/NewTheme/relaxing.png" style="width:100px;" />
+                    <p>
+                        Cosy and Lesst officy
+                        work Environment some text
+                        here some text  here some
+                        text  here some text here
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="reasonone">
+                    <h6>4</h6>
+                    <img src="~/Images/NewTheme/worksho.png" />
+                    <p>
+                        Technical and Entrepreneurial
+                        workshop ome more text
+                        here some text here some
+                        more text here some
+                        text here
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="reasonone">
+                    <h6>5</h6>
+                    <img src="~/Images/NewTheme/hub.png" />
+                    <p>
+                        Activity Hub over the
+                        weekend promoting network
+                        ome more text here some
+                        text here some more text
+                        text here
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="reasonone">
+                    <h6>6</h6>
+                    <img src="~/Images/NewTheme/liberary.png" />
+                    <p>
+                        Menual and Digetal Libarary
+                        within the premises some
+                        more text here some text
+                        here some more text here
+                        some text here
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="dontmissourevents">
+    <h3>Don't miss Our</h3>
+    <p>AWESOME Event</p>
+    <img src="~/Images/NewTheme/EventsIcon.png" />
+    <div class="eventmainbg">
+        <div class="container">
+            <div class="row">
+                <h2>Launchpad7 Events</h2>
+                @*<p>Don't miss the opportunity to be part of this mentoring dinner</p>*@
+                <a href="@Url.Action("Index","Events")" class="btn btn-danger">More Events</a>
+                @*<a href="" class="btn btn-danger">Get Register</a>*@
+            </div>
+        </div>
+    </div>
+</div>
+    @*<div class="launchpad7team">
+        <div class="container-fluid">
+            <p>Stepping Together to Excel</p>
+            <h3>LaunchPad7 <span style="text-transform:uppercase">Team</span></h3>
+            <img src="~/Images/lpteam.png" class="img-responsive" alt="Launchpad7Team" />
+
+            <!-- Launchpad7 Team Carousel -->
+
+            <div id="myCarouselCeo" class="carousel slide" data-ride="carousel">
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <div class="row">
+                            <div class="col-sm-6 borderright hidden-xs">
+                                <img src="~/Images/ceopix.png" class="img-responsive lpteamimg" alt="Launchpad7CEO" />
+                            </div>
+                            <div class="col-sm-6 col-xs-12">
+                                <h4>Khurram Mujtaba</h4>
+                                <hr />
+                                <h5>CEO/FOUNDER</h5>
+                                <ul class="socialicons">
+                                    <li><a href="https://www.facebook.com/profile.php?id=100008686690367&fref=ts" target="_blank" class="facebook">Facebook</a></li>
+                                    <li><a href="https://twitter.com/kmzuberi" target="_blank" class="twitter">Twitter</a></li>
+                                    <li><a href="" target="_blank" class="linkedin">LinkedIn</a></li>
+                                </ul>
+                                <p class="ceodetail"></p>
+                                <p class="ceodetailborder"></p>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarouselCeo" role="button" data-slide="prev">
+                    <span class="icon-prev" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarouselCeo" role="button" data-slide="next">
+                    <span class="icon-next alighnit" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+
+            </div>
+        </div>
+    </div>*@
+
+    <div class="Iamgeandvideolp">
+    @*<div class="row">*@
+        <h4>Unforgetable Moments@@</h4>
+        <h2 style="margin-bottom:20px;">Launchpad7</h2>
+
+
+<div id="exTab1" class="pixvideotabs">
+    @*<ul class="nav nav-pills">
+        <li class="active picturetab">
+            <a href="#1a" data-toggle="tab" class="">Pictures</a>
+        </li>
+        <li>
+            <a href="#2a" data-toggle="tab">Videos</a>
+        </li>
+    </ul>*@
+
+    <div class="tab-content clearfix">
+        <div class="tab-pane active" id="1a">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner pixslider" role="listbox">
+                    <div class="item active">
+                        <div class="row">
+                            <div class="col-sm-3 col-xs-6 nopadding">
+                                <img src="~/Images/img-1.png" class="img-responsive" alt="Launchpad7Pictures" />
+                                @*<img src="~/Images/img-1.png" class="img-responsive" alt="Launchpad7Pictures" />*@
+                            </div>
+                            <div class="col-sm-3 col-xs-6 nopadding">
+                                <img src="~/Images/img-2.png" class="img-responsive" alt="Launchpad7Pictures" />
+                                @*<img src="~/Images/img-2.png" class="img-responsive" alt="Launchpad7Pictures" />*@
+                            </div>
+
+                            <div class="col-sm-3 hidden-xs nopadding">
+                                <img src="~/Images/img-3.png" class="img-responsive" alt="Launchpad7Pictures" />
+                                @*<img src="~/Images/img-3.png" class="img-responsive" alt="Launchpad7Pictures" />*@
+                            </div>
+                            <div class="col-sm-3 hidden-xs nopadding">
+                                <img src="~/Images/img-4.png" class="img-responsive" alt="Launchpad7Pictures" />
+                                @*<img src="~/Images/img-4.png" class="img-responsive" alt="Launchpad7Pictures" />*@
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-sm-3  nopadding hidden-xs">
+                                <img src="~/Images/img-1.png" class="img-responsive" alt="Launchpad7Pictures" />
+                                @*<img src="~/Images/img-1.png" class="img-responsive" alt="Launchpad7Pictures" />*@
+                            </div>
+                            <div class="col-sm-3  nopadding  hidden-xs">
+                                <img src="~/Images/img-2.png" class="img-responsive" alt="Launchpad7Pictures" />
+                                @*<img src="~/Images/img-2.png" class="img-responsive" alt="Launchpad7Pictures" />*@
+                            </div>
+
+                            <div class="col-sm-3 col-xs-6 nopadding">
+                                <img src="~/Images/img-3.png" class="img-responsive" alt="Launchpad7Pictures" />
+                                @*<img src="~/Images/img-3.png" class="img-responsive" alt="Launchpad7Pictures" />*@
+                            </div>
+                            <div class="col-sm-3 col-xs-6 nopadding">
+                                <img src="~/Images/img-4.png" class="img-responsive" alt="Launchpad7Pictures" />
+                                @*<img src="~/Images/img-4.png" class="img-responsive" alt="Launchpad7Pictures" />*@
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Left and right controls -->
+                <a class="left carousel-control Launchpadpicslider" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="icon-prev" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control Launchpadpicslider" href="#myCarousel" role="button" data-slide="next">
+                    <span class="icon-next" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <div class="tab-pane" id="2a">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner pixslider" role="listbox">
+                    <div class="item active">
+                        <div class="row">
+                            <div class="col-sm-3 col-xs-6 nopadding">
+                                <img src="~/Images/img-1.png" class="img-responsive" alt="Launchpad7Pictures" />
+                                @*<img src="~/Images/img-1.png" class="img-responsive" alt="Launchpad7Pictures" />*@
+                            </div>
+                            <div class="col-sm-3 col-xs-6 nopadding">
+                                <img src="~/Images/img-2.png" class="img-responsive" alt="Launchpad7Pictures" />
+                                @*<img src="~/Images/img-2.png" class="img-responsive" alt="Launchpad7Pictures" />*@
+                            </div>
+
+                            <div class="col-sm-3 hidden-xs nopadding">
+                                <img src="~/Images/img-3.png" class="img-responsive" alt="Launchpad7Pictures" />
+                                @*<img src="~/Images/img-3.png" class="img-responsive" alt="Launchpad7Pictures" />*@
+                            </div>
+                            <div class="col-sm-3 hidden-xs nopadding">
+                                <img src="~/Images/img-4.png" class="img-responsive" alt="Launchpad7Pictures" />
+                                @*<img src="~/Images/img-4.png" class="img-responsive" alt="Launchpad7Pictures" />*@
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-sm-3  nopadding hidden-xs">
+                                <img src="~/Images/img-1.png" class="img-responsive" alt="Launchpad7Pictures" />
+                                @*<img src="~/Images/img-1.png" class="img-responsive" alt="Launchpad7Pictures" />*@
+                            </div>
+                            <div class="col-sm-3  nopadding  hidden-xs">
+                                <img src="~/Images/img-2.png" class="img-responsive" alt="Launchpad7Pictures" />
+                                @*<img src="~/Images/img-2.png" class="img-responsive" alt="Launchpad7Pictures" />*@
+                            </div>
+
+                            <div class="col-sm-3 col-xs-6 nopadding">
+                                <img src="~/Images/img-3.png" class="img-responsive" alt="Launchpad7Pictures" />
+                                @*<img src="~/Images/img-3.png" class="img-responsive" alt="Launchpad7Pictures" />*@
+                            </div>
+                            <div class="col-sm-3 col-xs-6 nopadding">
+                                <img src="~/Images/img-4.png" class="img-responsive" alt="Launchpad7Pictures" />
+                                @*<img src="~/Images/img-4.png" class="img-responsive" alt="Launchpad7Pictures" />*@
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Left and right controls -->
+                <a class="left carousel-control Launchpadpicslider" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="icon-prev" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control Launchpadpicslider" href="#myCarousel" role="button" data-slide="next">
+                    <span class="icon-next" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+        
+    @*</div>*@
+</div>
+<div class="Its-cowork-time">
+    <h3>
+        its co-working
+    </h3>
+    <h4>
+        time
+    </h4>
+</div>
+<div class="worthy-members">
+    <h2>
+        Worthy Members
+    </h2>
+    <div id="myCarouseltwo" class="carousel slide" data-ride="carousel">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <ul class="row">
+                    <li>
+                        <a href="http://www.jumpstartpakistan.com/" target="_blank"><img src="~/Images/jump.png" class="img-responsive membersimg" alt="Jumpstartpakicon" /></a>
+                    </li>
+                    <li>
+                        <a href="http://www.moftak.com/" target="_blank"> <img src="~/Images/moftak.png" class="img-responsive membersimg" alt="moftakicon" /></a></li>
+                    @*<li>
+                        <a href="https://propakistani.pk/ " target="_blank"> <img src="~/Images/propakistani.png" class="img-responsive membersimg" alt="PropakistaniIcon" /></a></li>*@
+                    <li>
+                        <a href="http://codebarpk.com/" target="_blank"><img src="~/Images/codebar.png" class="img-responsive membersimg" alt="CodebarIcon" /></a></li>
+                    <li>
+                        <a target="_blank"><img src="~/Images/NewTheme/expevic.png" class="img-responsive membersimg" alt="ExpevicIcon" /></a></li>
+                    <li>
+                        <a href="http://suffahonline.com/" target="_blank"><img src="~/Images/suffah-logo.png" class="img-responsive membersimg" alt="ExpevicIcon" /></a></li>
+                    <li>
+                        <a href="http://www.vheelz.com/" target="_blank"> <img src="~/Images/vheelz-logo.png" class="img-responsive membersimg" alt="ExpevicIcon" /></a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <!-- Left and right controls -->
+        @*<a class="left carousel-control" href="#myCarouseltwo" role="button" data-slide="prev">
+            <span class="icon-prev" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarouseltwo" role="button" data-slide="next">
+            <span class="icon-next" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>*@
+
+    </div>
+</div>
+<div class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3321.913782254637!2d73.07109731410154!3d33.63347744713113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df94d982dd1ac3%3A0x912f77a1d7080f77!2sLaunchPad7!5e0!3m2!1sen!2s!4v1455268802566" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+</div>
+
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script>
+    ////Slider Jquery 
+    //$(document).ready(function () {
+    //var flag = true;
+    //    if (flag === true) {
+    //        $('.carousel').carousel();
+	//        $('.carousel').on('slide.bs.carousel', function () {
+	//            $('.carousel-caption').animate({
+	//		        marginLeft: "+=20%",
+	//		        opacity: 0,
+    //              //fontSize: "1px",
+	//	        });
+	//        })
+	//        $('.carousel').on('slid.bs.carousel', function () {
+	//            $('.carousel-caption').animate({
+	//		        marginLeft: 0,
+	//		        opacity: 1,
+    //              //fontSize: "400%",
+	//            }, 700);
+	//            return false;
+	//        })
+	//    flag = false;
+	//    return false;
+    //    }
+    //});
+
+</script>

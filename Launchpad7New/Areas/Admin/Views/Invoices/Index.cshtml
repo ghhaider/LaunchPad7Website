@@ -1,0 +1,126 @@
+﻿@model IEnumerable<Launchpad7New.Areas.Admin.Models.Invoice>
+@using Microsoft.AspNet.Identity
+@{
+    ViewBag.Title = "Create invoice";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout1.cshtml";
+}
+
+<h2>Invoice lists</h2>
+@using (Html.BeginForm())
+{
+    <input type="text" name="invoicenumber" id="invoicenumber" class="col-md-2" placeholder="Search By Invoice Number"/>
+    <input type="submit" value="Search Invoice" class="btn btn-default" style="float:left;margin-bottom:15px;" />
+}
+<span>
+    @Html.ActionLink("Create Invoice", "Create", null, new {@class="btn btn-default" })
+</span>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.UserId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.InvoiceNumber)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.PaymentMethod)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PackageId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Members)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TotalPrice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IssueDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Status)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Comments)
+        </th>
+     
+        <th>
+            @Html.DisplayNameFor(model => model.UpdatedBy)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PaymentDate)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.CreatedDate)
+        </th>   <th>
+            @Html.DisplayNameFor(model => model.UpdatedDate)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <th>
+            @foreach (var user in ViewBag.UserId)
+            {
+                if (user.UserId == item.UserId)
+                {
+                    <span>@user.Name</span>
+                }
+            }
+        </th>
+        <td>
+            @Html.DisplayFor(modelItem => item.InvoiceNumber)
+        </td>
+        <td>
+           @Enum.GetName(typeof(Launchpad.Enums.PaymentMethod), item.PaymentMethod)
+        </td>
+        <td>
+            @foreach (var val in ViewBag.packglist)
+            {
+                if (item.PackageId == val.Id)
+                {
+                    @val.Name;
+                }
+            }
+            @Html.DisplayFor(modelItem => item.Packages)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Members)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TotalPrice)
+        </td>
+        <td>
+            <span>@String.Format("{0:D}", item.IssueDate)</span>
+            @*@Html.DisplayFor(modelItem => item.IssueDate)*@
+        </td>
+        <td>
+            @Enum.GetName(typeof(Launchpad.Enums.Status), item.Status)
+        <td>
+            @Html.DisplayFor(modelItem => item.Comments)
+        </td>
+        
+        <td>
+            @Html.DisplayFor(modelItem => item.UpdatedBy)
+        </td>
+        <td>
+            <span>@String.Format("{0:D}", item.PaymentDate)</span>
+        </td>
+
+        <td>
+            <span>@String.Format("{0:D}", item.CreatedDate)</span>
+        </td><td>
+                 <span>@String.Format("{0:D}", item.UpdatedDate)</span>
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.Id }, new { @class = "btn btn-default" })
+            @*@Html.ActionLink("Details", "Details", new { id=item.Id }) |*@
+            @*@Html.ActionLink("Delete", "Delete", new { id=item.Id })*@
+        </td>
+    </tr>
+}
+
+</table>

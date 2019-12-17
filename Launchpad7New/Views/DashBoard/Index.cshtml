@@ -1,0 +1,64 @@
+﻿@{
+    ViewBag.Title = "DashBoard";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    
+</style>
+<div class="pageHeader">
+    <div class="container">
+        <h2 class="dashboard">Dashboard</h2>
+    </div>
+</div>
+
+<div class="pageContent dashboardPage">
+    <div class="container">
+        <div class="row"style="margin:0px">
+        
+            <h3 style="padding-left: 0;color: green;font-size: 22px;">@ViewBag.successmasg</h3>
+            <h3 style="padding-left: 0;color: green;font-size: 22px;">@ViewBag.resigersuccessmasg</h3>
+            <div class="col-md-5">
+                <h3 class="account">Account Settings</h3>
+                <ul>
+                    <li>@Html.ActionLink("Change Password", "ChangePassword", "Manage")</li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-5">
+                <h3 class="settings">User Profile Settings</h3>
+                <ul>
+                    <li>
+                        @Html.ActionLink("Edit Profile", "EditUser", "DashBoard")
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-md-5">
+                <h3 class="startups">Invoices(s)</h3>
+                <ul>
+                    <li>
+                      @Html.ActionLink("Invoice list", "Invoice", "Dashboard")
+                    </li>
+                </ul>
+            </div>
+        </div><!-- /.row -->
+    </div>
+</div>
+   
+
+@section Scripts {
+    @*@Scripts.Render("~/bundles/jqueryval")*@
+    <script type="text/javascript">
+        var domain = $("#domain").attr('href');
+        $(document).ready(function () {
+            var whylink = domain+"#why-launchpad";
+            $("#why").attr("href", whylink)
+            var memberlink = domain + "#membership";
+            $("#member").attr("href", memberlink)
+            var eventlink = domain + "#events";
+            $("#event").attr("href", eventlink)
+        });
+    </script>
+}
+

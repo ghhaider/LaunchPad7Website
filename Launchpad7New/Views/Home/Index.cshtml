@@ -1,0 +1,1524 @@
+﻿
+@{
+    ViewBag.Title = "Home Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+   
+}
+
+<!-- Start Slider BODY section -->
+
+<div id="carousel-example-generic" class="carousel slide MainSlider" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src="~/Images/Main-Banner.jpg" alt="New Coworking Space">
+
+
+        </div>
+        <div class="item">
+            <img src="~/Images/launchpad7_newlocation.jpg" alt="Coworking Space">
+            <div class="carousel-caption FirstBanner">
+                <br><br><br /><br> <br> <br><br><br><br><br><br>
+
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSez97BAPHUWEojqYZMCKxPGwO_cAzdBthk1iAyX-IWoHaQs1Q/viewform" target="_blank" class="btn btn-danger animateslider">Book Your Space Now! &rarr;</a>
+            </div>
+        </div>
+        <div class="item">
+            <img src="~/Images/NewTheme/FirstBanner.png" alt="Coworking Space">
+            <div class="carousel-caption FirstBanner">
+                <h4 class="animateslider">Co-Working</h4>
+                <h3>MORE THEN A DESK</h3>
+                <p class="animateslider">Why rent an office if you only need a desk/work place?</p>
+                <a href="@Url.Action("Contact", "Home")" class="btn btn-danger animateslider">Register Your Tour &rarr;</a>
+            </div>
+        </div>
+        <div class="item">
+            <img src="~/Images/NewTheme/launchpad7-banner-2.png" alt="WOrking Space">
+            <div class="carousel-caption FirstBanner secondbanner">
+                <div class="freefriday">
+                    <h3 class="animateslider">FREE FRIDAYS</h3>
+                    <p class="animateslider">
+                        Join us every first Friday of the month
+                        to meet and greet current members!
+                    </p>
+                </div>
+                <a href="@Url.Action("Contact", "Home")" class="btn btn-danger animateslider">Register Your Tour &rarr;</a>
+            </div>
+        </div>
+        <div class="item">
+            <img src="~/Images/NewTheme/day-and-week-banner.png" alt="DailyAndWeekelyPackages">
+            <div class="carousel-caption dayandweekpkg">
+                <h3 class="animateslider">Wish to Co-Work for a <br /><span>Day</span> or <span>Week?</span> <br /> </h3>
+                <a href="@Url.Action("Packages", "Memberships")" class="btn btn-danger animateslider">Register Your Tour &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<!-- End Slider BODY section -->
+
+
+<div class="whylp" id="why-launchpad">
+    <div class="container">
+        <div class="row">
+            <h2>Why launchpad7</h2>
+            <h3>WORK | NETWORK | EXPAND</h3>
+            @*<p>Say no to the office. Say no to high rent. Say no to no bijli. Say no to generator expenses. Say no to the tea boy being absent. Say no to the printer not working. Say no to a cubicle. Say no to pin drop eery silence. Say no to solo brainstorming. Say no to tea breaks ONLY twice a day. Say no to boring office khana. Say no to slow internet. Say no to working like a robot. Say NO to work feeling like work. Say YES to LaunchPad7.</p>*@
+            <p>LaunchPad7 is the closest thing you’ll get to working from home… with great company and without ammi’s errands. Why don’t we actually want to work from home? Our comfort zones tend to take us for granted; running to the market for eggs, driving the sibling to tuitions, accompanying the electrician as he works on that tricky wiring and having to sit with the unannounced guests. And what with the constant reminders of chores we should get done since we’re at home, the work gets too many breaks.</p>
+            <p>That’s where LaunchPad7 comes in. We wanted to create a comfortable workspace like coworking space with all learning resources alongside any other ones available at immediate reach where you get the comfort of home and the pleasure of company without the obligation of actually having to interact. Unless you want to!</p>
+
+        </div>
+    </div>
+</div>
+
+
+<!--Plan Starts-->
+<div class="chooseaplan">
+    <div class="container">
+        <div class="row">
+            <h3>Coworking: <b>Choose a plan</b></h3>
+        </div>
+        <!--Home Pricing Pan Tabs Starts-->
+
+        <div class="row">
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="HomePricingBody text-center">
+                    <a href="#" class="btn btn-danger priceBtn">Launchpad 7 Rawalpindi</a>
+                    <div class="carousel slide" data-ride="carousel" data-type="multi" data-interval="false" id="packageSliderRWP">
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+
+                            <div class="item">
+                                <div class=" col-md-6 col-sm-6 col-xs-12 ">
+                                    <div class="packgestypes VirtualRWPHeight" style="margin-top: 35px">
+                                        <img src="~/Images/NewTheme/virtual-.png" />
+                                        <h3>Virtual</h3>
+                                        <ul>
+                                            <li>Hot Desk - Few visits only</li>
+                                            <li>Mailing Address</li>
+                                            <li>Meeting room Access </li>
+                                            
+                                            @*<span id="virtualHideRWP">
+                                                    <li>Table Tennis & Xbox</li>
+                                                </span>*@
+                                        </ul>
+                                        @*<div class="btn-container">
+                                                <button class="btn btn-warning priceToggleButton" id="VirtualToggleRWP">Show More</button>
+                                            </div>*@
+                                        <p class="pricetag firstpricetag" style="padding-top: 244%;">5,000</p>
+                                        @*<p class="offPrice">4,000 <span>20% off Limited Time Offer</span></p>*@
+                                        <a href="@Url.Action("Virtual", "memberships")" class="btn btn-danger">Book Your Space</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item active">
+                                <div class=" col-md-6 col-sm-6 col-xs-12">
+                                    <div class="packgestypes DedicatedRWPHeight" style=" margin-top: 35px;">
+                                        <img src="~/Images/NewTheme/hot-desk.png" />
+                                        <h3>Dedicated Desk</h3>
+                                        <ul>
+                                            <li>Dedicated Desk - 24/7</li>
+                                            <li>Internet/ networking </li>
+                                            <li>Power Backup</li>
+                                            <li>Cooling and heating system</li>
+                                            <li>Free events- mentorship</li>
+                                            <li>Meeting room Access </li>
+                                            <li>Presentation area with all required equipment</li>
+                                            <li>*Lunch/Dinner on demand</li>
+                                            <li>Morning and Evening Tea </li>
+                                            <li>Lockers and Digital & hard book Library </li>
+                                           
+                                            <li>Bean bag environment</li>
+                                            <li>*Special Discounts on 3,6 or 12 months advance  payment</li>
+                                            @*<span id="DedicatedHideRWP">
+                                                    <li>Cooling and heating system</li>
+                                                    <li>Free events- mentorship</li>
+                                                    <li>Meeting room Access </li>
+                                                    <li>Presentation area with all required equipment</li>
+                                                    <li>*Lunch/Dinner on demand</li>
+                                                    <li>Morning and Evening Tea </li>
+                                                    <li>Lockers and Digital & hard book Library </li>
+                                                    <li>Table Tennis & Xbox</li>
+                                                    <li>Bean bag environment</li>
+                                                    <li>*Special Discounts on 3,6 or 12 months advance  payment</li>
+                                                    <li style="visibility:hidden">Cooling and heating system</li>
+                                                    <li style="visibility:hidden">Digital & handbook library</li>
+
+                                                </span>*@
+
+                                        </ul>
+                                        @*<div class="btn-container">
+                                                <button class="btn btn-warning priceToggleButton" id="DedicatedToggleRWP">Show More</button>
+                                            </div>*@
+                                        <p class="pricetag secondpricetag" style="padding-top: 95%;">10,000</p>
+                                        @*p class="offPrice">8,000 <span>20% off Limited Time Offer</span></p>*@
+                                        <a href="@Url.Action("HotDesk", "memberships")" class="btn btn-danger">Book Your Space</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class=" col-md-6 col-sm-6 col-xs-12">
+                                    <div class="packgestypes PO6RWPHeight" style="margin-top: 35px; ">
+                                        <img src="~/Images/NewTheme/private-office.png" />
+                                        <h3>Private Office</h3>
+                                        <ul>
+                                            <li>Allow 6 person</li>
+                                            <li>Meeting Room Access</li>
+                                            <li>Reception Services</li>
+                                            <li>Basic office necessities</li>
+                                            <li>Access Event area (1 day per week)</li>
+                                            <li>High speed broadband</li>
+                                            <li>Cooling and heating system</li>
+                                            <li>Power Backup</li>
+                                            <li>Presentation area with all required equipment</li>
+                                            <li>*Lunch/Dinner on demand</li>
+                                            <li>Morning and Evening Tea </li>
+                                            <li>Lockers & Co living space on discount</li>
+                                           
+                                            <li>Bean bag environment</li>
+                                            <li>24/7 – Access any time, any day.</li>
+                                            <li>*Special Discounts on 3,6 or 12 months advance  payment</li>
+                                            @*<span id="poHideRWP">
+                                                    <li>Basic office necessities</li>
+                                                    <li>Access Event area (1 day per week)</li>
+                                                    <li>High speed broadband</li>
+                                                    <li>Cooling and heating system</li>
+                                                    <li>Power Backup</li>
+                                                    <li>Presentation area with all required equipment</li>
+                                                    <li>*Lunch/Dinner on demand</li>
+                                                    <li>Morning and Evening Tea </li>
+                                                    <li>Lockers & Co living space on discount</li>
+                                                    <li>Table Tennis & Xbox</li>
+                                                    <li>Bean bag environment</li>
+                                                    <li>24/7 – Access any time, any day.</li>
+                                                    <li>*Special Discounts on 3,6 or 12 months advance  payment</li>
+                                                </span>*@
+                                        </ul>
+                                        @*<div class="btn-container">
+                                                <button class="btn btn-warning priceToggleButton" id="poToggleRWP">Show More</button>
+                                            </div>*@
+                                        <p class="pricetag " style="margin-top: 33px;">60,000</p>
+                                        @* <p class="offPrice">48,000 <span>20% off Limited Time Offer</span></p>*@
+                                        <a href="@Url.Action("PrivateOffice", "memberships")" class="btn btn-danger">Book Your Space</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class=" col-md-6 col-sm-6 col-xs-12">
+                                    <div class="packgestypes PO12RWPHeight" style="margin-top: 35px;">
+                                        <img src="~/Images/NewTheme/private-office.png" />
+                                        <h3>Private Office</h3>
+                                        <ul>
+                                            <li>Allow 12 person</li>
+                                            <li>Meeting Room Access</li>
+                                            <li>Reception Services</li>
+                                            <li>Basic office necessities</li>
+                                            <li>Access Event area (1 day per week)</li>
+                                            <li>High speed broadband</li>
+                                            <li>Cooling and heating system</li>
+                                            <li>Power Backup</li>
+                                            <li>Presentation area with all required equipment</li>
+                                            <li>*Lunch/Dinner on demand</li>
+                                            <li>Morning and Evening Tea </li>
+                                            <li>Lockers & Co living space on discount</li>
+                                          
+                                            <li>Bean bag environment</li>
+                                            <li>24/7 – Access any time, any day.</li>
+                                            <li>*Special Discounts on 3,6 or 12 months advance  payment</li>
+                                            @*<span id="po1HideRWP">
+                                                    <li>Basic office necessities</li>
+                                                    <li>Access Event area (1 day per week)</li>
+                                                    <li>High speed broadband</li>
+                                                    <li>Cooling and heating system</li>
+                                                    <li>Power Backup</li>
+                                                    <li>Presentation area with all required equipment</li>
+                                                    <li>*Lunch/Dinner on demand</li>
+                                                    <li>Morning and Evening Tea </li>
+                                                    <li>Lockers & Co living space on discount</li>
+                                                    <li>Table Tennis & Xbox</li>
+                                                    <li>Bean bag environment</li>
+                                                    <li>24/7 – Access any time, any day.</li>
+                                                    <li>*Special Discounts on 3,6 or 12 months advance  payment</li>
+                                                </span>*@
+
+                                        </ul>
+                                        @*<div class="btn-container">
+                                                <button class="btn btn-warning priceToggleButton" id="po1ToggleRWP">Show More</button>
+                                            </div>*@
+                                        <p class="pricetag " style="margin-top: 33px;">110,000</p>
+                                        @* <p class="offPrice">88,000 <span>20% off Limited Time Offer</span></p>*@
+                                        <a href="@Url.Action("PrivateOffice1", "memberships")" class="btn btn-danger">Book Your Space</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class=" col-md-6 col-sm-6 col-xs-12">
+                                    <div class="packgestypes EventRWPHeight" style="margin-top: 35px; ">
+                                        <img src="~/Images/NewTheme/private-office.png" />
+                                        <h3>Event Area Access</h3>
+                                        <ul>
+
+                                            <li>High speed Internet</li>
+                                            <li>Cooling and heating system</li>
+                                            <li>Comfortable Chairs</li>
+                                            <li>Presentation area with all required equipment</li>
+                                            <li>*Refreshment if required</li>
+                                            <li>Air Conditions & Fans</li>
+                                            <li>Projector</li>
+                                            <li>Sound System</li>
+                                            <li>Podium</li>
+                                            <li>Event promotion on Launchpad7 page</li>
+                                            <li>Photography</li>
+                                            <li>Video recording and editing on demand</li>
+                                            @*<span id="eaHideRWP">
+                                                    <li>Presentation area with all required equipment</li>
+                                                    <li>*Refreshment if required</li>
+                                                    <li>Air Conditions & Fans</li>
+                                                    <li>Projector</li>
+                                                    <li>Sound System</li>
+                                                    <li>Podium</li>
+                                                    <li>Event promotion on Launchpad7 page</li>
+                                                    <li>Photography</li>
+                                                    <li>Video recording and editing on demand</li>
+                                                </span>*@
+                                        </ul>
+                                        @*<div class="btn-container">
+                                                <button class="btn btn-warning priceToggleButton" id="eaToggleRWP">Show More</button>
+                                            </div>*@
+                                        <p class="pricetag" style="padding: 214px 0 0 0;">1,500/<span style="font-size:18px;">Hr.</span></p>
+                                        <p class="offPrice"> <span></span></p>
+                                        <a href="@Url.Action("EventAccess", "memberships")" class="btn btn-danger">Book Your Space</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#packageSliderRWP" data-slide="prev"><i class="glyphicon glyphicon-chevron-left" style="color:#DD1212"></i></a>
+                        <a class="right carousel-control" href="#packageSliderRWP" data-slide="next"><i class="glyphicon glyphicon-chevron-right" style="color:#DD1212"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="HomePricingBody text-center">
+                    <a href="#" class="btn btn-danger priceBtn1">Launchpad 7 Islamabad</a>
+                    <div class="carousel slide" data-ride="carousel" data-type="multi" data-interval="false" id="packageSliderISD">
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item">
+                                <div class=" col-md-6 col-sm-6 col-xs-12">
+                                    <div class="packgestypes VirtualISDHeight" style="margin-top: 35px">
+                                        <img src="~/Images/NewTheme/virtual-.png" />
+                                        <h3>Virtual</h3>
+                                        <ul>
+                                            <li>Hot Desk - Few visits only</li>
+                                            <li>Mailing Address</li>
+                                            <li>Meeting room Access </li>
+                                            <li> X Box</li>
+                                            <li>Bean bag environment</li>
+
+                                            @*<span id="virtualHideISD">
+                                                    <li>Table Tennis & Xbox</li>
+                                                    <li>Bean bag environment</li>
+                                                </span>*@
+
+
+                                        </ul>
+                                        @*<div class="btn-container">
+                                                <button class="btn btn-warning priceToggleButton1" id="virtualToggleISD">Show More</button>
+                                            </div>*@
+                                        <p class="pricetag firstpricetag" style="padding-top: 219%;">5,000</p>
+                                        @* <p class="offPrice">2, 500 <span>50% off Limited Time Offer</span></p>*@
+                                        <a href="@Url.Action("VirtualISD", "memberships")" class="btn btn-danger ISDbtn">Book Your Space</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item active">
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <div class="packgestypes DedicatedISDHeight" style=" margin-top: 35px;">
+                                        <img src="~/Images/NewTheme/hot-desk.png" />
+                                        <h3>Dedicated Desk</h3>
+                                        <ul>
+
+                                            <li>Internet/ networking </li>
+                                            <li>Power Backup</li>
+                                            <li>Free events- mentorship</li>
+                                            <li>Cooling and heating system</li>
+                                            <li>Free events- mentorship</li>
+                                            <li>Meeting room Access </li>
+                                            <li>Presentation area with all required equipment</li>
+                                            <li>*Lunch/Dinner on demand</li>
+                                            <li>*Morning and Evening Tea on demand </li>
+                                            <li>Lockers and Digital & hard book Library </li>
+                                            <li> X Box</li>
+                                            <li>Bean bag environment</li>
+                                            <li>*Special Discounts on 3,6 or 12 months advance  payment</li>
+                                            <li style="visibility:hidden">Cooling and heating system</li>
+                                            <li style="visibility:hidden">Digital & handbook library</li>
+                                            @*<span id="DedicatedHideISD">
+                                                    <li>Cooling and heating system</li>
+                                                    <li>Free events- mentorship</li>
+                                                    <li>Meeting room Access </li>
+                                                    <li>Presentation area with all required equipment</li>
+                                                    <li>*Lunch/Dinner on demand</li>
+                                                    <li>*Morning and Evening Tea on demand </li>
+                                                    <li>Lockers and Digital & hard book Library </li>
+                                                    <li>Table Tennis & Xbox</li>
+                                                    <li>Bean bag environment</li>
+                                                    <li>*Special Discounts on 3,6 or 12 months advance  payment</li>
+                                                    <li style="visibility:hidden">Cooling and heating system</li>
+                                                    <li style="visibility:hidden">Digital & handbook library</li>
+                                                </span>*@
+
+
+                                        </ul>
+                                        @*<div class="btn-container">
+                                                <button class="btn btn-warning priceToggleButton1" id="DedicatedToggleISD">Show More</button>
+                                            </div>*@
+                                        <p class="pricetag secondpricetag" style="padding-top: 45%;">15,000</p>
+                                        @*<p class="offPrice">7,500 <span>50% off Limited Time Offer</span></p>*@
+                                        <a href="@Url.Action("HotDeskISD", "memberships")" class="btn btn-danger ISDbtn">Book Your Space</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <div class="packgestypes PO6ISDHeight" style="margin-top: 35px; ">
+                                        <img src="~/Images/NewTheme/private-office.png" />
+                                        <h3>Private Office</h3>
+                                        <ul>
+                                            <li>Allow 6 person</li>
+                                            <li>Meeting Room Access</li>
+                                            <li>Reception Services</li>
+                                            <li>Basic office necessities</li>
+                                            <li>Access Event area (1 day per week)</li>
+                                            <li>High speed broadband</li>
+                                            <li>Cooling and heating system</li>
+                                            <li>Power Backup</li>
+                                            <li>Presentation area with all required equipment</li>
+                                            <li>*Lunch/Dinner on demand</li>
+                                            <li>Morning and Evening Tea </li>
+                                            <li>Lockers & Co living space on discount</li>
+                                            <li> X Box</li>
+                                            <li>Bean bag environment</li>
+                                            <li>24/7 – Access any time, any day.</li>
+                                            <li>*Special Discounts on 3,6 or 12 months advance  payment</li>
+                                            @*<span id="poHideISD">
+                                                    <li>Basic office necessities</li>
+                                                    <li>Access Event area (1 day per week)</li>
+                                                    <li>High speed broadband</li>
+                                                    <li>Cooling and heating system</li>
+                                                    <li>Power Backup</li>
+                                                    <li>Presentation area with all required equipment</li>
+                                                    <li>*Lunch/Dinner on demand</li>
+                                                    <li>Morning and Evening Tea </li>
+                                                    <li>Lockers & Co living space on discount</li>
+                                                    <li>Table Tennis & Xbox</li>
+                                                    <li>Bean bag environment</li>
+                                                    <li>24/7 – Access any time, any day.</li>
+                                                    <li>*Special Discounts on 3,6 or 12 months advance  payment</li>
+                                                </span>*@
+
+                                        </ul>
+                                        @*<div class="btn-container">
+                                                <button class="btn btn-warning priceToggleButton1" id="poToggleISD">Show More</button>
+                                            </div>*@
+                                        <p class="pricetag ">90,000</p>
+                                        @*  <p class="offPrice">45,000 <span>50% off Limited Time Offer</span></p>*@
+                                        <a href="@Url.Action("PrivateOfficeISD", "memberships")" class="btn btn-danger ISDbtn">Book Your Space</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <div class="packgestypes PO12ISDHeight" style="margin-top: 35px; ">
+                                        <img src="~/Images/NewTheme/private-office.png" />
+                                        <h3>Private Office</h3>
+                                        <ul>
+                                            <li>Allow 12 person</li>
+                                            <li>Meeting Room Access</li>
+                                            <li>Reception Services</li>
+                                            <li>Basic office necessities</li>
+                                            <li>Access Event area (1 day per week)</li>
+                                            <li>High speed broadband</li>
+                                            <li>Cooling and heating system</li>
+                                            <li>Power Backup</li>
+                                            <li>Presentation area with all required equipment</li>
+                                            <li>*Lunch/Dinner on demand</li>
+                                            <li>Morning and Evening Tea </li>
+                                            <li>Lockers & Co living space on discount</li>
+                                            <li> X Box</li>
+                                            <li>Bean bag environment</li>
+                                            <li>24/7 – Access any time, any day.</li>
+                                            <li>*Special Discounts on 3,6 or 12 months advance  payment</li>
+                                            @*<span id="po1HideISD">
+                                                    <li>Basic office necessities</li>
+                                                    <li>Access Event area (1 day per week)</li>
+                                                    <li>High speed broadband</li>
+                                                    <li>Cooling and heating system</li>
+                                                    <li>Power Backup</li>
+                                                    <li>Presentation area with all required equipment</li>
+                                                    <li>*Lunch/Dinner on demand</li>
+                                                    <li>Morning and Evening Tea </li>
+                                                    <li>Lockers & Co living space on discount</li>
+                                                    <li>Table Tennis & Xbox</li>
+                                                    <li>Bean bag environment</li>
+                                                    <li>24/7 – Access any time, any day.</li>
+                                                    <li>*Special Discounts on 3,6 or 12 months advance  payment</li>
+                                                </span>*@
+
+                                        </ul>
+                                        @*<div class="btn-container">
+                                                <button class="btn btn-warning priceToggleButton1" id="po1ToggleISD">Show More</button>
+                                            </div>*@
+                                        <p class="pricetag ">150,000</p>
+                                        @*  <p class="offPrice">75,000 <span>50% off Limited Time Offer</span></p>*@
+                                        <a href="@Url.Action("PrivateOffice1ISD", "memberships")" class="btn btn-danger ISDbtn">Book Your Space</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class=" col-md-6 col-sm-6 col-xs-12">
+                                    <div class="packgestypes EventISDHeight" style="margin-top: 35px; ">
+                                        <img src="~/Images/NewTheme/private-office.png" />
+                                        <h3>Event Area Access</h3>
+                                        <ul>
+
+                                            <li>High speed Internet</li>
+                                            <li>Cooling and heating system</li>
+                                            <li>Comfortable Chairs</li>
+                                            <li>Presentation area with all required equipment</li>
+                                            <li>*Refreshment if required</li>
+                                            <li>Air Conditions & Fans</li>
+                                            <li>Projector</li>
+                                            <li>Sound System</li>
+                                            <li>Podium</li>
+                                            <li>Event promotion on Launchpad7 page</li>
+                                            <li>Photography</li>
+                                            <li>Video recording and editing on demand</li>
+                                            @*<span id="eaHideISD">
+                                                    <li>Presentation area with all required equipment</li>
+                                                    <li>*Refreshment if required</li>
+                                                    <li>Air Conditions & Fans</li>
+                                                    <li>Projector</li>
+                                                    <li>Sound System</li>
+                                                    <li>Podium</li>
+                                                    <li>Event promotion on Launchpad7 page</li>
+                                                    <li>Photography</li>
+                                                    <li>Video recording and editing on demand</li>
+                                                </span>*@
+
+
+
+                                        </ul>
+                                        @*<div class="btn-container">
+                                                <button class="btn btn-warning priceToggleButton1" id="eaToggleISD">Show More</button>
+                                            </div>*@
+                                        <p class="pricetag" style="padding: 218px 0 0 0;">2,000/<span style="font-size:18px;">Hr.</span></p>
+                                        @*  <p class="offPrice"> 1,000 <span>50% off Limited Time Offer</span></p>*@
+                                        <a href="@Url.Action("EventAccessISD", "memberships")" class="btn btn-danger ISDbtn">Book Your Space</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#packageSliderISD" data-slide="prev"><i class="glyphicon glyphicon-chevron-left" style="color:black"></i></a>
+                        <a class="right carousel-control" href="#packageSliderISD" data-slide="next"><i class="glyphicon glyphicon-chevron-right" style="color:black"></i></a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <!--Home Pricing Plan Tabs Ends-->
+    </div>
+</div>
+<!--Plan Ends-->
+<div class="Co-working-space">
+    <div class="container">
+        <div class="row">
+            <h3>
+                Co-working space<br>
+                the perfect match for
+            </h3>
+            <h4>
+                startup
+            </h4>
+        </div>
+    </div>
+</div>
+<div class="majorreason">
+    <div class="container">
+        <div class="row">
+            <h3>6 Major Reasons: To Choose LaunchPad7</h3>
+            <img src="~/Images/NewTheme/coworkinglogo.png" class="img-responsive majorreasoniconimg" />
+            <div class="col-sm-4">
+                <div class="reasonone">
+                    <h6>1</h6>
+                    <img src="~/Images/NewTheme/location.png" />
+                    <p>
+                        Central location in Rawalpindi
+                        and Islamabad.
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="reasontwo">
+                    <h6>2</h6>
+                    <img src="~/Images/NewTheme/gaming.png" />
+                    <p>
+                        Relaxing and gaming enviroment.<br>
+                        Bean Bags, Table Tennis, Monopoly, Dart Board, Chess, Xbox
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-4 ">
+                <div class="reasonthree">
+                    <h6>3</h6>
+                    <img src="~/Images/NewTheme/relaxing.png" style="width:100px;" />
+                    <p>
+                        Cosy and Less officy
+                        work Environment.
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="reasonfour">
+                    <h6>4</h6>
+                    <img src="~/Images/NewTheme/worksho.png" />
+                    <p>
+                        Co-living facility.
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="reasonfive">
+                    <h6>5</h6>
+                    <img src="~/Images/NewTheme/hub.png" />
+                    <p>
+                        Activity Hub over the
+                        weekend promoting network.
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="reasonsix">
+                    <h6>6</h6>
+                    <img src="~/Images/NewTheme/food arena icon.png" />
+                    <p>
+                        Food Arena.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@* Events Section *@
+<div class="dontmissourevents">
+    <h3>Don't miss Our</h3>
+    <p>AWESOME Events</p>
+    <div class="eventMainImage" style="width:30%; margin: 0 auto; text-align: center;">
+        <img src="~/Images/NewTheme/EventsIcon.png" class="img-responsive" />
+    </div>
+
+    <div class="eventsMainBody">
+        @Html.Action("Events", "Home")
+    </div>
+
+
+
+    @*<div class="eventmainbg" style="background:none;padding: 0 0 45px;margin-top: 20px;">
+        <a href="@Url.Action("Index","Events")" class="">
+            <img class="img-responsive" src="~/Images/new-event-image.jpg" style="margin: 0 auto;">
+        </a>
+        <div class="container" ">
+            <div class="row">
+                <h2>Events</h2>
+
+                @*<p>Don't miss the opportunity to be part of this mentoring dinner</p>*@
+    @*a href="@Url.Action("Index","Events")" class="btn btn-primary eventsBTN">More Events</a>
+        @*<a href="" class="btn btn-danger">Get Register</a>*@
+    @*</div>
+            </div>
+        </div>*@
+</div>
+@*<div class="launchpad7team">
+        <div class="container-fluid">
+            <p>Stepping Together to Excel</p>
+            <h3>LaunchPad7 <span style="text-transform:uppercase">Team</span></h3>
+            <img src="~/Images/lpteam.png" class="img-responsive" alt="Launchpad7Team" />
+
+            <!-- Launchpad7 Team Carousel -->
+
+            <div id="myCarouselCeo" class="carousel slide" data-ride="carousel">
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <div class="row">
+                            <div class="col-sm-6 borderright hidden-xs">
+                                <img src="~/Images/ceopix.png" class="img-responsive lpteamimg" alt="Launchpad7CEO" />
+                            </div>
+                            <div class="col-sm-6 col-xs-12">
+                                <h4>Khurram Mujtaba</h4>
+                                <hr />
+                                <h5>CEO/FOUNDER</h5>
+                                <ul class="socialicons">
+                                    <li><a href="https://www.facebook.com/profile.php?id=100008686690367&fref=ts" target="_blank" class="facebook">Facebook</a></li>
+                                    <li><a href="https://twitter.com/kmzuberi" target="_blank" class="twitter">Twitter</a></li>
+                                    <li><a href="" target="_blank" class="linkedin">LinkedIn</a></li>
+                                </ul>
+                                <p class="ceodetail"></p>
+                                <p class="ceodetailborder"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarouselCeo" role="button" data-slide="prev">
+                    <span class="icon-prev" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarouselCeo" role="button" data-slide="next">
+                    <span class="icon-next alighnit" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>*@
+
+
+<!--LP7 Promotions/Offers Section Starts-->
+<div class="Iamgeandvideolp">
+    @*<div class="row">*@
+
+    <h2 style="margin-bottom:60px;"> Promotions & Offers</h2>
+
+    @*</div>*@
+</div>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="currentOfferImage text-center">
+                    <span class="label label-primary">Current Offer</span>
+                    <a href="https://urlzs.com/LS2Zs" target="_blank">   <img src="~/Images/offer-main.jpg" class="img-responsive" /></a>
+
+                </div>
+                <div class="currentOfferBody">
+                    <p>
+                        #Freelancers or #Startups #Teams looking for a better co-working space?
+                        Call now for details: 0346-8811896
+                        Look no further than #LaunchPad7 with 3 locations including
+
+                        Blue Area Islamabad
+                        Murree Road RWP
+                        Ghauri Town
+                    </p>
+                    <a href="https://urlzs.com/LS2Zs" target="_blank" class="btn btn-warning">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="subOffers">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+
+                    <div class="subOffersImage text-center">
+                        <span class="label label-primary">Previous Offer</span>
+                        <a href="https://urlzs.com/LS2Zs"><img src="~/Images/promotions/offer-1.jpeg" class="img-responsive img-fluid" /></a>
+                        <a href="https://urlzs.com/LS2Zs"> <h4>Offer 2</h4></a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="subOffersImage text-center">
+                        <span class="label label-primary">Previous Offer</span>
+                        <a href="https://urlzs.com/LS2Zs"><img src="~/Images/promotions/offer-2.jpeg" class="img-responsive img-fluid" /></a>
+                        <a href="https://urlzs.com/LS2Zs"> <h4>Offer 3</h4></a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="subOffersImage text-center">
+                        <span class="label label-primary">Previous Offer</span>
+                        <a href="https://urlzs.com/LS2Zs"><img src="~/Images/promotions/offer-3.jpeg" class="img-responsive img-fluid" style="width:260px; height: 177px;" /></a>
+                        <a href="https://urlzs.com/LS2Zs"> <h4>Offer 4</h4></a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="subOffersImage text-center">
+                        <span class="label label-primary">Previous Offer</span>
+                        <a href="https://urlzs.com/LS2Zs"><img src="~/Images/promotions/space-promotion-1.jpg" class="img-responsive img-fluid" /></a>
+                        <a href="https://urlzs.com/LS2Zs"> <h4>Offer 5</h4></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!--LP7 Promotions/Offers Section Ends-->
+<!--LP7 Gallery Section Starts-->
+<div class="Iamgeandvideolp">
+    @*<div class="row">*@
+    <a href="@Url.Action("index", "Gallery")">
+        <h2 style="margin-bottom:20px; margin-top: 100px;">LaunchPad7 Gallery</h2>
+    </a>
+    @*</div>*@
+</div>
+<section id="LP7Gallery">
+    <div class="container-fluid">
+        <!--Gallery Tabs Starts-->
+        <div class="row">
+            <div class="col-12 text-center">
+                <ul class="nav nav-pills galleryTabs">
+                    <li class="active pl-0 mb-2" id="tab1"><a data-toggle="pill" href="#LP7RWPgallery" id="tabLink1">LP7 Rawalpindi</a></li>
+                    <li id="tab2" class="mb-2"><a data-toggle="pill" href="#LP7ISDgallery" id="tabLink2">LP7 Islamabad</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-12 ">
+                <div class="tab-content ">
+                    <div id="LP7RWPgallery" class="tab-pane fade in active ">
+                        <div id="myCarouselLP7RWPgallery" class="carousel slide " data-ride="carousel">
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner pixslider" role="listbox">
+                                <div class="item active">
+                                    <div class="row">
+                                        <div class="col-sm-3 col-xs-6 nopadding">
+                                            <img src="~/Images/1.jpg" class="img-responsive img-fluid" alt="Launchpad7Pictures" />
+                                        </div>
+                                        <div class="col-sm-3 col-xs-6 nopadding">
+                                            <img src="~/Images/sample-image.png" class="img-responsive" alt="Launchpad7Pictures" />
+                                        </div>
+                                        <div class="col-sm-3 hidden-xs nopadding">
+                                            <img src="~/Images/4.jpg" class="img-responsive" alt="Launchpad7Pictures" />
+                                        </div>
+                                        <div class="col-sm-3 hidden-xs nopadding">
+                                            <img src="~/Images/5.jpg" class="img-responsive" alt="Launchpad7Pictures" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="row">
+                                        <div class="col-sm-3 hidden-xs nopadding">
+                                            <img src="~/Images/6.jpg" class="img-responsive" alt="Launchpad7Pictures" />
+                                        </div>
+                                        <div class="col-sm-3 hidden-xs  nopadding ">
+                                            <img src="~/Images/11.jpg" class="img-responsive" alt="Launchpad7Pictures" />
+                                        </div>
+
+                                        <div class="col-sm-3 col-xs-6 nopadding">
+                                            <img src="~/Images/3.jpg" class="img-responsive" alt="Launchpad7Pictures" />
+                                        </div>
+                                        <div class="col-sm-3 col-xs-6 nopadding">
+                                            <img src="~/Images/12.jpg" class="img-responsive" alt="Launchpad7Pictures" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Left and right controls -->
+                            <a class="left carousel-control Launchpadpicslider" href="#myCarouselLP7RWPgallery" role="button" data-slide="prev">
+                                <span class="icon-prev" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control Launchpadpicslider" href="#myCarouselLP7RWPgallery" role="button" data-slide="next">
+                                <span class="icon-next" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="LP7ISDgallery" class="tab-pane fade in">
+                        <div id="myCarouselLP7ISDgallery" class="carousel slide " data-ride="carousel">
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner pixslider" role="listbox">
+                                <div class="item active">
+                                    <div class="row">
+                                        <div class="col-sm-3 col-xs-6 nopadding">
+                                            <img src="~/Images/isd-gallery/01.jpg" class="img-responsive img-fluid" alt="Launchpad7Pictures" />
+                                        </div>
+                                        <div class="col-sm-3 col-xs-6 nopadding">
+                                            <img src="~/Images/isd-gallery/02.jpg" class="img-responsive" alt="Launchpad7Pictures" />
+                                        </div>
+                                        <div class="col-sm-3 hidden-xs nopadding">
+                                            <img src="~/Images/isd-gallery/06.jpg" class="img-responsive" alt="Launchpad7Pictures" />
+                                        </div>
+                                        <div class="col-sm-3 hidden-xs nopadding">
+                                            <img src="~/Images/isd-gallery/08.jpg" class="img-responsive" alt="Launchpad7Pictures" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="row">
+                                        <div class="col-sm-3 hidden-xs nopadding">
+                                            <img src="~/Images/isd-gallery/10.jpg" class="img-responsive" alt="Launchpad7Pictures" />
+                                        </div>
+                                        <div class="col-sm-3 hidden-xs  nopadding ">
+                                            <img src="~/Images/isd-gallery/11.jpg" class="img-responsive" alt="Launchpad7Pictures" />
+                                        </div>
+
+                                        <div class="col-sm-3 col-xs-6 nopadding">
+                                            <img src="~/Images/isd-gallery/12.jpg" class="img-responsive" alt="Launchpad7Pictures" />
+                                        </div>
+                                        <div class="col-sm-3 col-xs-6 nopadding">
+                                            <img src="~/Images/isd-gallery/13.jpg" class="img-responsive" alt="Launchpad7Pictures" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="row">
+                                        <div class="col-sm-3 hidden-xs nopadding">
+                                            <img src="~/Images/isd-gallery/14.jpg" class="img-responsive" alt="Launchpad7Pictures" />
+                                        </div>
+                                        <div class="col-sm-3 hidden-xs  nopadding ">
+                                            <img src="~/Images/isd-gallery/17.jpg" class="img-responsive" alt="Launchpad7Pictures" />
+                                        </div>
+
+                                        <div class="col-sm-3 col-xs-6 nopadding">
+                                            <img src="~/Images/isd-gallery/19.jpg" class="img-responsive" alt="Launchpad7Pictures" />
+                                        </div>
+                                        <div class="col-sm-3 col-xs-6 nopadding">
+                                            <img src="~/Images/isd-gallery/20.jpg" class="img-responsive" alt="Launchpad7Pictures" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="row">
+                                        <div class="col-sm-3 hidden-xs nopadding">
+                                            <img src="~/Images/isd-gallery/21.jpg" class="img-responsive" alt="Launchpad7Pictures" />
+                                        </div>
+                                        <div class="col-sm-3 hidden-xs  nopadding ">
+                                            <img src="~/Images/isd-gallery/25.jpg" class="img-responsive" alt="Launchpad7Pictures" />
+                                        </div>
+
+                                        <div class="col-sm-3 col-xs-6 nopadding">
+                                            <img src="~/Images/isd-gallery/28.jpg" class="img-responsive" alt="Launchpad7Pictures" />
+                                        </div>
+                                        <div class="col-sm-3 col-xs-6 nopadding">
+                                            <img src="~/Images/isd-gallery/32.jpg" class="img-responsive" alt="Launchpad7Pictures" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Left and right controls -->
+                            <a class="left carousel-control Launchpadpicslider" href="#myCarouselLP7ISDgallery" role="button" data-slide="prev">
+                                <span class="icon-prev" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control Launchpadpicslider" href="#myCarouselLP7ISDgallery" role="button" data-slide="next">
+                                <span class="icon-next" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+<!--LP7 Gallery Section Ends-->
+
+<div class="worthy-members">
+    <h2>
+        Worthy Members
+    </h2>
+    <div id="myCarouseltwo" class="carousel slide" data-ride="carousel">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <ul class="row">
+                    <li>
+                        <a href="http://www.jumpstartpakistan.com/" target="_blank"><img src="~/Images/jump_logo.jpg" class="img-responsive membersimg" alt="Jumpstartpakicon" style="height: 63px;" /></a>
+                    </li>
+                    @*<li>
+            <a href="http://www.moftak.com/" target="_blank"> <img src="~/Images/moftak.png" class="img-responsive membersimg" alt="moftakicon" /></a>
+        </li>*@
+                    <li>
+                        <a href="https://www.researchsnipers.com/" target="_blank"> <img src="~/Images/rs.png" class="img-responsive membersimg" alt="PropakistaniIcon" /></a>
+                    </li>
+                    <li>
+                        <a href="http://www.ascendbpo.com/" target="_blank"> <img src="~/Images/bpo.jpg" class="img-responsive membersimg" alt="ExpevicIcon" /></a>
+                    </li>
+
+
+                    @*<li>
+            <img src="~/Images/PearlGAte_logo.png" class="img-responsive membersimg" alt="ExpevicIcon" />
+
+        </li>*@
+                    <br />
+                    <br />
+
+
+                    @*<li>
+            <a href="http://www.vheelz.com/" target="_blank"> <img src="~/Images/vheelz-logo.png" class="img-responsive membersimg" alt="ExpevicIcon" /></a>
+        </li>*@
+                    <li>
+                        <a href="http://codebarpk.com/" target="_blank"><img src="~/Images/codebar.png" class="img-responsive membersimg" alt="CodebarIcon" /></a>
+
+                    </li>
+                    <li>
+                        <img src="~/Images/logo.jpg" class="img-responsive membersimg" alt="ExpevicIcon" />
+
+                    </li>
+                    <li>
+                        <a href="#"> <img src="~/Images/member-logo-1.jpg" class="img-fluid img-responsive membersimg" alt="ExpevicIcon" /></a>
+
+                    </li>
+                    <br />
+                    <br />
+                    @*<li>
+            <a target="_blank"><img src="~/Images/NewTheme/expevic.png" class="img-responsive membersimg" alt="ExpevicIcon" /></a>
+        </li>*@
+                    @*<li>
+            <img src="~/Images/it.jpg" class="img-responsive membersimg" alt="ExpevicIcon" />
+
+        </li>*@
+
+                    <li>
+                        <a href="#"> <img src="~/Images/member-logo-2.jpg" class="img-fluid img-responsive membersimg" alt="ExpevicIcon" /></a>
+
+                    </li>
+                    <li>
+                        <a href="#"> <img src="~/Images/member-logo-5.jpeg" class="img-fluid img-responsive membersimg" alt="ExpevicIcon" /></a>
+
+                    </li>
+                    <li>
+                        <a href="#"> <img src="~/Images/member-logo-6.jpeg" class="img-fluid img-responsive membersimg" alt="ExpevicIcon" /></a>
+
+                    </li>
+                    <br />
+                    <br />
+                    <li>
+                        <a href="#"> <img src="~/Images/moftak.png" class="img-fluid img-responsive membersimg" alt="ExpevicIcon" /></a>
+
+                    </li>
+                    <li>
+                        <a href="#"> <img src="~/Images/member-logo-3.png" class="img-fluid img-responsive membersimg" alt="ExpevicIcon" /></a>
+
+                    </li>
+                    <li>
+                        <a href="#"> <img src="~/Images/vheelz-logo.png" class="img-fluid img-responsive membersimg" alt="ExpevicIcon" /></a>
+
+                    </li>
+                    <br />
+                    <br />
+                    <li>
+                        <a href="#"> <img src="~/Images/home-tutor.jpeg" class="img-fluid img-responsive membersimg" alt="ExpevicIcon" style="height:61px;" /></a>
+
+                    </li>
+                    <li>
+                        <a href="#"> <img src="~/Images/new-logo-1.png" class="img-fluid img-responsive membersimg" alt="ExpevicIcon" style="height:61px;" /></a>
+
+                    </li>
+                    <li>
+                        <a href="#"> <img src="~/Images/new-logo.jpg" class="img-fluid img-responsive membersimg" alt="ExpevicIcon" style="height:61px;" /></a>
+
+                    </li>
+                    <br />
+                    <br />
+                    <li>
+                        <a href="#"> <img src="~/Images/logo-peergraphics.png" class="img-fluid img-responsive membersimg" alt="ExpevicIcon" style="height:61px;" /></a>
+
+                    </li>
+                    <li>
+                        <a href="#"> <img src="~/Images/trip-tours.jpeg" class="img-fluid img-responsive membersimg" alt="ExpevicIcon" style="height:61px;" /></a>
+
+                    </li>
+                    <li>
+                        <a href="#"> <img src="~/Images/musafir.png" class="img-fluid img-responsive membersimg" alt="ExpevicIcon" style="height:61px;" /></a>
+
+                    </li>
+                    <br />
+                    <br />
+                    <li>
+                        <a href="#"> <img src="~/Images/moosh.jpg" class="img-fluid img-responsive membersimg" alt="ExpevicIcon" style="height:61px;" /></a>
+
+                    </li>
+
+
+
+
+                    @*<li>
+            <a href="#"> <img src="~/Images/member-logo-4.jpeg" class="img-fluid img-responsive membersimg" alt="ExpevicIcon" /></a>
+
+        </li>*@
+
+                    @* <li>
+            <img src="~/Images/PearlGAte_logo.png" class="img-responsive membersimg" alt="ExpevicIcon" />
+        </li>*@
+
+                </ul>
+            </div>
+        </div>
+        <!-- Left and right controls -->
+        @*<a class="left carousel-control" href="#myCarouseltwo" role="button" data-slide="prev">
+                <span class="icon-prev" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarouseltwo" role="button" data-slide="next">
+                <span class="icon-next" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>*@
+    </div>
+</div>
+<!--Members Slider Starts-->
+<div class="container">
+    <div class="Iamgeandvideolp">
+        <div class="row">
+            <div class="col-12">
+                <h2 style="margin-bottom:20px;">Member Reviews</h2>
+            </div>
+        </div>
+    </div>
+    <div class="row ">
+        <div class="col-12">
+            <div class="memberSlider">
+
+                <div id="memberSlider" class="carousel slide" data-ride="carousel">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active memberSliderRow">
+
+                            <div class="row" style="padding: 20px">
+                                <p class="testimonial_para">
+                                    <button style="border: none;"><i class="fa fa-quote-left testimonial_fa" aria-hidden="true"></i></button>
+                                    Lauchpad7 is a professional co-working space. Its good for small companies especially startups,
+                                    freelancers and work from home people. By opting the facility of launchpad7,
+                                    you don't have to spend energy in operational and administrative challenges attached
+                                    to an office space and you can concentrate fully on your product/service/business.
+                                    Also, by having similar sort of people around you, you can get benefit from learning and
+                                    challenging environment.
+
+                                    <button style="border: none;"><i class="fa fa-quote-right testimonial_fa" aria-hidden="true"></i></button>
+                                </p>
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                        <img src="~/Images/member-img-1.jpg" class="img-responsive" style="width: 80px">
+                                    </div>
+                                    <div class="col-sm-10 ">
+                                        <h4><strong>Muhammad Farrukh Mehmood</strong></h4>
+                                        <p class="testimonial_subtitle">
+                                            <span>11Values</span><br>
+                                            <span>CEO & Founder</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item memberSliderRow">
+                            <div class="row" style="padding: 20px">
+                                <p class="testimonial_para">
+                                    <button style="border: none;"><i class="fa fa-quote-left testimonial_fa" aria-hidden="true"></i></button>
+                                    Launchpad 7 is much more than a Co-Working Space . It is part of vision of
+                                    JumpStart Pakistan to create an Entrepreneurial Eco System in Pakistan and
+                                    bringing change through Entrepreneurship. If you are looking for a cool ,
+                                    economical work place right in heart of city , I Launchpad 7 is best choice.
+
+                                    <button style="border: none;"><i class="fa fa-quote-right testimonial_fa" aria-hidden="true"></i></button>
+                                </p>
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                        <img src="~/Images/member-img-2.jpg" class="img-responsive" style="width: 80px">
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <h4><strong>Moazzam Arsalan Bhatti</strong></h4>
+                                        <p class="testimonial_subtitle">
+                                            <span>Alfoze Technologies</span><br>
+                                            <span>CEO & Founder</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item memberSliderRow">
+                            <div class="row" style="padding: 20px">
+                                <p class="testimonial_para">
+                                    <button style="border: none;"><i class="fa fa-quote-left testimonial_fa" aria-hidden="true"></i></button>
+                                    LaunchPad7 is friendly and most supportive environment!
+                                    especially grooming sessions and activities!
+
+
+                                    <button style="border: none;"><i class="fa fa-quote-right testimonial_fa" aria-hidden="true"></i></button>
+                                </p>
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                        <img src="~/Images/member-img-3.jpg" class="img-responsive" style="width: 80px">
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <h4><strong>Danish Sattar</strong></h4>
+                                        <p class="testimonial_subtitle">
+                                            <span>Moosh Digital</span><br>
+                                            <span>Operations Manager</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item memberSliderRow">
+                            <div class="row" style="padding: 20px">
+                                <p class="testimonial_para">
+                                    <button style="border: none;"><i class="fa fa-quote-left testimonial_fa" aria-hidden="true"></i></button>
+                                    Launchpad7 is one of the few platforms engaged truly in developing and nurturing a new generations of Entrepreneurs.
+                                    Its a great great place to work, learn and excel.
+
+
+                                    <button style="border: none;"><i class="fa fa-quote-right testimonial_fa" aria-hidden="true"></i></button>
+                                </p>
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                        <img src="~/Images/member-img-4.jpg" class="img-responsive" style="width: 80px">
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <h4><strong>Ghulam Shabbir</strong></h4>
+                                        <p class="testimonial_subtitle">
+                                            <span>Momentum Private Limited</span><br>
+                                            <span>COO</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="controls testimonial_control pull-right">
+                        <a class="left fa fa-chevron-left btn btn-default testimonial_btn" href="#memberSlider"
+                           data-slide="prev"></a>
+                        <a class="right fa fa-chevron-right btn btn-default testimonial_btn" href="#memberSlider"
+                           data-slide="next"></a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Members Slider Ends-->
+<!--Map Section Starts-->
+<section>
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-xs-6 text-center ">
+                <div class="mapBody">
+                    <h4>Islamabad Office</h4>
+
+                </div>
+                <div class="map map-responsive" style="margin-top: 30px;">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3318.773145326338!2d73.06513271468985!3d33.71481854288443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbf72d82c75ed%3A0x4737e98a8bc4797b!2sLaunchpad7!5e0!3m2!1sen!2s!4v1561532022492!5m2!1sen!2s" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+
+            </div>
+            <div class="col-xs-6  text-center">
+                <div class="mapBody">
+                    <h4>Rawalpindi Office</h4>
+
+                </div>
+                <div class="map map-responsive" style="margin-top: 30px;">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3321.913782254683!2d73.0710973146876!3d33.633477447129934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df94d982dd1ac3%3A0x912f77a1d7080f77!2sLaunchPad7!5e0!3m2!1sen!2s!4v1561532154329!5m2!1sen!2s" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!--Map Section Ends-->
+
+
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script>
+    ////Slider Jquery
+    //$(document).ready(function () {
+    //var flag = true;
+    //    if (flag === true) {
+    //        $('.carousel').carousel();
+    //        $('.carousel').on('slide.bs.carousel', function () {
+    //            $('.carousel-caption').animate({
+    //		        marginLeft: "+=20%",
+    //		        opacity: 0,
+    //              //fontSize: "1px",
+    //	        });
+    //        })
+    //        $('.carousel').on('slid.bs.carousel', function () {
+    //            $('.carousel-caption').animate({
+    //		        marginLeft: 0,
+    //		        opacity: 1,
+    //              //fontSize: "400%",
+    //            }, 700);
+    //            return false;
+    //        })
+    //    flag = false;
+    //    return false;
+    //    }
+    //});
+
+</script>
+<script>
+    $('.carousel[data-type="multi"] .item').each(function () {
+        var next = $(this).next();
+        console.log('hywwwwwww', $(this).next());
+        if (!next.length) {
+            next = $(this).siblings(':first');
+        }
+        next.children(':first-child').clone().appendTo($(this));
+        for (var i = 1; i < 1; i++) {
+            next = next.next();
+            if (!next.length) {
+                next = $(this).siblings(':first');
+            }
+            next.children(':first-child').clone().appendTo($(this));
+        }
+
+    });
+
+</script>
+<script>
+    $(document).ready(function () {
+        //Major Reason Boxes
+        $(".reasonone , .reasontwo, .reasonthree, .reasonfour, .reasonfive, .reasonsix ").mouseover(function () {
+            $(this).css({
+                "background-color": "#CB160E",
+                "border": "2px solid #CB160E",
+            });
+        });
+
+
+        $(".reasonone , .reasontwo, .reasonthree, .reasonfour, .reasonfive, .reasonsix ").mouseleave(function () {
+            $(this).css({
+                "background-color": "white",
+                "border": "2px solid #c3c3c3"
+            });
+        });
+
+
+    });
+</script>
+
+<script>
+    $(document).ready(function () {
+        //Virtual Toggle RWP
+        $("#VirtualToggleRWP").click(function () {
+            var elem = $("#VirtualToggleRWP").text();
+            if (elem == "Show More") {
+                //Stuff to do when btn is in the read more state
+                $("#VirtualToggleRWP").text("Show Less");
+                $("#virtualHideRWP").slideDown();
+                $(".VirtualRWPHeight").css({
+                    'height': '550px',
+                })
+            } else {
+                //Stuff to do when btn is in the read less state
+                $("#VirtualToggleRWP").text("Show More");
+                $("#virtualHideRWP").slideUp();
+                $(".VirtualRWPHeight").css({
+                    'height': '520px',
+                })
+            }
+
+        });
+
+        //Dedicated Toggle RWP
+        $("#DedicatedToggleRWP").click(function () {
+            var elem = $("#DedicatedToggleRWP").text();
+            if (elem == "Show More") {
+                //Stuff to do when btn is in the read more state
+                $("#DedicatedToggleRWP").text("Show Less");
+                $("#DedicatedHideRWP").slideDown();
+                $(".DedicatedRWPHeight").css({
+                    'height': '950px',
+                })
+            } else {
+                //Stuff to do when btn is in the read less state
+                $("#DedicatedToggleRWP").text("Show More");
+                $("#DedicatedHideRWP").slideUp();
+                $(".DedicatedRWPHeight").css({
+                    'height': '520px',
+                })
+            }
+        });
+        //Private Office Toggle RWP
+        $("#poToggleRWP").click(function () {
+            var elem = $("#poToggleRWP").text();
+            if (elem == "Show More") {
+                //Stuff to do when btn is in the read more state
+                $("#poToggleRWP").text("Show Less");
+                $("#poHideRWP").slideDown();
+                $(".PO6RWPHeight").css({
+                    'height': '1010px',
+                })
+            } else {
+                //Stuff to do when btn is in the read less state
+                $("#poToggleRWP").text("Show More");
+                $("#poHideRWP").slideUp();
+                $(".PO6RWPHeight").css({
+                    'height': '520px',
+                })
+            }
+        });
+        //Private Office-1 Toggle RWP
+        $("#po1ToggleRWP").click(function () {
+            var elem = $("#po1ToggleRWP").text();
+            if (elem == "Show More") {
+                //Stuff to do when btn is in the read more state
+                $("#po1ToggleRWP").text("Show Less");
+                $("#po1HideRWP").slideDown();
+                $(".PO12RWPHeight").css({
+                    'height': '1010px',
+                })
+            } else {
+                //Stuff to do when btn is in the read less state
+                $("#po1ToggleRWP").text("Show More");
+                $("#po1HideRWP").slideUp();
+                $(".PO12RWPHeight").css({
+                    'height': '520px',
+                })
+            }
+        });
+        //Event Access Toggle RWP
+        $("#eaToggleRWP").click(function () {
+            var elem = $("#eaToggleRWP").text();
+            if (elem == "Show More") {
+                //Stuff to do when btn is in the read more state
+                $("#eaToggleRWP").text("Show Less");
+                $("#eaHideRWP").slideDown();
+                $(".EventRWPHeight").css({
+                    'height': '830px',
+                })
+            } else {
+                //Stuff to do when btn is in the read less state
+                $("#eaToggleRWP").text("Show More");
+                $("#eaHideRWP").slideUp();
+                $(".EventRWPHeight").css({
+                    'height': '520px',
+                })
+            }
+        });
+
+
+        //Virtual Toggle ISD
+        $("#virtualToggleISD").click(function () {
+            var elem = $("#virtualToggleISD").text();
+            if (elem == "Show More") {
+                //Stuff to do when btn is in the read more state
+                $("#virtualToggleISD").text("Show Less");
+                $("#virtualHideISD").slideDown();
+                $(".VirtualISDHeight").css({
+                    'height': '550px',
+                })
+            } else {
+                //Stuff to do when btn is in the read less state
+                $("#virtualToggleISD").text("Show More");
+                $("#virtualHideISD").slideUp();
+                $(".VirtualISDHeight").css({
+                    'height': '520px',
+                })
+            }
+        });
+        //Dedicated Toggle ISD
+        $("#DedicatedToggleISD").click(function () {
+            var elem = $("#DedicatedToggleISD").text();
+            if (elem == "Show More") {
+                //Stuff to do when btn is in the read more state
+                $("#DedicatedToggleISD").text("Show Less");
+                $("#DedicatedHideISD").slideDown();
+                $(".DedicatedISDHeight").css({
+                    'height': '950px',
+                })
+            } else {
+                //Stuff to do when btn is in the read less state
+                $("#DedicatedToggleISD").text("Show More");
+                $("#DedicatedHideISD").slideUp();
+                $(".DedicatedISDHeight").css({
+                    'height': '520px',
+                })
+            }
+        });
+        //Private Office Toggle ISD
+        $("#poToggleISD").click(function () {
+            var elem = $("#poToggleISD").text();
+            if (elem == "Show More") {
+                //Stuff to do when btn is in the read more state
+                $("#poToggleISD").text("Show Less");
+                $("#poHideISD").slideDown();
+                $(".PO6ISDHeight").css({
+                    'height': '1010px',
+                })
+            } else {
+                //Stuff to do when btn is in the read less state
+                $("#poToggleISD").text("Show More");
+                $("#poHideISD").slideUp();
+                $(".PO6ISDHeight").css({
+                    'height': '520px',
+                })
+            }
+        });
+        //Private Office-1 Toggle ISD
+        $("#po1ToggleISD").click(function () {
+            var elem = $("#po1ToggleISD").text();
+            if (elem == "Show More") {
+                //Stuff to do when btn is in the read more state
+                $("#po1ToggleISD").text("Show Less");
+                $("#po1HideISD").slideDown();
+                $(".PO12ISDHeight").css({
+                    'height': '1010px',
+                })
+            } else {
+                //Stuff to do when btn is in the read less state
+                $("#po1ToggleISD").text("Show More");
+                $("#po1HideISD").slideUp();
+                $(".PO12ISDHeight").css({
+                    'height': '520px',
+                })
+            }
+        });
+        //Event Access Toggle ISD
+        $("#eaToggleISD").click(function () {
+            var elem = $("#eaToggleISD").text();
+            if (elem == "Show More") {
+                //Stuff to do when btn is in the read more state
+                $("#eaToggleISD").text("Show Less");
+                $("#eaHideISD").slideDown();
+                $(".EventISDHeight").css({
+                    'height': '830px',
+                })
+            } else {
+                //Stuff to do when btn is in the read less state
+                $("#eaToggleISD").text("Show More");
+                $("#eaHideISD").slideUp();
+                $(".EventISDHeight").css({
+                    'height': '520px',
+                })
+            }
+        });
+
+
+
+    });
+</script>

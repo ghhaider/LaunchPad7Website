@@ -1,0 +1,46 @@
+﻿@model Launchpad7New.Areas.Admin.Models.Event
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout1.cshtml";
+}
+
+
+<div class="container">
+    <div class="col-12 mb-5">
+        <h2>Event Detail</h2>
+
+        <p>
+            @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+            @Html.ActionLink("Back to Events List", "Index")
+        </p>
+    </div>
+    <div class="row mt-5">
+        <div class="col-12">
+            <label class="col-md-3 col-12">Event Name: </label>
+            <p class="col-md-9 col-12"> @Html.DisplayFor(model => model.Name)</p>
+            <label class="col-md-3 col-12">Event Location: </label>
+            <p class="col-md-9 col-12"> @Html.DisplayFor(model => model.Location)</p>
+            <label class="col-md-3 col-12">Event Date: </label>
+            <p class="col-md-9 col-12">  @Html.DisplayFor(model => model.Date)</p>
+            <label class="col-md-3 col-12">Event Time: </label>
+            <p class="col-md-9 col-12">  @Html.DisplayFor(model => model.Time)</p>
+            <label class="col-md-3 col-12">Event Status: </label>
+            <p class="col-md-9 col-12">  @Html.DisplayFor(model => model.IsActive)</p>
+            <label class="col-md-3 col-12">Event Description: </label>
+            <p class="col-md-9 col-12"> @Html.DisplayFor(model => model.MoreDetails)</p>
+            <label class="col-md-3 col-12">Event Registeration Link: </label>
+            <p class="col-md-9 col-12"> @Html.DisplayFor(model => model.Register)</p>
+            <label class="col-md-3 col-12">Event Location: </label>
+            <p class="col-md-9 col-12">  <img src="~/Images/Avatar/Event/@Model.Image"  class="img-responsive img-responsive" style="width:300px;" /></p>
+
+
+
+        </div>
+    </div>
+
+</div>
+
+
+   
+

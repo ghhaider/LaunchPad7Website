@@ -1,0 +1,77 @@
+﻿@{
+    ViewBag.Title = "Memberships List";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<!--Promotions Starts-->
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-12 text-center">
+            <h2>Promotions</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="currentOfferImage text-center">
+                <span class="label label-primary">Current Offer</span>
+                <a href="https://urlzs.com/LS2Zs" target="_blank">   <img src="~/Images/offer-main.jpg" class="img-responsive" /></a>
+
+            </div>
+            <div class="currentOfferBody">
+                <p>Are you a Freelancer or #Startup looking for a better co-working space where you can thrive? Look no further than LaunchPad7.</p>
+                <a href="https://urlzs.com/LS2Zs" target="_blank" class="btn btn-warning">View Details</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="subOffers">
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="subOffersImage text-center">
+                    <span class="label label-primary">Previous Offer</span>
+                    <a href="https://urlzs.com/LS2Zs"><img src="~/Images/promotions/offer-1.jpeg" class="img-responsive img-fluid" /></a>
+                    <a href="https://urlzs.com/LS2Zs"> <h4>Offer 2</h4></a>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="subOffersImage text-center">
+                    <span class="label label-primary">Previous Offer</span>
+                    <a href="https://urlzs.com/LS2Zs"><img src="~/Images/promotions/offer-2.jpeg" class="img-responsive img-fluid" /></a>
+                    <a href="https://urlzs.com/LS2Zs"> <h4>Offer 3</h4></a>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="subOffersImage text-center">
+                    <span class="label label-primary">Previous Offer</span>
+                    <a href="https://urlzs.com/LS2Zs"><img src="~/Images/promotions/offer-3.jpeg" class="img-responsive img-fluid" style="width:260px; height: 177px;" /></a>
+                    <a href="https://urlzs.com/LS2Zs"> <h4>Offer 4</h4></a>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="subOffersImage text-center">
+                    <span class="label label-primary">Previous Offer</span>
+                    <a href="https://urlzs.com/LS2Zs"><img src="~/Images/promotions/space-promotion-1.jpg" class="img-responsive img-fluid" /></a>
+                    <a href="https://urlzs.com/LS2Zs"> <h4>Offer 5</h4></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+        <!--Promotions Ends-->
+
+
+
+        <script>
+            $('.carousel[data-type="multi"] .item').each(function () {
+                var next = $(this).next();
+                if (!next.length) {
+                    next = $(this).siblings(':first');
+                }
+                next.children(':first-child').clone().appendTo($(this));
+
+
+            });
+        </script>

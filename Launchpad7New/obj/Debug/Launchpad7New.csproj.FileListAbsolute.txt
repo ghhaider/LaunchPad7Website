@@ -1,0 +1,362 @@
+D:\projects\Launchpadnew\Launchpad7New\Launchpad7New\bin\Launchpad7New.dll.config
+D:\projects\Launchpadnew\Launchpad7New\Launchpad7New\bin\Launchpad7New.dll
+D:\projects\Launchpadnew\Launchpad7New\Launchpad7New\bin\Launchpad7New.pdb
+D:\projects\Launchpadnew\Launchpad7New\Launchpad7New\bin\Antlr3.Runtime.dll
+D:\projects\Launchpadnew\Launchpad7New\Launchpad7New\bin\AutoMapper.dll
+D:\projects\Launchpadnew\Launchpad7New\Launchpad7New\bin\Codebar.dll
+D:\projects\Launchpadnew\Launchpad7New\Launchpad7New\bin\EntityFramework.dll
+D:\projects\Launchpadnew\Launchpad7New\Launchpad7New\bin\EntityFramework.SqlServer.dll
+D:\projects\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.AspNet.Identity.Core.dll
+D:\projects\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\projects\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\projects\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.dll
+D:\projects\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\projects\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.Cookies.dll
+D:\projects\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.dll
+D:\projects\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.Facebook.dll
+D:\projects\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.Google.dll
+D:\projects\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\projects\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.OAuth.dll
+D:\projects\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.Twitter.dll
+D:\projects\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.Web.Infrastructure.dll
+D:\projects\Launchpadnew\Launchpad7New\Launchpad7New\bin\Newtonsoft.Json.dll
+D:\projects\Launchpadnew\Launchpad7New\Launchpad7New\bin\Owin.dll
+D:\projects\Launchpadnew\Launchpad7New\Launchpad7New\bin\System.Web.Helpers.dll
+D:\projects\Launchpadnew\Launchpad7New\Launchpad7New\bin\System.Web.Mvc.dll
+D:\projects\Launchpadnew\Launchpad7New\Launchpad7New\bin\System.Web.Optimization.dll
+D:\projects\Launchpadnew\Launchpad7New\Launchpad7New\bin\System.Web.Razor.dll
+D:\projects\Launchpadnew\Launchpad7New\Launchpad7New\bin\System.Web.WebPages.Deployment.dll
+D:\projects\Launchpadnew\Launchpad7New\Launchpad7New\bin\System.Web.WebPages.dll
+D:\projects\Launchpadnew\Launchpad7New\Launchpad7New\bin\System.Web.WebPages.Razor.dll
+D:\projects\Launchpadnew\Launchpad7New\Launchpad7New\bin\WebGrease.dll
+D:\projects\Launchpadnew\Launchpad7New\Launchpad7New\bin\Codebar.pdb
+D:\projects\Launchpadnew\Launchpad7New\Launchpad7New\bin\AutoMapper.xml
+D:\projects\Launchpadnew\Launchpad7New\Launchpad7New\bin\System.Web.Helpers.xml
+D:\projects\Launchpadnew\Launchpad7New\Launchpad7New\bin\System.Web.Mvc.xml
+D:\projects\Launchpadnew\Launchpad7New\Launchpad7New\bin\System.Web.Optimization.xml
+D:\projects\Launchpadnew\Launchpad7New\Launchpad7New\bin\System.Web.Razor.xml
+D:\projects\Launchpadnew\Launchpad7New\Launchpad7New\bin\System.Web.WebPages.xml
+D:\projects\Launchpadnew\Launchpad7New\Launchpad7New\bin\System.Web.WebPages.Deployment.xml
+D:\projects\Launchpadnew\Launchpad7New\Launchpad7New\bin\System.Web.WebPages.Razor.xml
+D:\projects\Launchpadnew\Launchpad7New\Launchpad7New\bin\Antlr3.Runtime.pdb
+D:\projects\Launchpadnew\Launchpad7New\Launchpad7New\bin\Newtonsoft.Json.xml
+D:\projects\Launchpadnew\Launchpad7New\Launchpad7New\bin\EntityFramework.xml
+D:\projects\Launchpadnew\Launchpad7New\Launchpad7New\bin\EntityFramework.SqlServer.xml
+D:\projects\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.AspNet.Identity.Core.xml
+D:\projects\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\projects\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\projects\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.xml
+D:\projects\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\projects\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.xml
+D:\projects\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.Facebook.xml
+D:\projects\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.Cookies.xml
+D:\projects\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.OAuth.xml
+D:\projects\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.Google.xml
+D:\projects\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.Twitter.xml
+D:\projects\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\projects\Launchpadnew\Launchpad7New\Launchpad7New\obj\Debug\Launchpad7New.csprojResolveAssemblyReference.cache
+D:\projects\Launchpadnew\Launchpad7New\Launchpad7New\obj\Debug\Launchpad7New.dll
+D:\projects\Launchpadnew\Launchpad7New\Launchpad7New\obj\Debug\Launchpad7New.pdb
+C:\Users\waqar.kiyani\Documents\My Received Files\MS-DC-11\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\Launchpad7New.dll.config
+C:\Users\waqar.kiyani\Documents\My Received Files\MS-DC-11\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\Launchpad7New.dll
+C:\Users\waqar.kiyani\Documents\My Received Files\MS-DC-11\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\Launchpad7New.pdb
+C:\Users\waqar.kiyani\Documents\My Received Files\MS-DC-11\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\Antlr3.Runtime.dll
+C:\Users\waqar.kiyani\Documents\My Received Files\MS-DC-11\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\AutoMapper.dll
+C:\Users\waqar.kiyani\Documents\My Received Files\MS-DC-11\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\Codebar.dll
+C:\Users\waqar.kiyani\Documents\My Received Files\MS-DC-11\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\EntityFramework.dll
+C:\Users\waqar.kiyani\Documents\My Received Files\MS-DC-11\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\EntityFramework.SqlServer.dll
+C:\Users\waqar.kiyani\Documents\My Received Files\MS-DC-11\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\waqar.kiyani\Documents\My Received Files\MS-DC-11\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\waqar.kiyani\Documents\My Received Files\MS-DC-11\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\waqar.kiyani\Documents\My Received Files\MS-DC-11\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.dll
+C:\Users\waqar.kiyani\Documents\My Received Files\MS-DC-11\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\waqar.kiyani\Documents\My Received Files\MS-DC-11\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\waqar.kiyani\Documents\My Received Files\MS-DC-11\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.dll
+C:\Users\waqar.kiyani\Documents\My Received Files\MS-DC-11\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\waqar.kiyani\Documents\My Received Files\MS-DC-11\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\waqar.kiyani\Documents\My Received Files\MS-DC-11\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\waqar.kiyani\Documents\My Received Files\MS-DC-11\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\waqar.kiyani\Documents\My Received Files\MS-DC-11\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\waqar.kiyani\Documents\My Received Files\MS-DC-11\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\waqar.kiyani\Documents\My Received Files\MS-DC-11\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\Newtonsoft.Json.dll
+C:\Users\waqar.kiyani\Documents\My Received Files\MS-DC-11\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\Owin.dll
+C:\Users\waqar.kiyani\Documents\My Received Files\MS-DC-11\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\System.Web.Helpers.dll
+C:\Users\waqar.kiyani\Documents\My Received Files\MS-DC-11\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\System.Web.Mvc.dll
+C:\Users\waqar.kiyani\Documents\My Received Files\MS-DC-11\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\System.Web.Optimization.dll
+C:\Users\waqar.kiyani\Documents\My Received Files\MS-DC-11\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\System.Web.Razor.dll
+C:\Users\waqar.kiyani\Documents\My Received Files\MS-DC-11\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\System.Web.WebPages.Deployment.dll
+C:\Users\waqar.kiyani\Documents\My Received Files\MS-DC-11\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\System.Web.WebPages.dll
+C:\Users\waqar.kiyani\Documents\My Received Files\MS-DC-11\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\System.Web.WebPages.Razor.dll
+C:\Users\waqar.kiyani\Documents\My Received Files\MS-DC-11\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\WebGrease.dll
+C:\Users\waqar.kiyani\Documents\My Received Files\MS-DC-11\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\Codebar.pdb
+C:\Users\waqar.kiyani\Documents\My Received Files\MS-DC-11\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\AutoMapper.xml
+C:\Users\waqar.kiyani\Documents\My Received Files\MS-DC-11\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\System.Web.Helpers.xml
+C:\Users\waqar.kiyani\Documents\My Received Files\MS-DC-11\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\System.Web.Mvc.xml
+C:\Users\waqar.kiyani\Documents\My Received Files\MS-DC-11\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\System.Web.Optimization.xml
+C:\Users\waqar.kiyani\Documents\My Received Files\MS-DC-11\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\System.Web.Razor.xml
+C:\Users\waqar.kiyani\Documents\My Received Files\MS-DC-11\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\System.Web.WebPages.xml
+C:\Users\waqar.kiyani\Documents\My Received Files\MS-DC-11\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\System.Web.WebPages.Deployment.xml
+C:\Users\waqar.kiyani\Documents\My Received Files\MS-DC-11\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\System.Web.WebPages.Razor.xml
+C:\Users\waqar.kiyani\Documents\My Received Files\MS-DC-11\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\Antlr3.Runtime.pdb
+C:\Users\waqar.kiyani\Documents\My Received Files\MS-DC-11\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\Newtonsoft.Json.xml
+C:\Users\waqar.kiyani\Documents\My Received Files\MS-DC-11\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\EntityFramework.xml
+C:\Users\waqar.kiyani\Documents\My Received Files\MS-DC-11\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\EntityFramework.SqlServer.xml
+C:\Users\waqar.kiyani\Documents\My Received Files\MS-DC-11\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\waqar.kiyani\Documents\My Received Files\MS-DC-11\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\waqar.kiyani\Documents\My Received Files\MS-DC-11\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\waqar.kiyani\Documents\My Received Files\MS-DC-11\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.xml
+C:\Users\waqar.kiyani\Documents\My Received Files\MS-DC-11\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\waqar.kiyani\Documents\My Received Files\MS-DC-11\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.xml
+C:\Users\waqar.kiyani\Documents\My Received Files\MS-DC-11\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\waqar.kiyani\Documents\My Received Files\MS-DC-11\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\waqar.kiyani\Documents\My Received Files\MS-DC-11\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\waqar.kiyani\Documents\My Received Files\MS-DC-11\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\waqar.kiyani\Documents\My Received Files\MS-DC-11\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\waqar.kiyani\Documents\My Received Files\MS-DC-11\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\waqar.kiyani\Documents\My Received Files\MS-DC-11\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\obj\Debug\Launchpad7New.csprojResolveAssemblyReference.cache
+C:\Users\waqar.kiyani\Documents\My Received Files\MS-DC-11\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\obj\Debug\Launchpad7New.dll
+C:\Users\waqar.kiyani\Documents\My Received Files\MS-DC-11\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\obj\Debug\Launchpad7New.pdb
+G:\Users\waqar.kiyani\projects\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\Launchpad7New.dll.config
+G:\Users\waqar.kiyani\projects\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\Launchpad7New.dll
+G:\Users\waqar.kiyani\projects\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\Launchpad7New.pdb
+G:\Users\waqar.kiyani\projects\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\Antlr3.Runtime.dll
+G:\Users\waqar.kiyani\projects\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\AutoMapper.dll
+G:\Users\waqar.kiyani\projects\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\Codebar.dll
+G:\Users\waqar.kiyani\projects\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\EntityFramework.dll
+G:\Users\waqar.kiyani\projects\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\EntityFramework.SqlServer.dll
+G:\Users\waqar.kiyani\projects\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.AspNet.Identity.Core.dll
+G:\Users\waqar.kiyani\projects\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+G:\Users\waqar.kiyani\projects\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.AspNet.Identity.Owin.dll
+G:\Users\waqar.kiyani\projects\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.dll
+G:\Users\waqar.kiyani\projects\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Host.SystemWeb.dll
+G:\Users\waqar.kiyani\projects\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.Cookies.dll
+G:\Users\waqar.kiyani\projects\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.dll
+G:\Users\waqar.kiyani\projects\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.Facebook.dll
+G:\Users\waqar.kiyani\projects\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.Google.dll
+G:\Users\waqar.kiyani\projects\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+G:\Users\waqar.kiyani\projects\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.OAuth.dll
+G:\Users\waqar.kiyani\projects\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.Twitter.dll
+G:\Users\waqar.kiyani\projects\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.Web.Infrastructure.dll
+G:\Users\waqar.kiyani\projects\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\Newtonsoft.Json.dll
+G:\Users\waqar.kiyani\projects\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\Owin.dll
+G:\Users\waqar.kiyani\projects\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\System.Web.Helpers.dll
+G:\Users\waqar.kiyani\projects\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\System.Web.Mvc.dll
+G:\Users\waqar.kiyani\projects\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\System.Web.Optimization.dll
+G:\Users\waqar.kiyani\projects\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\System.Web.Razor.dll
+G:\Users\waqar.kiyani\projects\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\System.Web.WebPages.Deployment.dll
+G:\Users\waqar.kiyani\projects\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\System.Web.WebPages.dll
+G:\Users\waqar.kiyani\projects\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\System.Web.WebPages.Razor.dll
+G:\Users\waqar.kiyani\projects\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\WebGrease.dll
+G:\Users\waqar.kiyani\projects\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\Codebar.pdb
+G:\Users\waqar.kiyani\projects\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\AutoMapper.xml
+G:\Users\waqar.kiyani\projects\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\System.Web.Helpers.xml
+G:\Users\waqar.kiyani\projects\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\System.Web.Mvc.xml
+G:\Users\waqar.kiyani\projects\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\System.Web.Optimization.xml
+G:\Users\waqar.kiyani\projects\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\System.Web.Razor.xml
+G:\Users\waqar.kiyani\projects\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\System.Web.WebPages.xml
+G:\Users\waqar.kiyani\projects\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\System.Web.WebPages.Deployment.xml
+G:\Users\waqar.kiyani\projects\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\System.Web.WebPages.Razor.xml
+G:\Users\waqar.kiyani\projects\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\Antlr3.Runtime.pdb
+G:\Users\waqar.kiyani\projects\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\Newtonsoft.Json.xml
+G:\Users\waqar.kiyani\projects\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\EntityFramework.xml
+G:\Users\waqar.kiyani\projects\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\EntityFramework.SqlServer.xml
+G:\Users\waqar.kiyani\projects\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.AspNet.Identity.Core.xml
+G:\Users\waqar.kiyani\projects\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.AspNet.Identity.Owin.xml
+G:\Users\waqar.kiyani\projects\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+G:\Users\waqar.kiyani\projects\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.xml
+G:\Users\waqar.kiyani\projects\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Host.SystemWeb.xml
+G:\Users\waqar.kiyani\projects\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.xml
+G:\Users\waqar.kiyani\projects\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.Facebook.xml
+G:\Users\waqar.kiyani\projects\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.Cookies.xml
+G:\Users\waqar.kiyani\projects\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.OAuth.xml
+G:\Users\waqar.kiyani\projects\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.Google.xml
+G:\Users\waqar.kiyani\projects\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.Twitter.xml
+G:\Users\waqar.kiyani\projects\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+G:\Users\waqar.kiyani\projects\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\obj\Debug\Launchpad7New.csprojResolveAssemblyReference.cache
+G:\Users\waqar.kiyani\projects\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\obj\Debug\Launchpad7New.dll
+G:\Users\waqar.kiyani\projects\Launchpadnew\Launchpadnew\Launchpad7New\Launchpad7New\obj\Debug\Launchpad7New.pdb
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Launchpad7New\bin\Launchpad7New.dll.config
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Launchpad7New\bin\Launchpad7New.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Launchpad7New\bin\Launchpad7New.pdb
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Launchpad7New\bin\Antlr3.Runtime.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Launchpad7New\bin\AutoMapper.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Launchpad7New\bin\Codebar.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Launchpad7New\bin\EntityFramework.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Launchpad7New\bin\EntityFramework.SqlServer.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Launchpad7New\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Launchpad7New\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Launchpad7New\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.Google.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Launchpad7New\bin\Microsoft.Web.Infrastructure.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Launchpad7New\bin\Newtonsoft.Json.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Launchpad7New\bin\Owin.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Launchpad7New\bin\System.Web.Helpers.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Launchpad7New\bin\System.Web.Mvc.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Launchpad7New\bin\System.Web.Optimization.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Launchpad7New\bin\System.Web.Razor.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Launchpad7New\bin\System.Web.WebPages.Deployment.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Launchpad7New\bin\System.Web.WebPages.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Launchpad7New\bin\System.Web.WebPages.Razor.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Launchpad7New\bin\WebGrease.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Launchpad7New\bin\Codebar.pdb
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Launchpad7New\bin\AutoMapper.xml
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Launchpad7New\bin\System.Web.Helpers.xml
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Launchpad7New\bin\System.Web.Mvc.xml
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Launchpad7New\bin\System.Web.Optimization.xml
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Launchpad7New\bin\System.Web.Razor.xml
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Launchpad7New\bin\System.Web.WebPages.xml
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Launchpad7New\bin\System.Web.WebPages.Deployment.xml
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Launchpad7New\bin\System.Web.WebPages.Razor.xml
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Launchpad7New\bin\Antlr3.Runtime.pdb
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Launchpad7New\bin\Newtonsoft.Json.xml
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Launchpad7New\bin\EntityFramework.xml
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Launchpad7New\bin\EntityFramework.SqlServer.xml
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Launchpad7New\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Launchpad7New\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Launchpad7New\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.xml
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.xml
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.Google.xml
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Launchpad7New\obj\Debug\Launchpad7New.csprojAssemblyReference.cache
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Launchpad7New\obj\Debug\Launchpad7New.csproj.CoreCompileInputs.cache
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Launchpad7New\obj\Debug\Launchpad7New.csproj.CopyComplete
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Launchpad7New\obj\Debug\Launchpad7New.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Launchpad7New\obj\Debug\Launchpad7New.pdb
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-280619 - Updated\Launchpad7New\Launchpad7New\bin\Launchpad7New.dll.config
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-280619 - Updated\Launchpad7New\Launchpad7New\bin\Launchpad7New.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-280619 - Updated\Launchpad7New\Launchpad7New\bin\Launchpad7New.pdb
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-280619 - Updated\Launchpad7New\Launchpad7New\bin\Antlr3.Runtime.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-280619 - Updated\Launchpad7New\Launchpad7New\bin\AutoMapper.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-280619 - Updated\Launchpad7New\Launchpad7New\bin\Codebar.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-280619 - Updated\Launchpad7New\Launchpad7New\bin\EntityFramework.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-280619 - Updated\Launchpad7New\Launchpad7New\bin\EntityFramework.SqlServer.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-280619 - Updated\Launchpad7New\Launchpad7New\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-280619 - Updated\Launchpad7New\Launchpad7New\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-280619 - Updated\Launchpad7New\Launchpad7New\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-280619 - Updated\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-280619 - Updated\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-280619 - Updated\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-280619 - Updated\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-280619 - Updated\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-280619 - Updated\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.Google.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-280619 - Updated\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-280619 - Updated\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-280619 - Updated\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-280619 - Updated\Launchpad7New\Launchpad7New\bin\Microsoft.Web.Infrastructure.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-280619 - Updated\Launchpad7New\Launchpad7New\bin\Newtonsoft.Json.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-280619 - Updated\Launchpad7New\Launchpad7New\bin\Owin.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-280619 - Updated\Launchpad7New\Launchpad7New\bin\System.Web.Helpers.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-280619 - Updated\Launchpad7New\Launchpad7New\bin\System.Web.Mvc.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-280619 - Updated\Launchpad7New\Launchpad7New\bin\System.Web.Optimization.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-280619 - Updated\Launchpad7New\Launchpad7New\bin\System.Web.Razor.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-280619 - Updated\Launchpad7New\Launchpad7New\bin\System.Web.WebPages.Deployment.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-280619 - Updated\Launchpad7New\Launchpad7New\bin\System.Web.WebPages.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-280619 - Updated\Launchpad7New\Launchpad7New\bin\System.Web.WebPages.Razor.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-280619 - Updated\Launchpad7New\Launchpad7New\bin\WebGrease.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-280619 - Updated\Launchpad7New\Launchpad7New\bin\Codebar.pdb
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-280619 - Updated\Launchpad7New\Launchpad7New\bin\AutoMapper.xml
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-280619 - Updated\Launchpad7New\Launchpad7New\bin\System.Web.Helpers.xml
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-280619 - Updated\Launchpad7New\Launchpad7New\bin\System.Web.Mvc.xml
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-280619 - Updated\Launchpad7New\Launchpad7New\bin\System.Web.Optimization.xml
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-280619 - Updated\Launchpad7New\Launchpad7New\bin\System.Web.Razor.xml
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-280619 - Updated\Launchpad7New\Launchpad7New\bin\System.Web.WebPages.xml
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-280619 - Updated\Launchpad7New\Launchpad7New\bin\System.Web.WebPages.Deployment.xml
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-280619 - Updated\Launchpad7New\Launchpad7New\bin\System.Web.WebPages.Razor.xml
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-280619 - Updated\Launchpad7New\Launchpad7New\bin\Antlr3.Runtime.pdb
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-280619 - Updated\Launchpad7New\Launchpad7New\bin\Newtonsoft.Json.xml
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-280619 - Updated\Launchpad7New\Launchpad7New\bin\EntityFramework.xml
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-280619 - Updated\Launchpad7New\Launchpad7New\bin\EntityFramework.SqlServer.xml
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-280619 - Updated\Launchpad7New\Launchpad7New\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-280619 - Updated\Launchpad7New\Launchpad7New\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-280619 - Updated\Launchpad7New\Launchpad7New\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-280619 - Updated\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.xml
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-280619 - Updated\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-280619 - Updated\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.xml
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-280619 - Updated\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-280619 - Updated\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-280619 - Updated\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-280619 - Updated\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.Google.xml
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-280619 - Updated\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-280619 - Updated\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-280619 - Updated\Launchpad7New\Launchpad7New\obj\Debug\Launchpad7New.csprojAssemblyReference.cache
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-280619 - Updated\Launchpad7New\Launchpad7New\obj\Debug\Launchpad7New.csproj.CoreCompileInputs.cache
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-280619 - Updated\Launchpad7New\Launchpad7New\obj\Debug\Launchpad7New.csproj.CopyComplete
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-280619 - Updated\Launchpad7New\Launchpad7New\obj\Debug\Launchpad7New.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-280619 - Updated\Launchpad7New\Launchpad7New\obj\Debug\Launchpad7New.pdb
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Launchpad7New\bin\Launchpad7New.dll.config
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Launchpad7New\bin\Launchpad7New.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Launchpad7New\bin\Launchpad7New.pdb
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Launchpad7New\bin\Antlr3.Runtime.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Launchpad7New\bin\AutoMapper.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Launchpad7New\bin\Codebar.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Launchpad7New\bin\EntityFramework.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Launchpad7New\bin\EntityFramework.SqlServer.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Launchpad7New\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Launchpad7New\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Launchpad7New\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.Google.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Launchpad7New\bin\Microsoft.Web.Infrastructure.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Launchpad7New\bin\Newtonsoft.Json.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Launchpad7New\bin\Owin.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Launchpad7New\bin\System.Web.Helpers.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Launchpad7New\bin\System.Web.Mvc.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Launchpad7New\bin\System.Web.Optimization.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Launchpad7New\bin\System.Web.Razor.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Launchpad7New\bin\System.Web.WebPages.Deployment.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Launchpad7New\bin\System.Web.WebPages.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Launchpad7New\bin\System.Web.WebPages.Razor.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Launchpad7New\bin\WebGrease.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Launchpad7New\bin\Codebar.pdb
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Launchpad7New\bin\AutoMapper.xml
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Launchpad7New\bin\System.Web.Helpers.xml
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Launchpad7New\bin\System.Web.Mvc.xml
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Launchpad7New\bin\System.Web.Optimization.xml
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Launchpad7New\bin\System.Web.Razor.xml
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Launchpad7New\bin\System.Web.WebPages.xml
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Launchpad7New\bin\System.Web.WebPages.Deployment.xml
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Launchpad7New\bin\System.Web.WebPages.Razor.xml
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Launchpad7New\bin\Antlr3.Runtime.pdb
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Launchpad7New\bin\Newtonsoft.Json.xml
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Launchpad7New\bin\EntityFramework.xml
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Launchpad7New\bin\EntityFramework.SqlServer.xml
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Launchpad7New\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Launchpad7New\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Launchpad7New\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.xml
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.xml
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.Google.xml
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Launchpad7New\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Launchpad7New\obj\Debug\Launchpad7New.csprojAssemblyReference.cache
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Launchpad7New\obj\Debug\Launchpad7New.csproj.CoreCompileInputs.cache
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Launchpad7New\obj\Debug\Launchpad7New.csproj.CopyComplete
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Launchpad7New\obj\Debug\Launchpad7New.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Launchpad7New\obj\Debug\Launchpad7New.pdb
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Launchpad7New\obj\Debug\Launchpad7New.Migrations.contactus.resources
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Launchpad7New\obj\Debug\Launchpad7New.csproj.GenerateResource.cache

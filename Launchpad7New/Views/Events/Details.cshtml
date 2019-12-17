@@ -1,0 +1,109 @@
+﻿@model Launchpad7New.Areas.Admin.Models.Event
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    .glyphicon {
+    top: 0;
+}
+</style>
+<div class="eventbbanerbg"></div>
+<div class="Eventdetailspage">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="~/Images/Avatar/Event/@Html.DisplayFor(model => model.Image)" class="img-responsive">
+                @*<a href="" class="btn btn-danger jointhiseventbtn">Join This Event</a>*@
+            </div>
+            <div class="col-md-6 detailseventlp">
+                <h2>@Html.DisplayFor(model => model.Name)</h2>
+               
+                    <h5>Start</h5>
+                    <div><span class="glyphicon glyphicon-calendar"> </span>@Model.Date.ToString("dd-MMM-yyyy") <span class="glyphicon glyphicon-time"> </span> @Html.DisplayFor(model => model.Time)</div> 
+                    <h5>Location</h5>
+                    <p>@Html.DisplayFor(model => model.Location)</p>
+                    <h5>Email</h5>
+                    <a href="mailto:info@launchpad7.com">info@launchpad7.com</a>
+                    <p class="eventdescription">@Html.DisplayFor(model => model.MoreDetails)</p>
+                <a href="@Html.DisplayFor(model => model.Register)" class=" btn btn-danger jointhiseventbtn">Join This Event</a>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+@*<div>
+
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+           
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Location)
+        </dt>
+
+        <dd>
+           
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Date)
+        </dt>
+
+        <dd>
+           
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Time)
+        </dt>
+
+        <dd>
+           
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Image)
+        </dt>
+
+        <dd>
+           
+        </dd>
+
+        <dt>
+       
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MoreDetails)
+        </dt>
+
+        <dd>
+           
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Register)
+        </dt>
+
+        <dd>
+           
+        </dd>
+
+    </dl>
+</div>*@
+

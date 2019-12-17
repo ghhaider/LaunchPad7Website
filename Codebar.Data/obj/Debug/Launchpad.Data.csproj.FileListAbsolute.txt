@@ -1,0 +1,28 @@
+D:\projects\Launchpadnew\Launchpad7New\Codebar.Data\bin\Debug\Codebar.Data.dll
+D:\projects\Launchpadnew\Launchpad7New\Codebar.Data\bin\Debug\Codebar.Data.pdb
+D:\projects\Launchpadnew\Launchpad7New\Codebar.Data\bin\Debug\Codebar.dll
+D:\projects\Launchpadnew\Launchpad7New\Codebar.Data\bin\Debug\EntityFramework.dll
+D:\projects\Launchpadnew\Launchpad7New\Codebar.Data\bin\Debug\Codebar.pdb
+D:\projects\Launchpadnew\Launchpad7New\Codebar.Data\bin\Debug\EntityFramework.xml
+D:\projects\Launchpadnew\Launchpad7New\Codebar.Data\obj\Debug\Launchpad.Data.csprojResolveAssemblyReference.cache
+D:\projects\Launchpadnew\Launchpad7New\Codebar.Data\obj\Debug\Codebar.Data.dll
+D:\projects\Launchpadnew\Launchpad7New\Codebar.Data\obj\Debug\Codebar.Data.pdb
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Codebar.Data\bin\Debug\Codebar.Data.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Codebar.Data\bin\Debug\Codebar.Data.pdb
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Codebar.Data\bin\Debug\Codebar.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Codebar.Data\bin\Debug\Codebar.pdb
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Codebar.Data\bin\Debug\EntityFramework.xml
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Codebar.Data\obj\Debug\Launchpad.Data.csprojAssemblyReference.cache
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Codebar.Data\obj\Debug\Launchpad.Data.csproj.CoreCompileInputs.cache
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Codebar.Data\obj\Debug\Launchpad.Data.csproj.CopyComplete
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Codebar.Data\obj\Debug\Codebar.Data.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Append 2nd April 2019\Launchpad7New\Codebar.Data\obj\Debug\Codebar.Data.pdb
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Codebar.Data\bin\Debug\Codebar.Data.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Codebar.Data\bin\Debug\Codebar.Data.pdb
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Codebar.Data\bin\Debug\Codebar.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Codebar.Data\bin\Debug\Codebar.pdb
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Codebar.Data\obj\Debug\Launchpad.Data.csprojAssemblyReference.cache
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Codebar.Data\obj\Debug\Launchpad.Data.csproj.CoreCompileInputs.cache
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Codebar.Data\obj\Debug\Launchpad.Data.csproj.CopyComplete
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Codebar.Data\obj\Debug\Codebar.Data.dll
+D:\Ghulam Haider\0. Office Work\0. Moftak\1. Projects\1. Launchpad7\LP7 Rev-030719\Launchpad7New\Codebar.Data\obj\Debug\Codebar.Data.pdb

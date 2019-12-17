@@ -1,0 +1,4 @@
+D:\projects\Launchpadnew\Launchpad7New\Codebar\bin\Release\Codebar.dll
+D:\projects\Launchpadnew\Launchpad7New\Codebar\bin\Release\Codebar.pdb
+D:\projects\Launchpadnew\Launchpad7New\Codebar\obj\Release\Codebar.dll
+D:\projects\Launchpadnew\Launchpad7New\Codebar\obj\Release\Codebar.pdb

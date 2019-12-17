@@ -1,0 +1,177 @@
+﻿@model Launchpad7New.Areas.Admin.Models.Invoice
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout1.cshtml";
+}
+
+<h2>Create Invoice for Launchpad7 Member</h2>
+
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>Invoice</h4>
+        <hr />
+        
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            <label class="control-label col-md-2">Select Member</label>
+            <div class="col-md-6">
+               @Html.DropDownList("UserId", null, "Select A Member", new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.UserId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.InvoiceNumber, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-6">
+                @Html.EditorFor(model => model.InvoiceNumber, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.InvoiceNumber, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.PaymentMethod, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-6">
+                @Html.DropDownListFor(model => model.PaymentMethod, EnumHelper.GetSelectList(typeof(Launchpad.Enums.PaymentMethod)), "Select Payment method", new { @class = "form-control", @readonly = "readonly" })
+                @Html.ValidationMessageFor(model => model.PaymentMethod, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.PackageId, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-6">
+                @Html.DropDownListFor(m => m.PackageId, (SelectList)ViewBag.pakageslist, "Select Packages", new { @class = "form-control", @readonly = "readonly" })
+                @Html.ValidationMessageFor(model => model.PackageId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Members, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-6">
+                @Html.EditorFor(model => model.Members, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+                @Html.ValidationMessageFor(model => model.Members, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.TotalPrice, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-6">
+                <p id="corporatemsg"></p>
+                @Html.EditorFor(model => model.TotalPrice, new { htmlAttributes = new { @class = "form-control", @readonly="readonly"} })
+                @Html.ValidationMessageFor(model => model.TotalPrice, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.IssueDate, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-6">
+                @Html.TextBoxFor(model => model.IssueDate, "{0:d MMM yyyy}", new { @class = "form-control" } )
+                @Html.ValidationMessageFor(model => model.IssueDate, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Status, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-6">
+                <p style="margin-bottom:0;color:red;font-size:12px;">On Creation Status Should be <b>PENDING</b></p>
+                @Html.DropDownListFor(model => model.Status,  EnumHelper.GetSelectList(typeof(Launchpad.Enums.Status)), "Select Payment Status"   , new { @class = "form-control" })
+                @*@Html.EnumDropDownListFor(model => model.Status, "Select Invoice Status",  new { @class = "form-control" })*@
+                @Html.ValidationMessageFor(model => model.Status, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Comments, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-6">
+                @Html.EditorFor(model => model.Comments, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Comments, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        @*<div class="form-group">
+            @Html.LabelFor(model => model.UpdatedBy, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-6">
+                @Html.EditorFor(model => model.UpdatedBy, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.UpdatedBy, "", new { @class = "text-danger" })
+            </div>
+        </div>*@
+
+        @*<div class="form-group">
+            @Html.LabelFor(model => model.PaymentDate, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-6">
+                @Html.TextBoxFor(model => model.PaymentDate, "{0:d MMM yyyy}", new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.PaymentDate, "", new { @class = "text-danger" })
+            </div>
+        </div>*@
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-6">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-default" })
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    <script type="text/javascript">
+         var nowDate = new Date();
+    var today = new Date(nowDate.getFullYear(), nowDate.getMonth(), nowDate.getDate(), 0, 0, 0, 0);
+        $("#PaymentDate, #IssueDate").datepicker({
+
+            // showOn: "button",
+            //buttonImage: "@Url.Content("~/Content/images/calendar.png")",
+            buttonImageOnly: true,
+            duration: "fast",
+            changeMonth: true,
+            changeYear: true,
+            //format: 'd, M yyyy',
+            constrainInput: true,
+            startDate: today,
+            // maxDate: '0',
+            // minDate: '-5Y',
+            // buttonText: "Select date"
+        });
+</script>
+    <script>
+
+        $("#UserId").change(function () {
+            
+            var Userid = $('#UserId option:selected').val();
+
+            $.ajax({
+                type: "GET",
+                url: '@Url.Action("CalcPkgPrice", "Invoices")',
+                contentType: 'application/json',
+                dataType: "json",
+                data: { "Userid": Userid,},
+               
+                success: function (result) {
+                    var data = JSON.parse(result);
+                    //$("#TotalPrice").val(data.TotalPrice);
+                    $("#PackageId").val(data.PackageId);
+                    if (data.PackageId == 5) {
+                        $("#PackageId").val();
+                        $("#TotalPrice").removeAttr("readonly");
+                        $("#corporatemsg").text("Please Enter Custome price for This Membership").css({'color': 'red', 'margin-bottom': '0'})
+                    }
+                    else {
+                        $("#TotalPrice").val(data.TotalPrice);
+                        $("#TotalPrice").attr("readonly", "readonly");
+                        $("#corporatemsg").text("");
+                    }
+                    $("#Members").val(data.Members);
+                    $("#PaymentMethod").val(data.PaymentMethod);
+                }
+        });
+
+        });
+    </script>
+}

@@ -1,0 +1,97 @@
+﻿
+@{
+    ViewBag.Title = "Daily and Weekely Packages";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="membershipbanner"></div>
+<div class="packagespage">
+    <div class="container">
+        <div class="row">
+                <div class="col-sm-6">
+                   <div class="dailypkgbox">
+                       <h3>Daily Pass</h3>
+                       <h4>1000/-</h4>
+                       <p>Unlimited access to shared workspace</p>
+                   </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="dailypkgbox">
+                        <h3>Weekly Pass</h3>
+                        <h4>5000/-</h4>
+                        <p>Unlimited access to shared workspace</p>
+                    </div>
+                </div>
+            <div class="col-md-6">
+                <h2>schedule a tour</h2>
+                @using (Html.BeginForm("", "", FormMethod.Get, new { id = "PackageForm" }))
+                {
+                    <input type="text" name="cpname" placeholder="Name*" required>
+                    <input type="text" name="cpemail" placeholder="Email*" required>
+                    <input type="number" name="cpphone" placeholder="Phone*" required>
+                    <select class="form-control pkgname" name="pkgname" required>
+                        <option value="">Select Package</option>
+                        <option value="Daily">Daily</option>
+                        <option value="Weekly">Weekly</option>
+                    </select>
+                    <input type="text" name="date" id="StartingDate" placeholder="Select Date" required="required" />
+                    <textarea name="cpmessage" rows="10" placeholder="Comments / Questions*" required></textarea>
+                    <input type="submit" id="askusanythingbtn" class="btn btn-danger pkgbtn" value="Submit">
+                }
+            </div>
+            <div class="col-md-6">
+                <h2>Direction</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3321.913782254637!2d73.07109731410154!3d33.63347744713113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df94d982dd1ac3%3A0x912f77a1d7080f77!2sLaunchPad7!5e0!3m2!1sen!2s!4v1455268802566" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    <script type="text/javascript">
+        var nowDate = new Date();
+        var today = new Date(nowDate.getFullYear(), nowDate.getMonth(), nowDate.getDate(), 0, 0, 0, 0);
+
+        $("#StartingDate").datepicker({
+            // showOn: "button",
+            //buttonImage: "@Url.Content("~/Content/images/calendar.png")",
+            buttonImageOnly: true,
+            duration: "fast",
+            changeMonth: true,
+            changeYear: true,
+            startDate: today,
+            // format: 'd, M, Y',
+            autoclose: true,
+            constrainInput: true,
+            // maxDate: '0',
+            // minDate: '0',
+            //buttonText: "Select date"
+
+        });
+
+    </script>
+<script type="text/javascript">
+    //Ask us anything ajax request
+    $(document).ready(function () {
+        $("#PackageForm").submit(function (e) {
+            debugger;
+            e.preventDefault();
+            $.ajax({
+                url: '@Url.Content("~/Home/Packages")',
+                type: 'POST',
+                data: $("#PackageForm").serialize(),
+                success: function (result) {
+                    $("#PackageForm").html("<h4 style='color:green; font-family:'Opensans', 'NeoSanspro'; text-align:center;'>" + result + "</h4>");
+                },
+                error: function (data) {
+                    $(".errormessage").val("There is some error submitting your Requst. Please try again. Thanks");
+
+                }
+            });
+        });
+    });
+
+</script>
+
+}
+

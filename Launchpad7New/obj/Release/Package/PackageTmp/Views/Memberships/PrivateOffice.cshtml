@@ -1,0 +1,94 @@
+﻿
+@{
+    ViewBag.Title = "PrivateOffice";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    ul.pull-right.membershipsmenu li .privateoffie {
+        color: #e86c6c;
+    }
+</style>
+<div class="membershipbanner"></div>
+<ul class="pull-right membershipsmenu">
+    <li><a class="virtual" href="@Url.Action("Virtual", "memberships")">Virtual</a></li>
+    <li><a class="hotdesk" href="@Url.Action("HotDesk", "memberships")">Hot Desk</a></li>
+    <li><a class="privateoffie" href="@Url.Action("PrivateOffice", "memberships")">Private Office</a></li>
+</ul>
+
+<div class="membershipcontent">
+    <div class="container">
+        <div class="row">
+            <h2 class="privateofficeh2" id="pkgname">Private Office</h2>
+            <p>
+                Launchpad7 Coworking space gives you a professional, dedicated space to work from without the huge cost of a traditional office space. Because the space is shared between multiple likeminded business owners, it’s more affordable, and to top it off there are no long term leases or contracts!
+                At Launchapady7 we’re a friendly bunch who love embracing the many awesome coffee, lunch and drinking spots in the area. Of course, this is on top of all the great work we do. Our aim is to help businesses in their early stages by providing a low-risk and affordable office space.
+                Our light filled warehouse is an elegant, professional and affordable space for small businesses and freelancers. You also get full use of the meeting rooms, giving you a professional space to meet (and impress) your clients.
+            </p>
+            <h3>What Include In Virtual</h3>
+            <ul>
+                <li>Allow 6 person</li>
+                <li>Meeting Room Access</li>
+                <li>Reception Services</li>
+                <li>Basic office necessities</li>
+                <li>Access Event area (1 day per week)</li>
+                <li>High speed broadband</li>
+                <li>cooling and heating system</li>
+                <li>Power Backup</li>
+                <li>Presentation area with all required equipment</li>
+                <li>food (on discount rate)</li>
+                <li>lockers & Co living space on discount</li>
+                <li>Gaming Area - bean bag environment</li>
+                <li>24/7 – Access any time, any day.</li>
+                <li>*Special Discounts on 3,6 or 12 months advance  payment</li>
+            </ul>
+            <p class="pricetag">60,000/-</p>
+        </div>
+        <div class="row">
+            <div class="bookspace col-sm-9 col-xs-8">Book your space</div>
+            <a href="@Url.Action("Contact", "Home")" class="taketour btn btn-danger col-sm-2 col-sm-offset-1 col-xs-4">Take a Tour</a>
+        </div>
+        <div class="row signupmembershipForm">
+            @Html.Action("Register", "Account")
+        </div>
+
+    </div>
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    <script type="text/javascript">
+        var nowDate = new Date();
+        var today = new Date(nowDate.getFullYear(), nowDate.getMonth(), nowDate.getDate(), 0, 0, 0, 0);
+
+        $("#StartingDate").datepicker({
+            // showOn: "button",
+            //buttonImage: "@Url.Content("~/Content/images/calendar.png")",
+            buttonImageOnly: true,
+            duration: "fast",
+            changeMonth: true,
+            changeYear: true,
+            startDate: today,
+            // format: 'd, M, Y',
+            autoclose: true,
+            constrainInput: true,
+            // maxDate: '0',
+            // minDate: '0',
+            //buttonText: "Select date"
+
+        });
+
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#StartingDate').val('').datepicker('update');
+            $('#Members').val('');
+
+            var pkgid = $('#PackageIds').val();
+            $('#PackageId').val(pkgid);
+            var pkgname = $('#pkgname').text();
+            $('#packagename').val(pkgname);
+
+        });
+    </script>
+}

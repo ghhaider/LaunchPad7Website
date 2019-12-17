@@ -1,0 +1,63 @@
+﻿@{
+    ViewBag.Title = "Contact";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="Contactuspagebg"></div>
+<div class="contactuspage">
+    
+
+    <div class="container">
+        <div class="row">
+           <div class="col-sm-6">
+               <div class="contctus">
+                   @*<form id ="askusanythingform" role="form">*@
+                   @using (Html.BeginForm("", "", FormMethod.Get, new { id = "ContactForm" }))
+                   {
+                       <input type="text" name="cpname" placeholder="Name*" required>
+                       <input type="email" name="cpemail" placeholder="Email*" required>
+                       <input type="number" name="cpphone" placeholder="Phone*" required>
+                        <textarea name="cpmessage" rows="10" placeholder="Comments / Questions*" required></textarea>
+                       <input type="submit" id="askusanythingbtn" class="btn btn-danger" value="Submit">
+                   }
+                   @*</form>*@
+
+               </div>
+           </div>
+           <div class="col-sm-6">
+               <h4>OUR HOURS:</h4>
+               <p>Monday-Friday: 9:00 – 6:00</p>
+               <p>Saturday & Sunday: By appointment only.</p>
+               <h4 style="margin-top:30px;">DIRECTIONS:</h4>
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3321.913782254637!2d73.07109731410154!3d33.63347744713113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df94d982dd1ac3%3A0x912f77a1d7080f77!2sLaunchPad7!5e0!3m2!1sen!2s!4v1455268802566" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+           </div>
+         </div>
+    </div>
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryval")
+    <script type="text/javascript">
+        //Ask us anything ajax request
+        $(document).ready(function () {
+            $("#ContactForm").submit(function (e) {
+                debugger;
+                e.preventDefault();
+                $.ajax({
+                    url: '@Url.Content("~/Home/AskusAnything")',
+                    type: 'GET',
+                    data: $("#ContactForm").serialize(),
+                    success: function (result) {
+                        $("#ContactForm").html("<h4 style='color:green; font-family:'Opensans', 'NeoSanspro'; text-align:center;'>" + result + "</h4>");
+                    },
+                    error: function (data) {
+                        $(".errormessage").val("There is some error submitting your Requst. Please try again. Thanks");
+
+                    }
+                });
+            });
+        });
+
+    </script>
+}

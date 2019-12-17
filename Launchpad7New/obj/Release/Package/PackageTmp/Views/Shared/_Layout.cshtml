@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Launchpad7 - Talent - Ideas - Innovations - Entrepreneurship - Co Working Space</title>
+    <meta name="keywords" content="LaunchPad, Entrepreneurship, co working space in rawalpindi, islamabad,office space ,learning resources, workspace" />
+    <meta name="description" content="Launchpad7 is a co working space for supporting young talent with innovative ideas, early-stage social enterprises by providing them to best office space with learning resources." />
+
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    @Styles.Render("~/Content/css")
+    @*@Scripts.Render("~/bundles/modernizr")*@
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ ga('create', 'UA-3628759-33', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    @*<meta name="viewport" content="width=device-width, initial-scale=1.0">*@
+</head>
+<body>
+    <div class="Topbar"><span class="worksmartnumber"> Work Smart. Join Us. &nbsp;   051-5817375 </span><span class="" style="padding-left: 20px;"><a href="@Url.Action("Contact", "Home")" target="_blank" style="color:#3ee6ff; font-size: 11px;">Book Your Tour Today!</a></span>  <span><a href="https://www.facebook.com/LaunchPadSeven/?fref=ts" target="_blank">
+    <img src="~/Images/NewTheme/lpd-fb.png" class="fbimgmedia" /></a></span>  <span><a href="https://twitter.com/launchpad_7"><img src="~/Images/NewTheme/lpd-twitter.png" class="twitterimg" /></a></span></div>
+    <div class="navigation-image">
+        <nav class="navbar navbar-inverse">
+            <div class="container">
+                <div class="navbar-header col-sm-2">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand logo" href="~/">Launchpad</a>
+                </div>
+                <div class="collapse navbar-collapse pull-right col-sm-10" id="myNavbar">
+                    <ul class="nav navi navbar-nav">
+                        <li class="this"><a href="~/" id="domain">Home</a></li>
+                        <li class="this"><a href="~/#why-launchpad" id="why">Why LaunchPad7</a></li>
+                        <li class="this" ><a href="@Url.Action("Index", "Memberships")" id="member">Membership</a></li>
+                        <li class="this" ><a href="@Url.Action("Index", "Events")" id="event">Events</a></li>
+                        <li class="this"><a href="@Url.Action("Contact", "Home")">Contact Us</a></li>
+                        @Html.Partial("_LoginPartial")
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    @*-- THIS IS THE CONTACT US SNIPPET THAT SHOW ON EVERY PAGE --*@
+
+    <div class="container">
+        <div class="row">
+            <!-- Form -->
+            <div class="nb-form">
+                <p class="title">Ask us Anything</p>
+                <img src="~/images/LaunchPad.png" alt="" class="user-icon">
+                <p class="message">Send us your query here and we'll get back to you.</p>
+                <h4 id="errormessage" style="color:red;font-family:Helvita"></h4>
+                @*<form id ="askusanythingform" role="form">*@
+                @using (Html.BeginForm("", "", FormMethod.Get, new { id = "askusanythingform" }))
+                {
+                    <input type="text" name="cpname" placeholder="Name*" required>
+                    <input type="email" name="cpemail" placeholder="Email*" required>
+                    <input type="number" name="cpphone" placeholder="Phone*" required>
+                    <textarea name="cpmessage" placeholder="Message*" required></textarea>
+                    <input type="submit" id="askusanythingbtn" value="Send Message">
+                }
+                @*</form>*@
+            </div>
+        </div>
+    </div>
+
+    @*----*@
+    
+        @RenderBody()
+        
+        <footer>
+            <div id="contact-us" class="fotter">
+                <div class="container">
+                    <div class="row">
+                        <span><a href="mailto:&#105;&#110;&#102;&#111;&#064;&#108;&#097;&#117;&#110;&#099;&#104;&#112;&#097;&#100;&#055;&#046;&#099;&#111;&#109;"><img src="~/Images/email-icon.png" alt="Launchpad7Emailaddress" /></a></span>
+                        <span><a href="https://www.facebook.com/LaunchPadSeven/?fref=ts"><img src="~/Images/fb.png" class="footifbimg" alt="Launchpad7Facebookicon"/></a></span>
+                        <span><a href="https://twitter.com/launchpad_7"><img src="~/Images/twitter.png" alt="Launchpad7Twittericon"/></a></span>
+                        
+                        <p>Ghazali Plaza,133-B (Floor # 3) Near Chandni Chowk, Murree Road, Rawalpindi, Pakistan</p>
+                        <ul>
+                            <li>Phone:  051-5817375  |</li>
+                            <li>Cell/Whatsapp 0333-5262283  |</li>
+                            <li>Email info@launchpad7.com</li>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+            @*<div class="wrap">
+                <div id="copyright">Copyright © @DateTime.Now.Year Launchpad7</div>
+            </div>*@
+        </footer>
+        <div class="scroll-top-wrapper">
+            <span class="scroll-top-inner">
+                <i></i>
+            </span>
+        </div>
+    
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+<script>
+$(function () {
+
+    $(document).on('scroll', function () {
+
+        if ($(window).scrollTop() > 100) {
+            $('.scroll-top-wrapper').addClass('show');
+        } else {
+            $('.scroll-top-wrapper').removeClass('show');
+        }
+    });
+
+    $('.scroll-top-wrapper').on('click', scrollToTop);
+});
+
+function scrollToTop() {
+    verticalOffset = typeof (verticalOffset) != 'undefined' ? verticalOffset : 0;
+    element = $('body');
+    offset = element.offset();
+    offsetTop = offset.top;
+    $('html, body').animate({ scrollTop: offsetTop }, 500, 'linear');
+}
+
+
+
+//Ask us anything ajax request
+$(document).ready(function () {
+    $("#askusanythingform").submit(function (e) {
+        //$("#askusanythingform").validate();
+        e.preventDefault();
+        //if ($(this).valid()) {
+            $(".nb-form").css({ 'bottom': '0' });
+            $.ajax({
+                url: '@Url.Content("~/Home/AskusAnything")',
+                type: 'GET',
+                data: $("#askusanythingform").serialize(),
+                success: function (result) {
+                    $("#askusanythingform").html("<h4 style='color:green; font-family:'OpenSans-Bold', 'NeoSanspro'; text-align:center; padding: 30px 0;'>" + result + "</h4>");
+                    $(".nb-form").css({ 'bottom': '0' });
+                    $(".message").hide();
+                    setTimeout(function () {
+                        $(".nb-form").css({ 'bottom': '-367px' });
+                    }, 3000);
+                },
+                error: function (data) {
+                    $(".errormessage").val("There is some error submitting your Requst. Please try again. Thanks");
+                    $(".nb-form").css({ 'bottom': '0' });
+                }
+            });
+        //}
+
+    });
+});
+
+
+
+
+
+</script>
+
+
+</body>
+</html>

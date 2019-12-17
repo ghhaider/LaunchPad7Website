@@ -1,0 +1,122 @@
+﻿@model Launchpad7New.Models.RegisterViewModel
+
+@using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+    @Html.AntiForgeryToken()
+    <style>
+        .form-control {
+            border: 1px solid rgba(43, 42, 42, 0.46);
+        }
+       .signupmembershipForm .form-group {
+        margin-bottom: 0px;
+        width: 90%;
+    }
+        .signupmembershipForm .rightform .form-group{
+            margin-left: auto;
+        }
+        .signupmembershipForm .form-group .gender{
+            margin-bottom:18px;
+        }
+        input[type="radio"], input[type="checkbox"] {
+    margin: 4px 0 0;
+    margin-top: 1px \9;
+    line-height: normal;
+    width: 20px;
+    top: -10px;
+    position: relative;
+    }
+        select#PackageId {
+    margin-bottom: 15px;
+    }
+    </style>
+        @*@Html.ValidationSummary(true, "", new { @class = "text-danger" })*@
+    <div class="col-md-6">
+        <div class="form-group">
+            @Html.HiddenFor(m=>m.PackageId)
+             @Html.ValidationMessageFor(m => m.Name)
+           @Html.TextBoxFor(m => m.Name, new { @class = "form-control", @placeholder = "Full Name" })
+        </div>
+        <div class="form-group">
+            @Html.ValidationMessageFor(m => m.Gender)
+            @Html.EnumDropDownListFor(m => m.Gender, new { @class = "form-control gender" })
+        </div>
+        <div class="form-group">
+            @Html.ValidationMessageFor(m => m.Profession)
+            @Html.TextBoxFor(m => m.Profession, new { @class = "form-control", @placeholder = "Profession" })
+        </div>
+        <div class="form-group">
+            @Html.ValidationMessageFor(m => m.City)
+            @Html.TextBoxFor(m => m.City, new { @class = "form-control", @placeholder = "Your City" })
+        </div>
+        <div class="form-group">
+                @Html.ValidationMessageFor(m => m.Email)
+                @Html.TextBoxFor(m => m.Email, new { @class = "form-control", @placeholder = "Email" })
+        </div>
+        <div class="form-group">
+                @Html.ValidationMessageFor(m => m.Phone)
+                @Html.TextBoxFor(model => model.Phone, new { @class = "form-control", @placeholder = "Phone" })
+        </div>
+        <div class="form-group">
+                @Html.ValidationMessageFor(m => m.Password)
+                @Html.PasswordFor(m => m.Password, new { @class = "form-control", @placeholder = "Password" })
+        </div>
+        <div class="form-group">
+                @Html.ValidationMessageFor(m => m.ConfirmPassword)
+                @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control", @placeholder = "Confirm Password" })
+        </div>
+    </div>
+    <div class="col-md-6 rightform">
+        <h4 class="createaccount">Company Details</h4>
+        <div class="form-group">
+                @Html.ValidationMessageFor(m => m.CompanyName)
+                @Html.TextBoxFor(m => m.CompanyName, new { @class = "form-control", @placeholder = "Company Name" })
+        </div>
+        <div class="form-group">
+                @Html.ValidationMessageFor(m => m.Website)
+                @Html.TextBoxFor(m => m.Website, new { @class = "form-control", @placeholder = "Company Website" })
+        </div>
+        <div class="form-group">
+                @Html.ValidationMessageFor(m => m.Details)
+                @Html.TextAreaFor(m => m.Details, new { @class = "form-control", @placeholder = "Company Details" })
+        </div>
+        <div class="form-group">
+                @Html.ValidationMessageFor(m => m.Members)
+                @Html.TextBoxFor(m => m.Members, new { @class = "form-control", @placeholder = "Team Members"})
+        </div>
+
+        <h4 class="createaccount">Package Details</h4>
+
+        <div class="form-group">
+                @Html.ValidationMessageFor(m => m.PackageId)
+                <input type="text" id="packagename" class="form-control" readonly="readonly" />
+                @*@Html.DropDownListFor(m => m.PackageId, new SelectList(ViewBag.PackageId, "Id","Name"), "Select Package", new { @class = "form-control" })*@
+        </div>
+        <div class="form-group">
+                @Html.ValidationMessageFor(model => model.StartingDate, "", new { @class = "text-danger" })
+                @Html.EditorFor(model => model.StartingDate, new { htmlAttributes = new { @class = "form-control", @placeholder = "Select Starting Date" } })
+        </div>
+        <div class="form-group">
+                @Html.ValidationMessageFor(m => m.PackageId)
+                @Html.DropDownListFor(model => model.PaymentMethod, EnumHelper.GetSelectList(typeof(Launchpad.Enums.PaymentMethod)), "Select Payment Method", new { @class = "form-control" })
+        </div>
+        <div class="form-group">
+                @Html.ValidationMessageFor(m => m.HowYouKnow)
+                @Html.TextAreaFor(m => m.HowYouKnow, new { @class = "form-control howyouknow", @placeholder = "How you Know about Launpad7" })
+        </div>
+        <div class="form-group">
+               @Html.LabelFor(m => m.Food, new { @class = " foodlable" })
+            <div class="col-md-1">
+                @Html.ValidationMessageFor(m => m.Food)
+                @Html.CheckBoxFor(m => m.Food, new { @class = "form-control", @placeholder = "Do you Want Food Facility" })
+            </div>
+        </div>
+        <div class="form-group text-left">
+                <input type="submit" class="btn btn-default registerbtn " value="Register" />
+        </div>
+
+    </div>
+}
+
+
+
+

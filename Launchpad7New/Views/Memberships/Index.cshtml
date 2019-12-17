@@ -1,0 +1,401 @@
+﻿
+@{
+    ViewBag.Title = "Memberships List";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="membershipbanner"></div>
+
+
+<!--Plan Starts-->
+<div class="chooseaplan">
+    <div class="container">
+        <div class="row">
+            <h3>Coworking: <b>Choose a plan</b></h3>
+        </div>
+        <!--Pricing Pan Tabs Starts-->
+        <div class="row ">
+            <div class="col-12 text-center">
+                <ul class="nav nav-pills pricingTabs">
+                    <li class="active pl-0 mb-2" id="tab1"><a data-toggle="pill" href="#LP7RWP" id="tabLink1">LP7 Rawalpindi</a></li>
+                    <li id="tab2" class="mb-2"><a data-toggle="pill" href="#LP7ISD" id="tabLink2">LP7 Islamabad</a></li>
+                    <li id="tab3" class="mb-2"><a data-toggle="pill" href="#LP7DHA" id="tabLink2">LP7 DHA</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="tab-content ">
+            <div id="LP7RWP" class="tab-pane fade in active ">
+                <div class="carousel slide" data-ride="carousel" data-type="multi" data-interval="false" id="packageSliderRWP">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+
+                        <div class="item">
+                            <div class=" col-md-4 col-sm-6 col-xs-12 ">
+                                <div class="packgestypes" style="margin-top: 50px; height:1019px;">
+                                    <img src="~/Images/NewTheme/virtual-.png" />
+                                    <h3>Virtual</h3>
+                                    <ul>
+                                        <li>Hot Desk - Few visits only</li>
+                                        <li>Mailing Address</li>
+                                        <li>Meeting room Access </li>
+                                       
+                                        <li>Bean bag environment</li>
+                                        <li>*Special Discounts on 3,6 or 12 months advance payment</li>
+                                        <li style="visibility:hidden">Internet/ Networkng</li>
+                                        <li style="visibility:hidden">Electricity & generator </li>
+                                        <li style="visibility:hidden">Cooling and heating system</li>
+                                        <li style="visibility:hidden">Digital & handbook library</li>
+                                        <li style="visibility:hidden">Internet/ Networkng</li>
+                                        <li style="visibility:hidden">Electricity & generator </li>
+                                        <li style="visibility:hidden">Cooling and heating system</li>
+                                        <li style="visibility:hidden">Digital & handbook library</li>
+                                    </ul>
+                                    <p class="pricetag firstpricetag">5,000</p>
+                                    @*   <p class="offPrice">4,000 <span>20% off Limited Time Offer</span></p>*@
+                                    <a href="@Url.Action("Virtual", "memberships")" class="btn btn-danger">Book Your Space</a>
+                                </div>
+                                    </div>
+                                </div>
+                                <div class="item active">
+                                    <div class=" col-md-4 col-sm-6 col-xs-12">
+                                        <div class="packgestypes" style="height:1019px; margin-top: 50px;">
+                                            <img src="~/Images/NewTheme/hot-desk.png" />
+                                            <h3>Dedicated Desk</h3>
+                                            <ul>
+                                                <li>Dedicated Desk - 24/7</li>
+                                                <li>Internet/ networking </li>
+                                                <li>Power Backup</li>
+                                                <li>Cooling and heating system</li>
+                                                <li>Free events- mentorship</li>
+                                                <li>Meeting room Access </li>
+                                                <li>Presentation area with all required equipment</li>
+                                                <li>*Lunch/Dinner on demand</li>
+                                                <li>Morning and Evening Tea </li>
+                                                <li>Lockers and Digital & hard book Library </li>
+                                                
+                                                <li>Bean bag environment</li>
+                                                <li>*Special Discounts on 3,6 or 12 months advance  payment</li>
+                                                <li style="visibility:hidden">Cooling and heating system</li>
+                                                <li style="visibility:hidden">Digital & handbook library</li>
+
+                                            </ul>
+                                            <p class="pricetag secondpricetag" style="margin-top: 26px;">10,000</p>
+                                            @*  <p class="offPrice">8,000 <span>20% off Limited Time Offer</span></p>*@                                            <a href="@Url.Action("HotDesk", "memberships")" class="btn btn-danger">Book Your Space</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class=" col-md-4 col-sm-6 col-xs-12">
+                                        <div class="packgestypes" style="margin-top: 50px; height:1019px;">
+                                            <img src="~/Images/NewTheme/private-office.png" />
+                                            <h3>Private Office</h3>
+                                            <ul>
+                                                <li>Allow 6 person</li>
+                                                <li>Meeting Room Access</li>
+                                                <li>Reception Services</li>
+                                                <li>Basic office necessities</li>
+                                                <li>Access Event area (1 day per week)</li>
+                                                <li>High speed broadband</li>
+                                                <li>Cooling and heating system</li>
+                                                <li>Power Backup</li>
+                                                <li>Presentation area with all required equipment</li>
+                                                <li>*Lunch/Dinner on demand</li>
+                                                <li>Morning and Evening Tea </li>
+                                                <li>Lockers & Co living space on discount</li>
+                                             
+                                                <li>Bean bag environment</li>
+                                                <li>24/7 – Access any time, any day.</li>
+                                                <li>*Special Discounts on 3,6 or 12 months advance  payment</li>
+                                            </ul>
+                                            <p class="pricetag " style="margin-top: 64px;">60,000</p>
+                                            @*  <p class="offPrice">48,000 <span>20% off Limited Time Offer</span></p>*@
+                                            <a href="@Url.Action("PrivateOffice", "memberships")" class="btn btn-danger">Book Your Space</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class=" col-md-4 col-sm-6 col-xs-12">
+                                        <div class="packgestypes" style="margin-top: 50px; height:1019px;">
+                                            <img src="~/Images/NewTheme/private-office.png" />
+                                            <h3>Private Office</h3>
+                                            <ul>
+                                                <li>Allow 12 person</li>
+                                                <li>Meeting Room Access</li>
+                                                <li>Reception Services</li>
+                                                <li>Basic office necessities</li>
+                                                <li>Access Event area (1 day per week)</li>
+                                                <li>High speed broadband</li>
+                                                <li>Cooling and heating system</li>
+                                                <li>Power Backup</li>
+                                                <li>Presentation area with all required equipment</li>
+                                                <li>*Lunch/Dinner on demand</li>
+                                                <li>Morning and Evening Tea </li>
+                                                <li>Lockers & Co living space on discount</li>
+                                                
+                                                <li>Bean bag environment</li>
+                                                <li>24/7 – Access any time, any day.</li>
+                                                <li>*Special Discounts on 3,6 or 12 months advance  payment</li>
+                                            </ul>
+                                            <p class="pricetag" style="margin-top: 64px;">110,000</p>
+                                            @*   <p class="offPrice">88,000 <span>20% off Limited Time Offer</span></p>*@
+                                            <a href="@Url.Action("PrivateOffice1", "memberships")" class="btn btn-danger">Book Your Space</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class=" col-md-4 col-sm-6 col-xs-12">
+                                        <div class="packgestypes" style="margin-top: 50px; height:1019px;">
+                                            <img src="~/Images/NewTheme/private-office.png" />
+                                            <h3>Event Area Access</h3>
+                                            <ul>
+
+                                                <li>High speed Internet</li>
+                                                <li>Cooling and heating system</li>
+                                                <li>Comfortable Chairs</li>
+                                                <li>Presentation area with all required equipment</li>
+                                                <li>*Refreshment if required</li>
+                                                <li>Air Conditions & Fans</li>
+                                                <li>Projector</li>
+                                                <li>Sound System</li>
+                                                <li>Podium</li>
+                                                <li>Event promotion on Launchpad7 page</li>
+                                                <li>Photography</li>
+                                                <li>Video recording and editing on demand</li>
+
+
+                                            </ul>
+                                            <p class="pricetag " style="margin-top: 215px;">1,500/<span style="font-size:18px;">Hr.</span></p>
+                                            <p class="offPrice" > <span></span></p>
+                                            <a href="@Url.Action("EventAccess", "memberships")" class="btn btn-danger">Book Your Space</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Left and right controls -->
+                            <a class="left carousel-control" href="#packageSliderRWP" data-slide="prev"><i class="glyphicon glyphicon-chevron-left" style="color:#DD1212"></i></a>
+                            <a class="right carousel-control" href="#packageSliderRWP" data-slide="next"><i class="glyphicon glyphicon-chevron-right" style="color:#DD1212"></i></a>
+                        </div>
+                    </div>
+                    <div id="LP7ISD" class="tab-pane fade in">
+                        <div class="carousel slide" data-ride="carousel" data-type="multi" data-interval="false" id="packageSliderISD">
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <div class="item">
+                                    <div class=" col-md-4 col-sm-6 col-xs-12">
+                                        <div class="packgestypes" style="margin-top: 50px; height:1019px;">
+                                            <img src="~/Images/NewTheme/virtual-.png" />
+                                            <h3>Virtual</h3>
+                                            <ul>
+                                                <li>Hot Desk - Few visits only</li>
+                                                <li>Mailing Address</li>
+                                                <li>Meeting room Access </li>
+                                                <li>X Box</li>
+                                                <li>Bean bag environment</li>
+                                                <li>*Special Discounts on 3,6 or 12 months advance payment</li>
+                                                <li style="visibility:hidden">Internet/ Networkng</li>
+                                                <li style="visibility:hidden">Electricity & generator </li>
+                                                <li style="visibility:hidden">Cooling and heating system</li>
+                                                <li style="visibility:hidden">Digital & handbook library</li>
+                                                <li style="visibility:hidden">Internet/ Networkng</li>
+                                                <li style="visibility:hidden">Electricity & generator </li>
+                                                <li style="visibility:hidden">Cooling and heating system</li>
+                                                <li style="visibility:hidden">Digital & handbook library</li>
+                                            </ul>
+                                            <p class="pricetag firstpricetag">5,000</p>
+                                            @*  <p class="offPrice">2,500 <span>50% off Limited Time Offer</span></p>*@
+                                            <a href="@Url.Action("VirtualISD", "memberships")" class="btn btn-danger">Book Your Space</a>
+                                        </div>
+            </div>
+        </div>
+        <div class="item active">
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="packgestypes" style="height:1019px; margin-top: 50px;">
+                    <img src="~/Images/NewTheme/hot-desk.png" />
+                    <h3>Dedicated Desk</h3>
+                    <ul>
+
+                        <li>Internet/ networking </li>
+                        <li>Power Backup</li>
+                        <li>Cooling and heating system</li>
+                        <li>Free events- mentorship</li>
+                        <li>Meeting room Access </li>
+                        <li>Presentation area with all required equipment</li>
+                        <li>*Lunch/Dinner on demand</li>
+                        <li>*Morning and Evening Tea on demand </li>
+                        <li>Lockers and Digital & hard book Library </li>
+                        <li>X Box</li>
+                        <li>Bean bag environment</li>
+                        <li>*Special Discounts on 3,6 or 12 months advance  payment</li>
+                        <li style="visibility:hidden">Cooling and heating system</li>
+                        <li style="visibility:hidden">Digital & handbook library</li>
+
+                    </ul>
+                    <p class="pricetag secondpricetag" style="margin-top: 55px;">15,000</p>
+                    @* <p class="offPrice">7,500 <span>50% off Limited Time Offer</span></p>*@
+                    <a href="@Url.Action("HotDeskISD", "memberships")" class="btn btn-danger">Book Your Space</a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="packgestypes" style="margin-top: 50px; height:1019px;">
+                    <img src="~/Images/NewTheme/private-office.png" />
+                    <h3>Private Office</h3>
+                    <ul>
+                        <li>Allow 6 person</li>
+                        <li>Meeting Room Access</li>
+                        <li>Reception Services</li>
+                        <li>Basic office necessities</li>
+                        <li>Access Event area (1 day per week)</li>
+                        <li>High speed broadband</li>
+                        <li>Cooling and heating system</li>
+                        <li>Power Backup</li>
+                        <li>Presentation area with all required equipment</li>
+                        <li>*Lunch/Dinner on demand</li>
+                        <li>Morning and Evening Tea </li>
+                        <li>Lockers & Co living space on discount</li>
+                        <li>X Box</li>
+                        <li>Bean bag environment</li>
+                        <li>24/7 – Access any time, any day.</li>
+                        <li>*Special Discounts on 3,6 or 12 months advance  payment</li>
+                    </ul>
+                    <p class="pricetag" style="margin-top: 65px;">90,000</p>
+                     @*  <p class="offPrice">45,000 <span>50% off Limited Time Offer</span></p>*@                                                  <a href="@Url.Action("PrivateOfficeISD", "memberships")" class="btn btn-danger">Book Your Space</a>
+                </div>
+                                          </div>
+                                      </div>
+                                      <div class="item">
+                                          <div class="col-md-4 col-sm-6 col-xs-12">
+                                              <div class="packgestypes" style="margin-top: 50px; height:1019px;">
+                                                  <img src="~/Images/NewTheme/private-office.png" />
+                                                  <h3>Private Office</h3>
+                                                  <ul>
+                                                      <li>Allow 12 person</li>
+                                                      <li>Meeting Room Access</li>
+                                                      <li>Reception Services</li>
+                                                      <li>Basic office necessities</li>
+                                                      <li>Access Event area (1 day per week)</li>
+                                                      <li>High speed broadband</li>
+                                                      <li>Cooling and heating system</li>
+                                                      <li>Power Backup</li>
+                                                      <li>Presentation area with all required equipment</li>
+                                                      <li>*Lunch/Dinner on demand</li>
+                                                      <li>Morning and Evening Tea </li>
+                                                      <li>Lockers & Co living space on discount</li>
+                                                      <li>X Box</li>
+                                                      <li>Bean bag environment</li>
+                                                      <li>24/7 – Access any time, any day.</li>
+                                                      <li>*Special Discounts on 3,6 or 12 months advance  payment</li>
+                                                  </ul>
+                                                  <p class="pricetag" style="margin-top: 65px;">150,000</p>
+        @* <p class="offPrice">75,000 <span>50% off Limited Time Offer</span></p>*@
+                                            <a href="@Url.Action("PrivateOffice1ISD", "memberships")" class="btn btn-danger">Book Your Space</a>
+                                        </div>
+                                                 </div>
+                                             </div>
+                                             <div class="item">
+                                                 <div class=" col-md-4 col-sm-6 col-xs-12">
+                                                     <div class="packgestypes" style="margin-top: 50px; height:1019px;">
+                                                         <img src="~/Images/NewTheme/private-office.png" />
+                                                         <h3>Event Area Access</h3>
+                                                         <ul>
+                                                             <li>High speed Internet</li>
+                                                             <li>Cooling and heating system</li>
+                                                             <li>Comfortable Chairs</li>
+                                                             <li>Presentation area with all required equipment</li>
+                                                             <li>*Refreshment if required</li>
+                                                             <li>Air Conditions & Fans</li>
+                                                             <li>Projector</li>
+                                                             <li>Sound System</li>
+                                                             <li>Podium</li>
+                                                             <li>Event promotion on Launchpad7 page</li>
+                                                             <li>Photography</li>
+                                                             <li>Video recording and editing on demand</li>
+                                                         </ul>
+                                                         <p class="pricetag" style="padding: 265px 0 0 0 ;">2,000/<span style="font-size:18px;">Hr.</span></p>
+        @*<p class="offPrice">1,000 <span>50% off Limited Time Offer</span></p>*@
+                                            <a href="@Url.Action("EventAccessISD", "memberships")" class="btn btn-danger">Book Your Space</a>
+                                        </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <!-- Left and right controls -->
+                                  <a class="left carousel-control" href="#packageSliderISD" data-slide="prev"><i class="glyphicon glyphicon-chevron-left" style="color:#DD1212"></i></a>
+                                  <a class="right carousel-control" href="#packageSliderISD" data-slide="next"><i class="glyphicon glyphicon-chevron-right" style="color:#DD1212"></i></a>
+                              </div>
+                          </div>
+                          <div id="LP7DHA" class="tab-pane fade in">
+                              <div class="row mt-5">
+                                  <div class="col-12">
+                                      <div class="dhaCommingSoon text-center">
+                                          <h4>Comming Soon</h4>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+
+                      <!--Pricing Plan Tabs Ends-->
+                  </div>
+              </div>
+              <!--Plan Ends-->
+
+              <div class="container">
+
+                  <div class="row memberpkgpage">
+                      <div class="col-sm-6">
+                          <a href="@Url.Action("Packages","Memberships")" class="dailypkgbox">
+                              <h3>Daily Pass</h3>
+                              <h4>1000/-</h4>
+                              <p>Unlimited access to shared workspace</p>
+                          </a>
+                      </div>
+                      <div class="col-sm-6">
+                          <a href="@Url.Action("Packages","Memberships")" class="dailypkgbox">
+                              <h3>Weekly Pass</h3>
+                              <h4>5000/-</h4>
+                              <p>Unlimited access to shared workspace</p>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+              @section scripts{
+                  <script>
+                      $(document).ready(function () {
+                          var url = document.location.toString();
+                          if (url.match('#')) {
+                              $('.nav-pills a[href="#' + url.split('#')[1] + '"]').tab('show');
+                          }
+                      });
+                  </script>
+                  <script>
+                      $('.carousel[data-type="multi"] .item').each(function () {
+                          var next = $(this).next();
+                          console.log('hywwwwwww', $(this).next());
+                          if (!next.length) {
+                              next = $(this).siblings(':first');
+                          }
+                          next.children(':first-child').clone().appendTo($(this));
+                          for (var i = 1; i < 2; i++) {
+                              next = next.next();
+                              if (!next.length) {
+                                  next = $(this).siblings(':first');
+                              }
+
+                          }
+                          next.children(':first-child').clone().appendTo($(this));
+                      });
+                  </script>
+                  <script>
+                      $("#tab3").click(function () {
+                          $(".memberpkgpage").css({
+                              'display': "none"
+                          })
+                      })
+                      $("#tab1, #tab2").click(function () {
+                          $(".memberpkgpage").show()
+                      })
+                  </script>
+              }
+

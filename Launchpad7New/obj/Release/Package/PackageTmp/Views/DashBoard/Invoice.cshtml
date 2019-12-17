@@ -1,0 +1,71 @@
+﻿@model IEnumerable<Launchpad7New.Areas.Admin.Models.Invoice>
+
+@{
+    ViewBag.Title = "Invoice";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+       .Pending, .Pending a, .UnPaid, UnPaid a{
+        /*background:rgb(207, 65, 58);*/
+        color:rgb(207, 65, 58);
+        font-weight:bold;
+    }
+</style>
+<div class="pageHeader">
+    <div class="container">
+        <h2 class="dashboard">Invoice(s)</h2>
+    </div>
+</div>
+<div class="dashboard invoicepage">
+    <div class="container">
+        <div class="row">
+            <!-- your page content -->
+            @if (Model.Count() != 0)
+            {
+                <div class="invoiceheader">
+                    <div class="col-sm-2">@Html.DisplayNameFor(model => model.InvoiceNumber)</div>
+                    <div class="col-sm-1">Method</div>
+                    <div class="col-sm-1">@Html.DisplayNameFor(model => model.TotalPrice)</div>
+                    <div class="col-sm-1">@Html.DisplayNameFor(model => model.Status)</div>
+                    <div class="col-sm-5">@Html.DisplayNameFor(model => model.Comments)</div>
+                    <div class="col-sm-2">@Html.DisplayNameFor(model => model.PaymentDate)</div>
+                </div>
+                foreach (var item in Model)
+                {
+                    //if (item.Status == 3) { var pendingstatus; }
+                    <div class="incoivelist @Enum.GetName(typeof(Launchpad.Enums.Status), item.Status)">
+                        <div class="col-sm-2"><a href="@Url.Action("InvoiceDetails", "DashBoard", new { id = item.Id })">@Html.DisplayFor(modelItem => item.InvoiceNumber)</a></div>
+                        <div class="col-sm-1">@Enum.GetName(typeof(Launchpad.Enums.PaymentMethod), item.PaymentMethod)</div>
+                        <div class="col-sm-1">@Html.DisplayFor(modelItem => item.TotalPrice)</div>
+                        <div class="col-sm-1">@Enum.GetName(typeof(Launchpad.Enums.Status), item.Status)</div>
+                        <div class="col-sm-5">@Html.DisplayFor(modelItem => item.Comments)</div>
+                        <div class="col-sm-2">@String.Format("{0:D}", item.PaymentDate)</div>
+                    </div>
+                }
+            }
+            @if (Model.Count() == 0)
+            {
+                <h4>No invoice found!</h4>
+            }
+
+        </div>
+
+    </div>
+</div>
+
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    <script type="text/javascript">
+        var domain = $("#domain").attr('href');
+        $(document).ready(function () {
+            var whylink = domain+"#why-launchpad";
+            $("#why").attr("href", whylink)
+            var memberlink = domain + "#membership";
+            $("#member").attr("href", memberlink)
+            var eventlink = domain + "#events";
+            $("#event").attr("href", eventlink)
+        });
+    </script>
+}

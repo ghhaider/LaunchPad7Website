@@ -1,0 +1,88 @@
+﻿@{
+    ViewBag.Title = "Contact";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="Contactuspagebg"></div>
+<div class="contactuspage">
+
+         
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="contctus">
+                    <h3 style="font-weight: bold; margin-bottom: 20px;">Contact Us</h3>
+
+                    @Html.Action("ContactPartial", "Home")
+
+                </div>
+            </div>
+
+            <!-- Map Location Starts Here -->
+            <div class="col-sm-6">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <ul class="nav nav-pills LocationMapTabs">
+                            <li class="active pl-0 mb-2" id="tab1"><a data-toggle="pill" href="#LocationMapRWP" id="tabLink1">LP7 Rawalpindi</a></li>
+                            <li id="tab2" class="mb-2"><a data-toggle="pill" href="#LocationMapISD" id="tabLink2">LP7 Islamabad</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-content ">
+                    <div id="LocationMapRWP" class="tab-pane fade in active ">
+                        <h4>OUR HOURS:</h4>
+                        <p>Book your appointments 24/7</p>
+                        <p>051-4571119  / 0346-8811896</p>
+                        <h4 style="margin-top:30px;">DIRECTIONS:</h4>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106300.7687241804!2d73.0119999415148!3d33.63386012065327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df94d982dd1ac3%3A0x912f77a1d7080f77!2sLaunchPad7!5e0!3m2!1sen!2s!4v1561438851916!5m2!1sen!2s" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+
+                    <div id="LocationMapISD" class="tab-pane fade ">
+                        <h4>OUR HOURS:</h4>
+                        <p>Book your appointments 24/7</p>
+                        <p>051-2344285 / 0335-6067353</p>
+                        <h4 style="margin-top:30px;">DIRECTIONS:</h4>
+                        <div class="IsdMapImage">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106301.07280902944!2d73.01200010629053!3d33.633613745364215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbf72d82c75ed%3A0x4737e98a8bc4797b!2sLaunchpad7!5e0!3m2!1sen!2s!4v1561438767120!5m2!1sen!2s" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+            <!-- Map Location Ends Here -->
+
+
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryval")
+    <script type="text/javascript">
+        //Ask us anything ajax request
+        $(document).ready(function () {
+            $("#ContactForm").submit(function (e) {
+                debugger;
+                e.preventDefault();
+                $.ajax({
+                    url: '@Url.Content("~/Home/AskusAnything")',
+                    type: 'GET',
+                    data: $("#ContactForm").serialize(),
+                    success: function (result) {
+                        $("#ContactForm").html("<h4 style='color:green; font-family:'Opensans', 'NeoSanspro'; text-align:center;'>" + result + "</h4>");
+                    },
+                    error: function (data) {
+                        $(".errormessage").val("There is some error submitting your Requst. Please try again. Thanks");
+
+                    }
+                });
+            });
+        });
+
+    </script>
+}

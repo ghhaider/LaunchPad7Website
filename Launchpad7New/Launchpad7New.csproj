@@ -1,0 +1,820 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{56922F6C-B390-476B-843E-3000F35BF3FF}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Launchpad7New</RootNamespace>
+    <AssemblyName>Launchpad7New</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper, Version=5.2.0.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.5.2.0\lib\net45\AutoMapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.2.1\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.1\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.3.0.1\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security">
+      <HintPath>..\packages\Microsoft.Owin.Security.3.0.1\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Facebook">
+      <HintPath>..\packages\Microsoft.Owin.Security.Facebook.3.0.1\lib\net45\Microsoft.Owin.Security.Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.3.0.1\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.3.0.1\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Google">
+      <HintPath>..\packages\Microsoft.Owin.Security.Google.3.0.1\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Twitter">
+      <HintPath>..\packages\Microsoft.Owin.Security.Twitter.3.0.1\lib\net45\Microsoft.Owin.Security.Twitter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.MicrosoftAccount">
+      <HintPath>..\packages\Microsoft.Owin.Security.MicrosoftAccount.3.0.1\lib\net45\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\IdentityConfig.cs" />
+    <Compile Include="App_Start\MapsConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Areas\Admin\AdminAreaRegistration.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Areas\Admin\Controllers\ContactUserController.cs" />
+    <Compile Include="Areas\Admin\Controllers\EventsController.cs" />
+    <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
+    <Compile Include="Areas\Admin\Controllers\InvoicesController.cs" />
+    <Compile Include="Areas\Admin\Controllers\PackagesController.cs" />
+    <Compile Include="Areas\Admin\Controllers\UserController.cs" />
+    <Compile Include="Areas\Admin\Models\ContactUser.cs" />
+    <Compile Include="Areas\Admin\Models\Event.cs" />
+    <Compile Include="Areas\Admin\Models\Invoice.cs" />
+    <Compile Include="Areas\Admin\Models\NewsLetter.cs" />
+    <Compile Include="Areas\Admin\Models\Package.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AutomateEmailsController.cs" />
+    <Compile Include="Controllers\BlueMembershipController.cs" />
+    <Compile Include="Controllers\CorporateMembershipController.cs" />
+    <Compile Include="Controllers\CustomMembershipController.cs" />
+    <Compile Include="Controllers\DashBoardController.cs" />
+    <Compile Include="Controllers\EventsController.cs" />
+    <Compile Include="Controllers\GalleryController.cs" />
+    <Compile Include="Controllers\GreenMembershipController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\LocationsController.cs" />
+    <Compile Include="Controllers\MembershipsController.cs" />
+    <Compile Include="Controllers\PromotionsController.cs" />
+    <Compile Include="Controllers\YellowMembershipController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201912131047086_contactus.cs" />
+    <Compile Include="Migrations\201912131047086_contactus.Designer.cs">
+      <DependentUpon>201912131047086_contactus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\Launchpad7NewContext.cs" />
+    <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="personalModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>personalModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="personalModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>personalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="personalModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>personalModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Startup.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\lp7.mdf" />
+    <Content Include="App_Data\lp7_log.ldf">
+      <DependentUpon>lp7.mdf</DependentUpon>
+    </Content>
+    <Content Include="Content\Responsive.css" />
+    <Content Include="Images\logo.jpg" />
+    <Content Include="Images\03-progress.gif" />
+    <Content Include="Content\css\unite-gallery.css" />
+    <Content Include="Content\cubeportfolio\cubeportfolio.css" />
+    <Content Include="Content\cubeportfolio\cubeportfolio.min.css" />
+    <Content Include="Content\jquery.lazy-master\gulpfile.js" />
+    <Content Include="Content\css\jquery.lazy.js" />
+    <Content Include="Content\jquery.lazy-master\jquery.lazy.min.js" />
+    <Content Include="Content\jquery.lazy-master\jquery.lazy.plugins.js" />
+    <Content Include="Content\jquery.lazy-master\jquery.lazy.plugins.min.js" />
+    <Content Include="Content\jquery.lazy-master\plugins\jquery.lazy.ajax.js" />
+    <Content Include="Content\jquery.lazy-master\plugins\jquery.lazy.ajax.min.js" />
+    <Content Include="Content\jquery.lazy-master\plugins\jquery.lazy.av.js" />
+    <Content Include="Content\jquery.lazy-master\plugins\jquery.lazy.av.min.js" />
+    <Content Include="Content\jquery.lazy-master\plugins\jquery.lazy.iframe.js" />
+    <Content Include="Content\jquery.lazy-master\plugins\jquery.lazy.iframe.min.js" />
+    <Content Include="Content\jquery.lazy-master\plugins\jquery.lazy.noop.js" />
+    <Content Include="Content\jquery.lazy-master\plugins\jquery.lazy.noop.min.js" />
+    <Content Include="Content\jquery.lazy-master\plugins\jquery.lazy.picture.js" />
+    <Content Include="Content\jquery.lazy-master\plugins\jquery.lazy.picture.min.js" />
+    <Content Include="Content\jquery.lazy-master\plugins\jquery.lazy.script.js" />
+    <Content Include="Content\jquery.lazy-master\plugins\jquery.lazy.script.min.js" />
+    <Content Include="Content\jquery.lazy-master\plugins\jquery.lazy.vimeo.js" />
+    <Content Include="Content\jquery.lazy-master\plugins\jquery.lazy.vimeo.min.js" />
+    <Content Include="Content\jquery.lazy-master\plugins\jquery.lazy.youtube.js" />
+    <Content Include="Content\jquery.lazy-master\plugins\jquery.lazy.youtube.min.js" />
+    <Content Include="Content\js\jquery-11.0.min.js" />
+    <Content Include="Content\js\jquery-latest.js" />
+    <Content Include="Content\js\lazyloading.js" />
+    <Content Include="Content\js\ug-theme-tiles.js" />
+    <Content Include="Content\js\unitegallery.min.js" />
+    <Content Include="Images\bpo.jpg" />
+    <Content Include="Images\cbp-loading-popup.gif" />
+    <Content Include="Images\cbp-loading.gif" />
+    <Content Include="Images\cbp-sprite.png" />
+    <Content Include="Images\it.jpg" />
+    <Content Include="Images\lightbox-arrow-left.png" />
+    <Content Include="Images\lightbox-arrow-right.png" />
+    <Content Include="Images\lightbox-icon-close-compact.png" />
+    <Content Include="Images\lightbox-icon-close-compact2.png" />
+    <Content Include="Content\Gallery.css" />
+    <Content Include="Images\images\benches.jpg" />
+    <Content Include="Images\images\bridge.jpg" />
+    <Content Include="Images\images\coast.jpg" />
+    <Content Include="Images\images\park.jpg" />
+    <Content Include="Images\images\rails.jpg" />
+    <Content Include="Images\images\rocks.jpg" />
+    <Content Include="Images\images\sky.jpg" />
+    <Content Include="Images\images\traffic.jpg" />
+    <Content Include="Images\images\tunnel.jpg" />
+    <Content Include="Content\bootstrap-datepicker.css" />
+    <Content Include="Content\bootstrap-datepicker.min.css" />
+    <Content Include="Content\bootstrap-datepicker.standalone.css" />
+    <Content Include="Content\bootstrap-datepicker.standalone.min.css" />
+    <Content Include="Content\bootstrap-datepicker3.css" />
+    <Content Include="Content\bootstrap-datepicker3.min.css" />
+    <Content Include="Content\bootstrap-datepicker3.standalone.css" />
+    <Content Include="Content\bootstrap-datepicker3.standalone.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Fonts\NeoSansPro-Regular.svg" />
+    <Content Include="Content\Fonts\OpenSans-Bold.svg" />
+    <Content Include="Content\Fonts\OpenSans.svg" />
+    <Content Include="Content\Style.css" />
+    <Content Include="Content\Theme.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\AvenirNextLTPro-Regular.svg" />
+    <Content Include="fonts\FuturaBT-Medium.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\OpenSans.svg" />
+    <Content Include="fonts\Roboto-Black.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Images\1stmeetuplp7.jpg" />
+    <Content Include="Images\accountsettings.png" />
+    <Content Include="Images\arrow.png" />
+    <Content Include="Images\Dashboard-icon.png" />
+    <Content Include="Images\invoice.png" />
+    <Content Include="Images\LaunchPad.png" />
+    <Content Include="Images\launchpad7-logo.png" />
+    <Content Include="Images\LP7-G\LP7\1.jpg" />
+    <Content Include="Images\LP7-G\LP7\10.jpg" />
+    <Content Include="Images\LP7-G\LP7\11.jpg" />
+    <Content Include="Images\LP7-G\LP7\12.jpg" />
+    <Content Include="Images\LP7-G\LP7\12322941_892214160912059_8813163394640081896_o.jpg" />
+    <Content Include="Images\LP7-G\LP7\12339124_739077936225683_2203922165586255172_o.jpg" />
+    <Content Include="Images\LP7-G\LP7\12370704_739077832892360_2486022344580625218_o.jpg" />
+    <Content Include="Images\LP7-G\LP7\12375293_740768902723253_5485511045741374537_o.jpg" />
+    <Content Include="Images\LP7-G\LP7\12694622_764700943663382_6693449632462147519_o.jpg" />
+    <Content Include="Images\LP7-G\LP7\12715827_771050006361809_7525075159603129591_o.jpg" />
+    <Content Include="Images\LP7-G\LP7\12716047_771049889695154_4031559484112057647_o.jpg" />
+    <Content Include="Images\LP7-G\LP7\13.jpg" />
+    <Content Include="Images\LP7-G\LP7\13220804_822542397879236_4155932743818650783_o.jpg" />
+    <Content Include="Images\LP7-G\LP7\13268089_822542381212571_2735883698804200376_o.jpg" />
+    <Content Include="Images\LP7-G\LP7\13443124_836986349768174_5855986135387246324_o.jpg" />
+    <Content Include="Images\LP7-G\LP7\13475035_836990219767787_1347171251791304078_o.jpg" />
+    <Content Include="Images\LP7-G\LP7\13490689_840694249397384_4057513432619951266_o.jpg" />
+    <Content Include="Images\LP7-G\LP7\13495556_836986306434845_4579662443456325745_o.jpg" />
+    <Content Include="Images\LP7-G\LP7\13497776_840694112730731_7672587885716773301_o.jpg" />
+    <Content Include="Images\LP7-G\LP7\13497917_840694102730732_4386625944438335265_o.jpg" />
+    <Content Include="Images\LP7-G\LP7\13502725_840693996064076_836691365124019382_o.jpg" />
+    <Content Include="Images\LP7-G\LP7\13522868_840694246064051_4146466931877507671_o.jpg" />
+    <Content Include="Images\LP7-G\LP7\13522897_840693992730743_3698520493258056792_o.jpg" />
+    <Content Include="Images\LP7-G\LP7\13558615_840694239397385_949131561736177226_o.jpg" />
+    <Content Include="Images\LP7-G\LP7\13958158_866403750159767_7130125156489985035_o.jpg" />
+    <Content Include="Images\LP7-G\LP7\14.jpg" />
+    <Content Include="Images\LP7-G\LP7\14379706_887358681397607_2199147196761845602_o.jpg" />
+    <Content Include="Images\LP7-G\LP7\14409558_892214014245407_8526499397915200604_o.jpg" />
+    <Content Include="Images\LP7-G\LP7\14457482_893275547472587_761605697452638837_n.jpg" />
+    <Content Include="Images\LP7-G\LP7\14470581_893275550805920_4442213166540598330_n.jpg" />
+    <Content Include="Images\LP7-G\LP7\14615690_911228095677332_6170599671652092148_o.jpg" />
+    <Content Include="Images\LP7-G\LP7\15.jpg" />
+    <Content Include="Images\LP7-G\LP7\15111010_930081550458653_9119437096141102874_o.jpg" />
+    <Content Include="Images\LP7-G\LP7\15129002_930794633720678_1995306945296569982_o.jpg" />
+    <Content Include="Images\LP7-G\LP7\15129017_930170280449780_8467957954758372359_o.jpg" />
+    <Content Include="Images\LP7-G\LP7\15137648_930794517054023_99691381419750296_o.jpg" />
+    <Content Include="Images\LP7-G\LP7\15167524_930680753732066_8906394352946350663_o.jpg" />
+    <Content Include="Images\LP7-G\LP7\15168712_930081537125321_9190567039307932484_o.jpg" />
+    <Content Include="Images\LP7-G\LP7\15168739_935014656632009_1285476112952636151_o.jpg" />
+    <Content Include="Images\LP7-G\LP7\15195859_930764410390367_8501620746436367066_o.jpg" />
+    <Content Include="Images\LP7-G\LP7\15195875_930794713720670_3876252409010115753_o.jpg" />
+    <Content Include="Images\LP7-G\LP7\15195996_930680747065400_2179838489935276706_o.jpg" />
+    <Content Include="Images\LP7-G\LP7\15871933_960445174088957_8716509306886289951_n.jpg" />
+    <Content Include="Images\LP7-G\LP7\15895114_961192204014254_1667903560302165585_n.jpg" />
+    <Content Include="Images\LP7-G\LP7\15940482_961192170680924_7028055010978707461_n.jpg" />
+    <Content Include="Images\LP7-G\LP7\16.jpg" />
+    <Content Include="Images\LP7-G\LP7\16251891_973993576067450_8002197848099488820_o.jpg" />
+    <Content Include="Images\LP7-G\LP7\16300413_975100069290134_1309416952887274852_o.jpg" />
+    <Content Include="Images\LP7-G\LP7\16463263_975100082623466_8424455789118554337_o.jpg" />
+    <Content Include="Images\LP7-G\LP7\16707370_983977395069068_8443633458556358777_o.jpg" />
+    <Content Include="Images\LP7-G\LP7\16797967_991045471028927_4456572090998481432_o.jpg" />
+    <Content Include="Images\LP7-G\LP7\16835859_989347834532024_2522815181283664506_o.jpg" />
+    <Content Include="Images\LP7-G\LP7\17.jpg" />
+    <Content Include="Images\LP7-G\LP7\17388843_1004357123031095_4782868260417442291_o.jpg" />
+    <Content Include="Images\LP7-G\LP7\17966826_1027424860724321_7810336023125775028_o.jpg" />
+    <Content Include="Images\LP7-G\LP7\17991726_1028203463979794_7438703095794924030_o.jpg" />
+    <Content Include="Images\LP7-G\LP7\18.jpg" />
+    <Content Include="Images\LP7-G\LP7\18056481_1028110240655783_3166736722248473472_o.jpg" />
+    <Content Include="Images\LP7-G\LP7\2.jpg" />
+    <Content Include="Images\LP7-G\LP7\23550293_1155402041259935_3244205183671963749_o.jpg" />
+    <Content Include="Images\LP7-G\LP7\23592144_1155776947889111_6845816297482527696_o.jpg" />
+    <Content Include="Images\LP7-G\LP7\24210393_1164659180334221_6705856329635939293_o.jpg" />
+    <Content Include="Images\LP7-G\LP7\24232787_1164128660387273_5248551440444017450_n.jpg" />
+    <Content Include="Images\LP7-G\LP7\3.jpg" />
+    <Content Include="Images\LP7-G\LP7\4.jpg" />
+    <Content Include="Images\LP7-G\LP7\5.jpg" />
+    <Content Include="Images\LP7-G\LP7\6.jpg" />
+    <Content Include="Images\LP7-G\LP7\7.jpg" />
+    <Content Include="Images\LP7-G\LP7\8.jpg" />
+    <Content Include="Images\LP7-G\LP7\9.jpg" />
+    <Content Include="Images\LP7\1.jpg" />
+    <Content Include="Images\LP7\10.jpg" />
+    <Content Include="Images\LP7\11.jpg" />
+    <Content Include="Images\LP7\12.jpg" />
+    <Content Include="Images\LP7\13.jpg" />
+    <Content Include="Images\LP7\14.jpg" />
+    <Content Include="Images\LP7\15.jpg" />
+    <Content Include="Images\LP7\16.jpg" />
+    <Content Include="Images\LP7\2.jpg" />
+    <Content Include="Images\LP7\3.jpg" />
+    <Content Include="Images\LP7\4.jpg" />
+    <Content Include="Images\LP7\5.jpg" />
+    <Content Include="Images\LP7\6.jpg" />
+    <Content Include="Images\LP7\7.jpg" />
+    <Content Include="Images\LP7\8.jpg" />
+    <Content Include="Images\LP7\9.jpg" />
+    <Content Include="Images\moosh.jpg" />
+    <Content Include="Images\NewTheme\calendar-icon.png" />
+    <Content Include="Images\NewTheme\coworkinglogo.png" />
+    <Content Include="Images\NewTheme\coworkingspace.png" />
+    <Content Include="Images\NewTheme\day-and-week-banner.png" />
+    <Content Include="Images\NewTheme\dinner-with-ceo-banner.png" />
+    <Content Include="Images\NewTheme\event-banner.jpg" />
+    <Content Include="Images\NewTheme\event-icon.png" />
+    <Content Include="Images\NewTheme\Events Cover 2.jpg" />
+    <Content Include="Images\NewTheme\Events-Cover.jpg" />
+    <Content Include="Images\NewTheme\EventsIcon.png" />
+    <Content Include="Images\NewTheme\expevic.png" />
+    <Content Include="Images\NewTheme\FirstBanner.png" />
+    <Content Include="Images\NewTheme\food arena icon.png" />
+    <Content Include="Images\NewTheme\footer-banner.jpg" />
+    <Content Include="Images\NewTheme\gaming.png" />
+    <Content Include="Images\NewTheme\hot-desk-big-icon.png" />
+    <Content Include="Images\NewTheme\hot-desk-inside-page.png" />
+    <Content Include="Images\NewTheme\hot-desk.png" />
+    <Content Include="Images\NewTheme\hub.png" />
+    <Content Include="Images\NewTheme\launchpad7-banner-2.png" />
+    <Content Include="Images\NewTheme\liberary.png" />
+    <Content Include="Images\NewTheme\location.png" />
+    <Content Include="Images\NewTheme\lpd-fb.png" />
+    <Content Include="Images\NewTheme\lpd-twitter.png" />
+    <Content Include="Images\NewTheme\Mappix.PNG" />
+    <Content Include="Images\NewTheme\Membership Cover.jpg" />
+    <Content Include="Images\NewTheme\memership-banner.png" />
+    <Content Include="Images\NewTheme\private-office-inside.png" />
+    <Content Include="Images\NewTheme\private-office.png" />
+    <Content Include="Images\NewTheme\priviate-office-big-icon.png" />
+    <Content Include="Images\NewTheme\relaxing.png" />
+    <Content Include="Images\NewTheme\tour-today-inside-banner.png" />
+    <Content Include="Images\NewTheme\virtual-.png" />
+    <Content Include="Images\NewTheme\virtual-big-icon.png" />
+    <Content Include="Images\NewTheme\virtual-icon.png" />
+    <Content Include="Images\NewTheme\worksho.png" />
+    <Content Include="Images\PearlGAte_logo.png" />
+    <Content Include="Images\rs.png" />
+    <Content Include="Images\TheABC.jpg" />
+    <Content Include="Images\accent.png" />
+    <Content Include="Images\banner-1.png" />
+    <Content Include="Images\banner-2.png" />
+    <Content Include="Images\banner-3.png" />
+    <Content Include="Images\banner-4.png" />
+    <Content Include="Images\blue-membership.jpg" />
+    <Content Include="Images\blue.png" />
+    <Content Include="Images\bluemembership.png" />
+    <Content Include="Images\bullet.png" />
+    <Content Include="Images\ceopix.png" />
+    <Content Include="Images\clck-icon.png" />
+    <Content Include="Images\cldr-icon.png" />
+    <Content Include="Images\codebar.png" />
+    <Content Include="Images\come-bg.png" />
+    <Content Include="Images\corporate-membership-pix.jpg" />
+    <Content Include="Images\Corporate-membership.jpg" />
+    <Content Include="Images\corporate.png" />
+    <Content Include="Images\customer-membership.jpg" />
+    <Content Include="Images\Customimg.png" />
+    <Content Include="Images\email-icon.png" />
+    <Content Include="Images\eventsicon.png" />
+    <Content Include="Images\expevic.png" />
+    <Content Include="Images\fb-icon-blck.png" />
+    <Content Include="Images\fb-icon.png" />
+    <Content Include="Images\fb.png" />
+    <Content Include="Images\finteckimg.jpg" />
+    <Content Include="Images\game-icon.png" />
+    <Content Include="Images\green-list.png" />
+    <Content Include="Images\green-membership.jpg" />
+    <Content Include="Images\green.png" />
+    <Content Include="Images\greenmembership.png" />
+    <Content Include="Images\handsheck.png" />
+    <Content Include="Images\heroAccent.png" />
+    <Content Include="Images\hub-logo.png" />
+    <Content Include="Images\img-1.png" />
+    <Content Include="Images\img-2.png" />
+    <Content Include="Images\img-3.png" />
+    <Content Include="Images\img-4.png" />
+    <Content Include="Images\jump.png" />
+    <Content Include="Images\lctin.icon.png" />
+    <Content Include="Images\linkdin-icon-blck.png" />
+    <Content Include="Images\linkdin-icon.png" />
+    <Content Include="Images\list-img.png" />
+    <Content Include="Images\locationsmall-icon.png" />
+    <Content Include="Images\lpteam.png" />
+    <Content Include="Images\main-banner-1.png" />
+    <Content Include="Images\map-icon.png" />
+    <Content Include="Images\membership=bg.png" />
+    <Content Include="Images\moftak.png" />
+    <Content Include="Images\orderedList0.png" />
+    <Content Include="Images\orderedList1.png" />
+    <Content Include="Images\orderedList2.png" />
+    <Content Include="Images\orderedList3.png" />
+    <Content Include="Images\orderedList4.png" />
+    <Content Include="Images\orderedList5.png" />
+    <Content Include="Images\orderedList6.png" />
+    <Content Include="Images\orderedList7.png" />
+    <Content Include="Images\orderedList8.png" />
+    <Content Include="Images\orderedList9.png" />
+    <Content Include="Images\pic-boarder.png" />
+    <Content Include="Images\propakistani.png" />
+    <Content Include="Images\reading-logo.png" />
+    <Content Include="Images\rocket-logo.png" />
+    <Content Include="Images\rocketIcon.png" />
+    <Content Include="Images\seeting-logo.png" />
+    <Content Include="Images\suffah-logo.png" />
+    <Content Include="Images\Sundas.jpg" />
+    <Content Include="Images\survival-of-the-fittest.png" />
+    <Content Include="Images\takeatour.jpg" />
+    <Content Include="Images\teching-logo.png" />
+    <Content Include="Images\trycoworkinglp.jpg" />
+    <Content Include="Images\twitter-icon-blck.png" />
+    <Content Include="Images\twitter-icon.png" />
+    <Content Include="Images\twitter.png" />
+    <Content Include="Images\uparrow-hover.png" />
+    <Content Include="Images\uparrow.png" />
+    <Content Include="Images\userprofile.png" />
+    <Content Include="Images\vheelz-logo.png" />
+    <Content Include="Images\working-time.png" />
+    <Content Include="Images\yello.png" />
+    <Content Include="Images\yellow-membership.jpg" />
+    <Content Include="Images\yellow.png" />
+    <Content Include="Images\yellowmembership.png" />
+    <Content Include="personalModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>personalModel.edmx</DependentUpon>
+      <LastGenOutput>personalModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="personalModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>personalModel.edmx</DependentUpon>
+      <LastGenOutput>personalModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="Scripts\bootstrap-datepicker.js" />
+    <Content Include="Scripts\bootstrap-datepicker.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Content\Fonts\NeoSansPro-Regular.eot" />
+    <Content Include="Content\Fonts\NeoSansPro-Regular.ttf" />
+    <Content Include="Content\Fonts\NeoSansPro-Regular.woff" />
+    <Content Include="Content\Fonts\OpenSans.eot" />
+    <Content Include="Content\Fonts\OpenSans.ttf" />
+    <Content Include="Content\Fonts\OpenSans.woff" />
+    <Content Include="Content\Fonts\OpenSans-Bold.eot" />
+    <Content Include="Content\Fonts\OpenSans-Bold.ttf" />
+    <Content Include="Content\Fonts\OpenSans-Bold.woff" />
+    <Content Include="fonts\AvenirNextLTPro-Regular.eot" />
+    <Content Include="fonts\AvenirNextLTPro-Regular.ttf" />
+    <Content Include="fonts\AvenirNextLTPro-Regular.woff" />
+    <Content Include="fonts\OpenSans.eot" />
+    <Content Include="fonts\OpenSans.ttf" />
+    <Content Include="fonts\OpenSans.woff" />
+    <Content Include="fonts\FuturaBT-Medium.eot" />
+    <Content Include="fonts\FuturaBT-Medium.ttf" />
+    <Content Include="fonts\FuturaBT-Medium.woff" />
+    <Content Include="Areas\Admin\Views\Shared\_Layout1.cshtml" />
+    <Content Include="Areas\Admin\Views\Home\Index.cshtml" />
+    <Content Include="Content\bootstrap-datepicker3.standalone.min.css.map" />
+    <Content Include="Content\bootstrap-datepicker3.standalone.css.map" />
+    <Content Include="Content\bootstrap-datepicker3.min.css.map" />
+    <Content Include="Content\bootstrap-datepicker3.css.map" />
+    <Content Include="Content\bootstrap-datepicker.standalone.min.css.map" />
+    <Content Include="Content\bootstrap-datepicker.standalone.css.map" />
+    <Content Include="Content\bootstrap-datepicker.min.css.map" />
+    <Content Include="Content\bootstrap-datepicker.css.map" />
+    <Content Include="Areas\Admin\Views\Web.config" />
+    <Content Include="Areas\Admin\Views\Events\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Events\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\Events\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\Events\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Events\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Invoices\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Invoices\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\Invoices\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\Invoices\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Invoices\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Packages\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Packages\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\Packages\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\Packages\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Packages\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\User\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\User\Edit.cshtml" />
+    <Content Include="fonts\Roboto-Black.eot" />
+    <Content Include="fonts\Roboto-Black.ttf" />
+    <Content Include="fonts\Roboto-Black.woff" />
+    <Content Include="Content\jquery.lazy-master\bower.json" />
+    <Content Include="Content\jquery.lazy-master\LICENSE" />
+    <Content Include="Content\jquery.lazy-master\package-lock.json" />
+    <Content Include="Content\jquery.lazy-master\package.json" />
+    <Content Include="Content\jquery.lazy-master\plugins\README.md" />
+    <Content Include="Content\jquery.lazy-master\README.md" />
+    <EntityDeploy Include="personalModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>personalModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="personalModel.edmx.diagram">
+      <DependentUpon>personalModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="Areas\Admin\Views\ContactUser\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\ContactUser\Detail.cshtml" />
+    <Content Include="Areas\Admin\Views\ContactUser\Delete.cshtml" />
+    <None Include="Properties\PublishProfiles\LaunchPad7New.pubxml" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\cubeportfolio\jquery.cubeportfolio.js" />
+    <Content Include="Scripts\cubeportfolio\jquery.cubeportfolio.min.js" />
+    <Content Include="Scripts\cubeportfolio\js\main.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.imglazy.js" />
+    <Content Include="Scripts\jquery.imglazy.min.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.ar.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.az.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.bg.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.bs.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.ca.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.cs.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.cy.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.da.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.de.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.el.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.en-AU.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.en-GB.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.eo.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.es.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.et.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.eu.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.fa.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.fi.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.fo.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.fr-CH.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.fr.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.gl.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.he.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.hr.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.hu.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.hy.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.id.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.is.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.it-CH.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.it.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.ja.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.ka.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.kh.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.kk.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.ko.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.kr.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.lt.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.lv.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.me.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.mk.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.mn.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.ms.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.nb.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.nl-BE.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.nl.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.no.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.pl.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.pt-BR.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.pt.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.ro.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.rs-latin.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.rs.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.ru.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.sk.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.sl.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.sq.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.sr-latin.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.sr.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.sv.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.sw.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.th.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.tr.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.uk.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.vi.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.zh-CN.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.zh-TW.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\scripts.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\wowslider.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Views\Gallery\index.cshtml" />
+    <Content Include="Views\Gallery\More.cshtml" />
+    <Content Include="Views\Register\index.cshtml" />
+    <Content Include="Views\Memberships\HotDeskISD.cshtml" />
+    <Content Include="Views\Memberships\PrivateOfficeISD.cshtml" />
+    <Content Include="Views\Memberships\PrivateOffice1ISD.cshtml" />
+    <Content Include="Views\Promotions\index.cshtml" />
+    <Content Include="Views\Memberships\EventAccessISD.cshtml" />
+    <None Include="Views\Memberships\PrivateOffice1.cshtml" />
+    <None Include="Views\Locations\index.cshtml" />
+    <Content Include="Views\Memberships\Virtual.cshtml">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Scripts\jquery-11.0.min.js" />
+    <Content Include="Scripts\ug-theme-tiles.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
+    <Content Include="Views\Account\ConfirmEmail.cshtml" />
+    <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
+    <Content Include="Views\Account\ExternalLoginFailure.cshtml" />
+    <Content Include="Views\Account\ForgotPassword.cshtml" />
+    <Content Include="Views\Account\ForgotPasswordConfirmation.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Account\ResetPassword.cshtml" />
+    <Content Include="Views\Account\ResetPasswordConfirmation.cshtml" />
+    <Content Include="Views\Account\SendCode.cshtml" />
+    <Content Include="Views\Account\VerifyCode.cshtml" />
+    <Content Include="Views\Manage\AddPhoneNumber.cshtml" />
+    <Content Include="Views\Manage\ChangePassword.cshtml" />
+    <Content Include="Views\Manage\Index.cshtml" />
+    <Content Include="Views\Manage\ManageLogins.cshtml" />
+    <Content Include="Views\Manage\SetPassword.cshtml" />
+    <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
+    <Content Include="Views\Shared\Lockout.cshtml" />
+    <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\BlueMembership\Index.cshtml" />
+    <Content Include="Views\CorporateMembership\Index.cshtml" />
+    <Content Include="Views\GreenMembership\Index.cshtml" />
+    <Content Include="Views\YellowMembership\Index.cshtml" />
+    <Content Include="Views\CustomMembership\Index.cshtml" />
+    <Content Include="Views\DashBoard\Index.cshtml" />
+    <Content Include="Views\DashBoard\EditUser.cshtml" />
+    <Content Include="Views\DashBoard\Invoice.cshtml" />
+    <Content Include="Views\AutomateEmails\FiveDays.cshtml" />
+    <Content Include="Views\AutomateEmails\DueDateEmail.cshtml" />
+    <Content Include="Views\DashBoard\InvoiceDetails.cshtml" />
+    <Content Include="Views\Memberships\Index.cshtml" />
+    <Content Include="Views\Memberships\HotDesk.cshtml" />
+    <Content Include="Views\Memberships\PrivateOffice.cshtml" />
+    <Content Include="Views\Events\Details.cshtml" />
+    <Content Include="Views\Events\Index.cshtml" />
+    <Content Include="Views\Memberships\Packages.cshtml" />
+    <Content Include="Views\Shared\index.cshtml" />
+    <Content Include="Views\Memberships\VirtualISD.cshtml" />
+    <Content Include="Views\Memberships\EventAccess.cshtml" />
+    <Content Include="Views\Shared\_Events.cshtml" />
+    <Content Include="Views\Shared\_ContactPartial.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Images\Avatar\Event\" />
+    <Folder Include="Migrations\ApplicationContext\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="packages.config" />
+    <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Codebar\Launchpad.Domain.csproj">
+      <Project>{e9da4328-f8a1-4ca4-a94e-950572f96cf6}</Project>
+      <Name>Launchpad.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201912131047086_contactus.resx">
+      <DependentUpon>201912131047086_contactus.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>5599</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:5599/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

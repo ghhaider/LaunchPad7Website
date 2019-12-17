@@ -1,0 +1,37 @@
+﻿@using Microsoft.AspNet.Identity
+@using System.Security.Claims
+@if (Request.IsAuthenticated)
+{
+    var identity = (ClaimsIdentity)User.Identity;
+    var name = identity.FindFirstValue(ClaimTypes.GivenName) ?? identity.GetUserName();
+    var stringchar = name.IndexOf('@');
+    if (stringchar > 1)
+    {
+        name = new string(name.Take(stringchar).ToArray()); 
+    }
+    using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
+    {
+    @Html.AntiForgeryToken()
+      //  string userName = Membership.GetUser(User.Identity.GetUserId()).UserName;
+    <ul class="nav navbar-nav navbar-right LoggedIn">
+        <li class="dropdown">
+            <a class=" dropdown-toggle" data-toggle="dropdown" href=" javascript:void(0);" title="@name.">@name</a>
+            @*@Html.ActionLink("Hi "+name,  "Index", "DashBoard", routeValues: null, htmlAttributes: new { title = "Manage" })*@
+            <ul class="dropdown-menu" role="menu">
+                <li>
+                    @Html.ActionLink("Profile", "Index", "DashBoard", routeValues: null, htmlAttributes: new { title = "Manage" })
+                </li>
+                <li style=""><a href="javascript:document.getElementById('logoutForm').submit()">Log off</a></li>
+            </ul>
+        </li>
+        @*<li><a href="javascript:document.getElementById('logoutForm').submit()">Log off</a></li>*@
+    </ul>
+    }
+}
+else
+{
+    <ul class="nav navbar-nav navbar-right">
+        <li>@Html.ActionLink(" ", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
+        <li>@Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+    </ul>
+}
